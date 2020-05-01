@@ -1,0 +1,23 @@
+/*   
+Theme Name: Ditto Theme
+Theme URI: ditto_theme
+Description: A simple WordPress theme created for developers.
+Author: Pipelon
+Author URI: https://pipeloncho.github.io
+Version: 1.0.5
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body, * p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    line-height: 20px;
+    color: #00263A;
+    -webkit-font-smoothing: antialiased !important;
+}
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none !important;
+}
