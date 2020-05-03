@@ -10,10 +10,10 @@ Version: 1.0.5
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 body, * p {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    line-height: 20px;
-    color: #00263A;
+    font-family: 'Work Sans';
+    font-size: 22px;
+    line-height: 31px;
+    color: #58595B;
     -webkit-font-smoothing: antialiased !important;
 }
 button:focus,

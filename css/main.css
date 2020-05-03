@@ -1,0 +1,157 @@
+#main_menu {
+    display: inline-block;
+}
+
+#main_menu li {
+    display: inline-block;
+    margin-left: 29px;
+    position: relative;
+}
+
+#main_menu li:first-child:before {
+    display: none;
+}
+
+#main_menu li:before {
+    content: '';
+    width: 2px;
+    height: 10px;
+    background-color: #808080; 
+    position: absolute;
+    top: 13.4px;
+    left: -19px;
+
+}
+
+#main_menu li a {
+    font-size: 14px;
+    line-height: 14.4px;
+    color: #808080; 
+    font-weight: bold;
+    text-transform: uppercase; /*Mayusculas*/
+    
+}
+
+.custom-logo {
+    max-width: 271px;
+}
+.menucontacto {
+    background-color: #92A5AE;
+    padding: 0px 14px 4px 14px;
+}
+
+.menucontacto:before {
+    display: none;
+}
+
+.menucontacto a {
+    color: #FFFFFF!important;
+}
+
+header {
+    height: 103px;
+    border: #A4A4A4 1px solid;
+    padding-top: 26px;
+}
+
+#navbarCollapse{
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+#PR-navbar a {
+    width: 271px;
+}
+
+.container-header {
+    margin-right: 23px;
+    margin-left: 31px;
+}
+
+.mainws {
+    margin-left: 19px !important;
+}
+.mainws:before {
+    display: none;
+}
+
+.mainws svg {
+    width: 39px;
+}
+
+.footermain {
+    background-color: #92A5AE;
+    padding-right: 30px;
+    padding-left: 50px;
+    height: 65px;
+}
+
+.footermain .footerleft {
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #FFFFFF; 
+    font-family: 'Work Sans';
+    width: 460px;
+    margin-top: 20px;
+
+}
+.footermain a{
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF; 
+    font-family: 'Work Sans';
+}
+.footermain .footerright span{
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF; 
+    font-family: 'Work Sans';
+}
+
+.footermain .footerright{
+    text-align: right;
+    width: 100%;
+    margin-top: 11px;
+}
+
+.footermain .footerright a:hover {
+    color: #FFFFFF;
+  }
+
+.footermain .mail {
+    position: relative;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.footermain .mail:hover {
+    text-decoration: none;
+}
+
+.footermain .mail:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 20px;
+    left: -3px;
+}
+
+.footermain .phonetwo {
+    margin-left: 11px;
+    position: relative;
+    margin-right: 18px;
+}
+
+.footermain .phonetwo:before {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 2px;
+    background-color: #FFFFFF; 
+    top: 3px;
+    left: -8px;
+
+}
