@@ -80,6 +80,11 @@ header {
     width: 39px;
 }
 
+.mainws svg path {
+    transform: translate(1px, 1px) scale(0.9);
+}
+
+
 .footermain {
     background-color: #92A5AE;
     padding-right: 30px;
@@ -154,4 +159,33 @@ header {
     top: 3px;
     left: -8px;
 
+}
+
+.uparrow {
+    text-align: center;
+    width: 52px;
+    position: fixed;
+    right: 28px;
+    bottom: 73px;
+    cursor: pointer;
+    display: none;
+}
+
+.uparrowsvg {
+    width: 13px;
+}
+
+.uparrowtext{
+    font-size: 14px;
+    line-height: 19px;
+    color: #A4A4A4;
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.075em;
+}
+
+.container-plastiglass{
+    width: calc(100% - 225px)!important;
+    margin-left: 87px!important;
+    margin-right: auto!important;
 }
