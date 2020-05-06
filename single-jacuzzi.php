@@ -127,10 +127,10 @@ get_header();
         <div class="container-fluid container-plastiglass">
             <div class="row">
                 <div class="col-7">
-                    <div class="jacuzzi_imagen">
-                        <img class="w-100" src="<?php echo $personaliza_tu_jacuzzi_imagen["url"]?>" alt="<?php echo $personaliza_tu_jacuzzi_imagen["alt"]?>">
-                    </div>
-                    </div>
+                        <div class="jacuzzi_imagen">
+                            <img class="w-100" src="<?php echo $personaliza_tu_jacuzzi_imagen["url"]?>" alt="<?php echo $personaliza_tu_jacuzzi_imagen["alt"]?>">
+                        </div>
+                </div>
                 <div class="col-5">
                     <p class="text_jacuzzi_text"><?php echo $personaliza_tu_jacuzzi_text?></p>
                     <p class="text_jacuzzi_contenido"><?php echo $personaliza_tu_jazuzzi_contenido?></p>

@@ -1,0 +1,118 @@
+.Menu_link{
+    margin-left: 81px;
+    margin-top: 46px;
+}
+
+.Menu_link_Menuproducto{
+    font-size: 16.96px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.10em;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.Menu_link_Menugrifo{
+    font-size: 16.96px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.10em;
+    margin-right: 20px;
+    position: relative;
+}
+
+.Menu_link_Menunevera{
+    font-size: 16.96px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.10em;
+    
+}
+
+.Menu_link_Menu .Menu_link_Menuproducto:before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 1px;
+    background-color: #808080; 
+    top: 5px;
+    left: 113px;
+}
+
+.Menu_link_Menu .Menu_link_Menugrifo:before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 1px;
+    background-color: #808080; 
+    top: 5px;
+    left: 114px;
+}
+
+.col-7 {
+    padding-right: 56px;
+}
+
+.contenido_grifo{
+    width: calc(100% - 225px)!important;
+    margin-left: 83px!important;
+    margin-top: 98px;
+}
+
+.title_grifo{
+    font-size: 49.27px;
+    line-height: 49.27px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.content_grifo{
+    font-size: 22px;
+    line-height: 35px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+}
+
+.classp{
+    font-size: 16.96px;
+    line-height: 24.73px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+}
+
+.classp1{
+    display: inline-block;
+    width: 310px;  
+    font-size: 17px;
+    line-height: 14.4px;
+    color: #58595B; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+
+}
+ 
+.classp2{
+    display: contents;
+    font-size: 17px;
+    line-height: 14.4px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+}
+
+.colores_text{
+    margin-top: 40px;
+    font-size: 26px;
+    line-height: 19px;
+    color: #58595B; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
