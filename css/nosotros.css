@@ -1,0 +1,68 @@
+.nosotros_text{
+    margin-top: 125px;
+    margin-left: 188px;
+    margin-right: 300px;
+    position: relative;
+}
+
+.nosotros_tittle{
+    font-size: 49px;
+    line-height: 51px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.050em;
+    text-transform: uppercase; 
+}
+.cliente_content{
+     font-size: 22px;
+    line-height: 31px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    text-align: justify;
+}
+
+.botonvisitar{
+    font-size: 18.09px;
+    line-height: 24.54px;
+    color: #92A5AE; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    position: relative;
+}
+
+.arrow{
+    width: 29px;
+    margin-left: 120px;
+    margin-top: -27px;
+    position: absolute;
+
+}
+.texthistoria{
+    margin-top: 81px;
+}
+
+.secleftimg{
+    width: 46%;
+}
+
+.boxleft{
+    width: 54%;
+    background-color: rgba(146, 165, 174, 0.22);
+    padding: 118px 165px 0 105px;
+}
+.textone{
+    font-size: 49px;
+    line-height: 51px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+.texttwo{
+    font-size: 22px;
+    line-height: 31px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+}

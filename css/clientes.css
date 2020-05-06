@@ -1,0 +1,23 @@
+.cliente_text{
+    margin-top: 61px;
+    margin-left: 289px;
+    margin-right: 289px;
+}
+
+.cliente_tittle{
+    text-align: center;
+    font-size: 26px;
+    line-height: 19px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    text-transform: uppercase; 
+}
+.cliente_content{
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+}
