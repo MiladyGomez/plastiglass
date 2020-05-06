@@ -79,7 +79,7 @@ $footer=get_field("footer_main", "option");
     });
 </script>
 
-<!-- comentarioo -->
+<!-- comentario -->
 
 </body>
 
