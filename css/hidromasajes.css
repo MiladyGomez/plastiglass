@@ -1,0 +1,43 @@
+.containerpost {
+    margin-left: 144px;
+    margin-top: 113px;
+    margin-right: 144px;
+}
+.marginbottomimg{
+    margin-bottom: 70px;
+}
+.marginbottomtext{
+    margin-bottom: 70px;
+}
+.sectext{
+    padding: 104px 135px 119px 40px;
+    background-color: rgba(146, 165, 174, 0.22);
+}
+
+.tittle{
+    font-size: 49px;
+    line-height: 51px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.content{
+    font-size: 22px;
+    line-height: 31px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+    }
+
+.verdetalles{
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+    background-color: #92A5AE;
+    padding: 10px 10px 10px 10px;
+} 

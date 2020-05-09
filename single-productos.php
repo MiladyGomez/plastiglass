@@ -10,7 +10,10 @@
  
 $Menu_link=get_field("Menu_link");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
-$productos_similares=get_field("productos_similares");
+$productos_similar=get_field("productos_similares");
+$productos_similares=get_field("producto_similar");
+$caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
+
 
 
 
@@ -113,8 +116,20 @@ get_header();
 	</section>
 	<section class="productsimili">
 		<div class="textproduct">
-            <p class="textproductsimil"> <?php echo $productos_similares["productos_similares"]?> </p>
-        </div>
+            <p class="textproductsimil"> <?php echo $productos_similar["productos_similares"]?> </p>
+		</div>
+		<div class="productssimilares d-flex">
+		<?php if($productos_similares): ?>
+                <?php foreach($productos_similares as $producto): ?> 
+                    <div class="productsimilares" >   
+						<?php $galeria = get_field("caracteristicas_caja_llave_nevera", $producto["producto"]->ID); ?>
+						 <img class="w-100" src="<?php echo $galeria["galeria_grifo"][0]["foto_grifo"]["url"]?>" alt="<?php echo $galeria[0]["foto_grifo"]["alt"]?>"> 
+                        <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
+                    </div>
+                    <?php endforeach ?> 
+            <?php endif ?> 
+        </div> 
+		
 	</section>
 
 </main>

@@ -1,0 +1,110 @@
+.blogcontent{
+    margin-top: 36px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.title{
+    font-size: 43.5px;
+    line-height: 45.27px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.050em;
+}
+.content{
+    font-size: 22px;
+    line-height: 31px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.01em;
+    margin-top: 30px;
+}
+.icono1{
+    width: 8.7px;
+    height: 18.8px;
+    margin-right: 7px;
+}
+.icono2{
+    width: 18.6px;
+    height: 18.6px;  
+    margin-right: 7px;
+}
+.icono3{
+    width: 20.7px;
+    height: 19.7px; 
+    margin-right: 7px;
+}
+.icono4{
+    width: 23px;
+    height: 18.8px; 
+    margin-right: 7px;
+}
+.icono5{
+    width: 15.6px;
+    height: 15.6px;
+    margin-right: 7px;
+}
+.social{
+    margin-top: -27px;
+}
+
+img {
+    margin-top: 37px;
+    margin-bottom: 45px;
+  }
+
+.bottomarrow{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+
+.arrowleft{
+    width: 29px;
+    margin-top: -3px;
+}
+
+.arrowrigh{
+    width: 29px;
+    margin-top: -3px;
+}
+.botonanterior{
+    font-size: 18px;
+    line-height: 14.5px;
+    color: #92A5AE; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    margin-right: 34px;
+}
+.botonsiguiente{
+    font-size: 18px;
+    line-height: 14.5px;
+    color: #92A5AE; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.075em;
+}
+
+.social a:hover {
+    text-decoration: none;
+  } 
+
+  .textproduct{
+    text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    color: #92A5AE; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+    margin-bottom: 52px;
+  }
+
+  .imgarticulo{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

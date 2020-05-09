@@ -19,9 +19,7 @@ $personaliza_tu_jacuzzi_text=get_field("personaliza_tu_jacuzzi_text");
 $personaliza_tu_jazuzzi_contenido=get_field("personaliza_tu_jazuzzi_contenido");
 $boton_cotizar=get_field("boton_cotizar");
 $caracteristicas_jacuzzi=get_field("caracteristicas_jacuzzi");
-$productos_similares=get_field("productos_similares");
-
-
+$productos_similares=get_field("producto_similar");
 
 
 
@@ -137,7 +135,7 @@ get_header();
                     <p class="color_casco">COLOR CASCO</p>
                     <p class="color_exterior">COLOR EXTERIOR</p>
                     <a class="botoncotizar" href="<?php echo $boton_cotizar["url"]?>">
-                        <?php echo $boton_cotizar["title"]?>
+                        <?php echo $boton_cotizar["title"]?> 
                     </a>
                 </div>
             </div>
@@ -152,17 +150,18 @@ get_header();
         </div>
 
         <div class="productssimilares d-flex">
-            <?php if($productos_similares["galeria_productos_similares"]): ?>
-                <?php foreach($productos_similares["galeria_productos_similares"] as $categoria): ?> 
-                    <div class="productsimilares" >                  
-                        <img class="w-100" src="<?php echo $categoria["imagen_productos_similares"]["url"]?>" alt="<?php echo $categoria["galeria_productos_similares"]["alt"]?>">
-                        <p class="productsimilarestext"><?php echo $categoria["text_producto_similares"][0]->name; ?></p>
+            <?php if($productos_similares): ?>
+                <?php foreach($productos_similares as $producto): ?> 
+                    <div class="productsimilares" >  
+                        <?php $galeria = get_field("jacuzziimgjacuzzi", $producto["producto"]->ID); ?>               
+                        <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
+                        <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
                     </div>
-                    <?php endforeach ?>
-            <?php endif ?>
+                    <?php endforeach ?> 
+            <?php endif ?>   
         </div>            
     </section>
-
+ 
 </main>
 
 <?php get_footer(); ?>

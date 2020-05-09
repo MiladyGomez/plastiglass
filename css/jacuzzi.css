@@ -134,22 +134,25 @@
     content: "";
     position: absolute;
     height: 1px;
-    width: 1131px;
+    width: 80%;
     background-color: #698893;
-    left: 114px;
+    left: 10%;
     top: -86px;
     opacity: 0.1;
 }
 
+
 .productssimilares{
-    margin-left: 140px;
-    margin-right: -64px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 145px;
     margin-top: 55px;
-    
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
 }
 .productsimilares{
-    width: 327px;
+    width: 25%;
     margin-right: 34px;
     text-align: center;
 
