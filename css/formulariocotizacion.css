@@ -1,0 +1,88 @@
+.formulcotizacion .title{
+    font-size: 26px;
+    line-height: 19px;
+    color: #58595B; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.075em;
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 53px;
+}
+.formulcotizacion .editable input{
+    width: 100%;
+    border-bottom: 1px #706F6F solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 7px;
+    margin-bottom: 28px;
+}
+.formulcotizacion .editable input::placeholder {                 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+}
+  
+.formulcotizacion .editable input:-ms-input-placeholder { 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+
+}
+  
+.formulcotizacion .editable input::-ms-input-placeholder { 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+
+}
+
+.formulcotizacion .wpcf7-submit{
+    background-color: #698893;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 33px;
+}
+
+.formulcotizacion .wpcf7-list-item-label{
+    font-size: 16px;
+    line-height: 19px;
+    color: #929292; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.020em;
+    margin-left: 21px;
+}
+.custemchulito{
+    left: 0px;
+    position: absolute;
+}
+.custemchulito svg{
+    width: 26px;
+    cursor: pointer;
+}
+.chulito{
+    opacity: 0;
+}
+.chulitomostar{
+    opacity: 1;
+}
+
+.formulcotizacion input[name="box[]"]{
+    display: none;
+}

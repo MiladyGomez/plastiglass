@@ -1,17 +1,17 @@
 .containerpost {
-    margin-left: 144px;
+    margin-left: 42px;
     margin-top: 113px;
-    margin-right: 144px;
+    margin-right: -9px;
 }
 .marginbottomimg{
     margin-bottom: 70px;
 }
 .marginbottomtext{
     margin-bottom: 70px;
+    background-color: rgba(146, 165, 174, 0.22);
 }
 .sectext{
     padding: 104px 135px 119px 40px;
-    background-color: rgba(146, 165, 174, 0.22);
 }
 
 .tittle{

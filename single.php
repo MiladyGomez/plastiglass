@@ -151,25 +151,37 @@ get_header();
 
 				</div>
 				<div class="col-4">
-					<div class="textproduct">
-						<p> EXPLORA MÁS ARTÍCULOS </p>
-					</div>
-					<div class="productssimilares d-flex">
-						<?php if($mas_articulos): ?>
-							<?php foreach($mas_articulos as $producto): ?> 
-								<div class="productsimilares" >  
-									<?php $galeria = get_field("imgtop", $producto["producto"]->ID); ?> 
-									<?php print_r ($galeria) ?>       
-									<img class="w-100 imgarticulo" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
-									<p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
-								</div>
+					<div>
+						<p class="textproduct"> EXPLORA MÁS ARTÍCULOS </p>
+					</div> 
+					<div >	
+							<?php if($mas_articulos): ?>
+								<?php foreach($mas_articulos as $articulo): ?> 
+									 
+									<div class="articulossimilares">
+										<a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+
+											<?php $galeria= get_field("imgentop", $articulo["articulo"]->ID);?>
+
+											<img class="w-100" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
+											<div class="boxtext">
+												<div>  
+													<p class="textdate"><?php echo $articulo["articulo"]->post_date; ?></p>
+												</div>
+												<div>  
+													<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
+												</div>
+											</div>
+										</a>
+									</div>	 
 								<?php endforeach ?> 
-						<?php endif ?>   
+							<?php endif ?> 
+						
 					</div> 
 				</div>
 		</div>
 	</div>
-</section>
+</section> 
 
 
 </main>

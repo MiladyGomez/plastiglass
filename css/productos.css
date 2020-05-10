@@ -66,11 +66,12 @@
 .imagen_nav{
     margin-right: 25px;
 
-}
+} 
 .contenido_grifo{
     width: calc(100% - 194px)!important;
     margin-left: 83px!important;
     margin-top: 98px;
+    margin-bottom: 94px;
 }
 
 .title_grifo{
@@ -79,7 +80,7 @@
     color: #58595B; 
     font-family: 'Work Sans';
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     letter-spacing: 0.1em;
 }
 
@@ -88,6 +89,7 @@
     line-height: 35px;
     color: #58595B; 
     font-family: 'Work Sans';
+
 }
 
 .classp{
@@ -180,4 +182,32 @@
 .productsimilarestext{
     margin-top: 15px;
     letter-spacing: 0.1em;
+}
+
+.circlec{
+    height: 42px;
+    width: 42px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#colordisponibleselet{
+    font-size: 18px;
+    line-height: 21px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.infcolor{
+    position: relative;
+    padding-top: 10px;
+}
+
+.activo{
+    border: 2px solid #000000;
 }

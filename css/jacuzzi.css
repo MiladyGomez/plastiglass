@@ -89,7 +89,7 @@
     color: #58595B; 
     font-family: 'Work Sans';
     font-weight: bold;
-    margin-bottom: 92px;
+    margin-bottom: 11px;
     margin-top: 24px
 
 }
@@ -100,7 +100,6 @@
     color: #58595B; 
     font-family: 'Work Sans';
     font-weight: bold;
-    margin-bottom: 114px;
 }
 
 .botoncotizar{
@@ -167,4 +166,46 @@
 .productsimilarestext{
     margin-top: 15px;
     letter-spacing: 0.1em;
+}
+
+.circlec, .circlee{
+    height: 42px;
+    width: 42px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#colorcascoselet{
+    font-size: 18px;
+    line-height: 21px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.infcolor{
+    position: relative;
+    padding-top: 10px;
+}
+#colorexteriorselet{
+    font-size: 18px;
+    line-height: 21px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.boxboton{
+    margin-top: 47px;
+}
+
+.activo{
+    border: 2px solid #000000;
 }

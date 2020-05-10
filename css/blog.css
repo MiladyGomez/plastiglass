@@ -61,9 +61,8 @@
 
 .seccionart
 {
-    width: calc(100% - 314px)!important;
-    margin-left: 185px!important;
-    margin-right: auto!important;
+    margin-left: 80px;
+    margin-right: -20px; 
 }
 
 .tittle1{

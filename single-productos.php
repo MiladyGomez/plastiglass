@@ -7,13 +7,13 @@
 
  global $post;
 
- 
+$color_disponible = wp_get_post_terms($post->ID, "color_disponible");
 $Menu_link=get_field("Menu_link");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
 $productos_similar=get_field("productos_similares");
 $productos_similares=get_field("producto_similar");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
-
+ 
 
 
 
@@ -41,7 +41,7 @@ get_header();
 		</div>
 	</section>
 	<section>
-		<div class="contenido_grifo">
+		<div class="contenido_grifo">  
 				<div class="row">
 					<div class="col-7">
 						<div class="rela">
@@ -88,6 +88,18 @@ get_header();
 								<p class="classp2"><?php echo $caracteristicas_caja_llave_nevera["material_text"]?></p> 
 							</div>
 							<p class="colores_text">colores disponibles</p>
+							<?php if ($color_disponible): ?>
+								<div class="infcolor">
+									<?php foreach ($color_disponible as $colord): ?>
+										<?php $background = get_field("color_disponible", $colord);  ?>
+										<span onclick="circlecolordisponible(this)" namecolor="<?php echo $colord->name ?>" class="circlec" style="background-color:<?php echo $background ?>"> 
+										</span>
+									<?php endforeach ?>
+										<span id="colordisponibleselet">
+										
+										</span>
+								</div>
+							<?php endif ?>
 						</div>
 					</div>
 				</div>
@@ -112,8 +124,19 @@ get_header();
 					});
 				
 			});
+		</script>
+		<script>
+            function circlecolordisponible(elementoentrante) {
+                var textcolor=jQuery(elementoentrante).attr("namecolor");
+                jQuery("#colordisponibleselet").text(textcolor)
+                jQuery(".circlec").removeClass("activo")
+                jQuery(elementoentrante).addClass("activo")
+            }
         </script>
 	</section>
+    <section> 
+        <?php echo get_template_part('partials/formulariocotizacion') ?>
+    </section>
 	<section class="productsimili">
 		<div class="textproduct">
             <p class="textproductsimil"> <?php echo $productos_similar["productos_similares"]?> </p>
@@ -121,11 +144,13 @@ get_header();
 		<div class="productssimilares d-flex">
 		<?php if($productos_similares): ?>
                 <?php foreach($productos_similares as $producto): ?> 
-                    <div class="productsimilares" >   
+                    <div class="productsimilares" >
+						<a href="<?php echo get_permalink($producto["producto"]->ID)?>">  
 						<?php $galeria = get_field("caracteristicas_caja_llave_nevera", $producto["producto"]->ID); ?>
 						 <img class="w-100" src="<?php echo $galeria["galeria_grifo"][0]["foto_grifo"]["url"]?>" alt="<?php echo $galeria[0]["foto_grifo"]["alt"]?>"> 
                         <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
-                    </div>
+						</a>
+					</div>
                     <?php endforeach ?> 
             <?php endif ?> 
         </div> 

@@ -1,0 +1,46 @@
+.boxcategorias{
+    margin-left: 10px;
+    margin-right: -40px;
+    margin-top: 109px;
+}
+.name{
+    font-size: 49px;
+    line-height: 51px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.050em;
+    text-transform: uppercase;
+}
+.descri{
+    font-size: 22px;
+    line-height: 31px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+}
+
+.paddingtext{
+    padding: 102px 41px 102px 41px;
+}
+
+.verproducto{
+    font-size: 18px; 
+    line-height: 20px;
+    color: #ffffff; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    background-color: #92A5AE;
+    padding: 15px;
+}
+
+.boximg{
+    margin-bottom: 60px;
+}
+
+.boxtext{
+    margin-bottom: 60px;
+    background-color: rgb(146, 165, 174, 0.22); 
+}

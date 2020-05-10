@@ -1,7 +1,7 @@
 .blogcontent{
-    margin-top: 36px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 82px;
+    margin-left: 88px;
+    margin-right: 97px;
 }
 
 .title{
@@ -19,6 +19,13 @@
     font-family: 'Work Sans';
     letter-spacing: 0.01em;
     margin-top: 30px;
+}
+.content img{
+    height: auto;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
 }
 .icono1{
     width: 8.7px;
@@ -46,13 +53,8 @@
     margin-right: 7px;
 }
 .social{
-    margin-top: -27px;
+    margin-top: 27px;
 }
-
-img {
-    margin-top: 37px;
-    margin-bottom: 45px;
-  }
 
 .bottomarrow{
     text-align: center;
@@ -99,7 +101,7 @@ img {
     font-weight: bold;
     font-family: 'Work Sans';
     letter-spacing: 0.050em;
-    margin-bottom: 52px;
+    margin-bottom: 22px;
   }
 
   .imgarticulo{
@@ -108,3 +110,41 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.textdate{
+    font-size: 14.26px;
+    line-height: 21.4px;
+    color: #ffffff; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.025em;
+}
+.texttitle{
+    font-size: 18.34px;
+    line-height: 21.4px;
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+}
+
+.boxtext{
+    background-color: #92A5AE;
+    padding: 10px 17px 12px 29px;
+}
+
+.productssimilares{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.articulossimilares{
+    margin-bottom: 75px;
+}
+
+.col-8{
+    padding-right: 67px; 
+}
+

@@ -6,7 +6,8 @@
  */
 
  global $post;
- 
+$color_casco = wp_get_post_terms($post->ID, "color_casco");
+$color_exterior = wp_get_post_terms($post->ID, "color_exterior");
 $jacuzziimgtop=get_field("jacuzziimgtop");
 $jacuzziimgjacuzzi=get_field("jacuzziimgjacuzzi");
 $jacuzzicapacity=get_field("jacuzzicapacity");
@@ -133,16 +134,62 @@ get_header();
                     <p class="text_jacuzzi_text"><?php echo $personaliza_tu_jacuzzi_text?></p>
                     <p class="text_jacuzzi_contenido"><?php echo $personaliza_tu_jazuzzi_contenido?></p>
                     <p class="color_casco">COLOR CASCO</p>
+                    <?php if ($color_casco): ?>
+                        <div class="infcolor">
+                            <?php foreach ($color_casco as $colorc): ?>
+                                <?php $background = get_field("color", $colorc);  ?>
+                                
+                                <span onclick="circlecolorcasco(this)" namecolor="<?php echo $colorc->name ?>" class="circlec" style="background-color:<?php echo $background ?>"> 
+                                </span>
+                            <?php endforeach ?>
+                            <span id="colorcascoselet">
+                                
+                            </span>
+                        </div>
+                    <?php endif ?>
                     <p class="color_exterior">COLOR EXTERIOR</p>
-                    <a class="botoncotizar" href="<?php echo $boton_cotizar["url"]?>">
-                        <?php echo $boton_cotizar["title"]?> 
-                    </a>
+                    <?php if ($color_exterior): ?>
+                        <div class="infcolor">
+                            <?php foreach ($color_exterior as $colore): ?>
+                                <?php $backgrounde = get_field("color", $colore);  ?>
+                                    <span onclick="circlecolorexterior(this)" namecolore="<?php echo $colore->name ?>" class="circlee" style="background-color:<?php echo $backgrounde ?>"> 
+                                    </span>
+                            <?php endforeach ?>
+                                <span id="colorexteriorselet">
+                                
+                                </span>
+                        </div>
+                    <?php endif ?>          
+                    <div class="boxboton">
+                        <a class="botoncotizar" href="<?php echo $boton_cotizar["url"]?>">
+                            <?php echo $boton_cotizar["title"]?>  
+                        </a>
+                    </div> 
                 </div>
             </div>
         </div>
+        <script>
+            function circlecolorcasco(elementoentrante) {
+                var textcolor=jQuery(elementoentrante).attr("namecolor");
+                jQuery("#colorcascoselet").text(textcolor)
+                jQuery(".circlec").removeClass("activo")
+                jQuery(elementoentrante).addClass("activo")
+            }
+        </script>
+        <script>
+            function circlecolorexterior(elementoentranteexterior) {
+                var textcolorexterior=jQuery(elementoentranteexterior).attr("namecolore");
+                jQuery("#colorexteriorselet").text(textcolorexterior)
+                jQuery(".circlee").removeClass("activo")
+                jQuery(elementoentranteexterior).addClass("activo")
+            }
+        </script>
     </section>
     <section>
         <img class="w-100" src="<?php echo $caracteristicas_jacuzzi["url"]?>" alt="<?php echo $caracteristicas_jacuzzi["alt"]?>">
+    </section>
+    <section>
+        <?php echo get_template_part('partials/formulariocotizacion') ?> 
     </section>
     <section class="productsimili">
         <div class="textproduct">
@@ -152,12 +199,14 @@ get_header();
         <div class="productssimilares d-flex">
             <?php if($productos_similares): ?>
                 <?php foreach($productos_similares as $producto): ?> 
-                    <div class="productsimilares" >  
+                    <div class="productsimilares" >
+                        <a href="<?php echo get_permalink($producto["producto"]->ID)?>">    
                         <?php $galeria = get_field("jacuzziimgjacuzzi", $producto["producto"]->ID); ?>               
                         <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
                         <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
+                        </a>
                     </div>
-                    <?php endforeach ?> 
+                    <?php endforeach ?>  
             <?php endif ?>   
         </div>            
     </section>

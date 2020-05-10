@@ -35,45 +35,47 @@ get_header();
         </div>
     </section>  
     <section>
-        <div class="containerpost">
-            <div class="row">
-                <?php if ($gjacuzzis->have_posts()) : ?>
-                    <?php $content=0 ?>
-                    <?php while ( $gjacuzzis->have_posts() ) : ?>
-                        <?php $gjacuzzis->the_post(); ?>  
-                        <?php $galeria = get_field("jacuzziimgjacuzzi"); ?>
-                        <?php if ($content%2==0) : ?>
-                            <div class="col-6 marginbottomimg">  
-                                <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
-                            </div>                      
-                            <div class="col-6 marginbottomtext"> 
-                                <div class="sectext">
-                                    <p class="tittle"> <?php the_title()?> </p>
-                                    <p class="content"> <?php the_content()?> </p>
-                                    <a class="verdetalles" href="<?php echo get_the_permalink()?>">
-                                        VER DETALLES
-                                    </a>
+        <div class="container-fluid container-plastiglass">  
+            <div class="containerpost">
+                <div class="row">
+                    <?php if ($gjacuzzis->have_posts()) : ?>
+                        <?php $content=0 ?>
+                        <?php while ( $gjacuzzis->have_posts() ) : ?>
+                            <?php $gjacuzzis->the_post(); ?>  
+                            <?php $galeria = get_field("jacuzziimgjacuzzi"); ?>
+                            <?php if ($content%2==0) : ?>
+                                <div class="col-6 marginbottomimg">  
+                                    <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
+                                </div>                      
+                                <div class="col-6 marginbottomtext"> 
+                                    <div class="sectext">
+                                        <p class="tittle"> <?php the_title()?> </p>
+                                        <p class="content"> <?php the_content()?> </p>
+                                        <a class="verdetalles" href="<?php echo get_the_permalink()?>">
+                                            VER DETALLES
+                                        </a>
+                                    </div>
+                                </div> 
+                            <?php else:?> 
+                                <div class="col-6 marginbottomtext">
+                                    <div class="sectext">
+                                        <p class="tittle"> <?php the_title()?></p>
+                                        <p class="content"> <?php the_content()?></p>
+                                        <a class="verdetalles" href="<?php echo get_the_permalink()?>">
+                                            VER DETALLES
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        <?php else:?> 
-                            <div class="col-6 marginbottomtext">
-                                <div class="sectext">
-                                    <p class="tittle"> <?php the_title()?></p>
-                                    <p class="content"> <?php the_content()?></p>
-                                    <a class="verdetalles" href="<?php echo get_the_permalink()?>">
-                                        VER DETALLES
-                                    </a>
+                                <div class="col-6 marginbottomimg">  
+                                    <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
                                 </div>
-                            </div>
-                            <div class="col-6 marginbottomimg">  
-                                <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
-                            </div>
-                         <?php endif ?>
-                         <?php $content++ ?>
-                    <?php endwhile ?>
-                <?php endif ?>
-                <?php  wp_reset_postdata() ?>
-            </div> 
+                            <?php endif ?>
+                            <?php $content++ ?>
+                        <?php endwhile ?>
+                    <?php endif ?>
+                    <?php  wp_reset_postdata() ?>
+                </div> 
+            </div>
         </div>  
     </section>
 

@@ -59,7 +59,7 @@ get_header();
                             </svg>
                         </a>
                     </div>
-                    <?php $imgentoppost= get_field("imgtop", $onepost->ID)?>
+                    <?php $imgentoppost= get_field("imgentop", $onepost->ID)?>
                     <div class="col-7">
                         <div class="imgpost" style="background-image: url(<?php echo $imgentoppost["url"]?>)">
                         </div>
@@ -72,7 +72,7 @@ get_header();
         <div class="container-fluid container-plastiglass">
             <div class="two">
                 <div class="row">
-                    <?php $imgentoppost= get_field("imgtop", $twopost->ID)?>
+                    <?php $imgentoppost= get_field("imgentop", $twopost->ID)?>
                     <div class="col-7">
                         <div class="imgpost" style="background-image: url(<?php echo $imgentoppost["url"]?>)">
                         </div>
@@ -106,28 +106,35 @@ get_header();
         <div class="textproduct">
             <p> ARTICULOS RECIENTES </p>
         </div>
-        <div class="seccionart">
-            <div class="recientes">
-                <div class="row">
-                    <?php if ($garticulos->have_posts()) : ?>
-                    <?php while ( $garticulos->have_posts() ) : ?>
-                    <?php $garticulos->the_post(); ?>  
-                    <?php $galeria = get_field("imgtop"); ?>
-                    <div class="col-4">
-                        <div class="imgarticulo" style="background-image: url(<?php echo $galeria ["url"]?>)">
-                        </div>
-                        <div class="textart">
-                        <p class="tittle1"> <?php the_date()?> </p>
-                        <p class="tittle2"> <?php the_title()?> </p>
+            <div class="container-fluid container-plastiglass">
+                <div class="seccionart">
+                    <div class="recientes">
+                        <div class="row">
+                            <?php if ($garticulos->have_posts()) : ?>
+                            <?php while ( $garticulos->have_posts() ) : ?>
+                            <?php $garticulos->the_post(); ?>
+                            
+                            <?php $galeria = get_field("imgentop"); ?>
+                            
+                            <div class="col-4">
+                            <a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+                                <div class="imgarticulo" style="background-image: url(<?php echo $galeria ["url"]?>)">
+                                </div>
+                                <div class="textart">
+                                <p class="tittle1"> <?php the_date()?> </p>
+                                <p class="tittle2"> <?php the_title()?> </p>
+                                </div>
+                            </a>
+                            </div>
+                            
+                            <?php endwhile ?>
+                            <?php endif ?>
+                            <?php  wp_reset_postdata() ?>
                         </div>
                     </div>
-
-                    <?php endwhile ?>
-                    <?php endif ?>
-                    <?php  wp_reset_postdata() ?>
                 </div>
-            </div>
-        </div>
+            </div> 
+
     </section> 
 
 
