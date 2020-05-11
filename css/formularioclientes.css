@@ -1,0 +1,171 @@
+
+.formulcliente{
+    margin-top: 45px;
+    margin-bottom: 53px;
+}
+.formulcliente .editable input{
+    width: 100%;
+    border-bottom: 1px #706F6F solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 7px;
+    margin-bottom: 28px;
+}
+.formulcliente .editable input::placeholder {                 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+}
+  
+.formulcliente .editable input:-ms-input-placeholder { 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+
+}
+  
+.formulcliente .editable input::-ms-input-placeholder { 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+
+}
+
+.formulcliente .wpcf7-submit{
+    background-color: #698893;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 33px;
+}
+
+.formulcliente .wpcf7-list-item-label{
+    font-size: 16px;
+    line-height: 19px;
+    color: #929292; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.020em;
+    margin-left: 21px;
+}
+.custemequiss{
+    left: 0px;
+    position: absolute; 
+}
+.custemequiss svg{
+    width: 26px;
+    cursor: pointer;
+}
+.equiss{
+    opacity: 0;
+}
+.equissmostar{
+    opacity: 1;
+}
+
+.formulcliente input[name="box[]"]{
+    display: none;
+}
+
+.bottombuscar{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+    background-color: #D0CFD0;
+    padding: 15px 11px 11px 11px;
+    width: 270px;
+}
+
+.addart{
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+    border: 1px #706F6F solid;
+    width: 100%;
+    height: 46px;
+    padding-left: 7px;
+    padding-top: 10px;
+    margin-right: 24px;
+}
+
+.Cmaradecomercio{
+    display: flex;
+    margin-top: 35px;
+}
+
+.Cmaradecomercio input{
+    display: none;
+}
+
+.titlfile{
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+    position: absolute;
+    top: -25px;
+    left: 7px;
+}
+
+.Cedulalegal{
+    display: flex;
+    margin-top: 35px;
+}
+
+.Cedulalegal input{
+    display: none;
+}
+
+.Docrut{
+    display: flex;
+    margin-top: 35px;
+}
+
+.Docrut input{
+    display: none;
+}
+
+.ForHabeas{
+    display: flex;
+    margin-top: 35px;
+}
+
+.ForHabeas input{
+    display: none;
+}
+.wpcf7-not-valid-tip{
+    font-size: 14px !important;
+    line-height: 16.8px;
+    color: #801F23 !important; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.050em;
+    position: absolute;
+    width: 164px;
+    left: 7px;
+    bottom: -25px;
+}
+.wpcf7-response-output{
+    display: none !important; 
+}
+ 

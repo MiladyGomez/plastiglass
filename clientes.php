@@ -31,6 +31,9 @@ get_header();
         <p class="cliente_content"><?php echo $inscripcion_de_clientes["inscripcion_content"]?></p>
     </div>
  </section>
+ <section>
+        <?php echo get_template_part('partials/formularioclientes') ?>  
+ </section>
 
 </main>
 

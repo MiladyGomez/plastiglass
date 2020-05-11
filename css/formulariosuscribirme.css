@@ -1,33 +1,43 @@
-.formulcotizacion .title{
+.formulsuscribirme .title{
     font-size: 26px;
-    line-height: 19px;
+    line-height: 14.4px;
     color: #58595B; 
     font-weight: bold;
     font-family: 'Work Sans';
     letter-spacing: 0.075em;
     text-align: center;
-    margin-top: 54px;
-    margin-bottom: 53px;
+}
+
+.formulsuscribirme{
+    background-color: rgb(146, 165, 174, 0.22); 
+    padding-bottom: 10px;
+    padding-top: 31px;
 } 
-.formulcotizacion .editable input{
+.formulsuscribirme .editable{
+    padding-right: 0px !important;
+}
+.formulsuscribirme .editablebotton{
+    padding-left: 0px !important; 
+}
+
+.formulsuscribirme .editable input{
     width: 100%;
-    border-bottom: 1px #706F6F solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding-left: 7px;
-    margin-bottom: 28px;
+    border: 1px rgb(112, 111, 111, 0.25) solid;
+    padding-left: 16px;
+    background-color: rgb(146, 165, 174, -0.75);
+    padding: 5px 13px 8px 13px;
+       /* margin-bottom: 28px;*/
 }
-.formulcotizacion .editable input::placeholder {                 
+.formulsuscribirme .editable input::placeholder {                 
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
     font-weight: bold;
     font-family: 'Work Sans';
-    letter-spacing: 0.050em;
+    letter-spacing: 0.050em; 
 }
   
-.formulcotizacion .editable input:-ms-input-placeholder { 
+.formulsuscribirme .editable input:-ms-input-placeholder { 
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
@@ -37,7 +47,7 @@
 
 }
   
-.formulcotizacion .editable input::-ms-input-placeholder { 
+.formulsuscribirme .editable input::-ms-input-placeholder { 
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
@@ -47,7 +57,7 @@
 
 }
 
-.formulcotizacion .wpcf7-submit{
+.formulsuscribirme .wpcf7-submit{
     background-color: #698893;
     font-size: 20px;
     line-height: 20px;
@@ -55,36 +65,47 @@
     font-weight: bold;
     font-family: 'Work Sans';
     letter-spacing: 0.1em;
-    padding: 10px 20px;
+    padding: 13px 15px;
     border: none;
-    margin-top: 33px;
+    /*margin-top: 33px;*/
 }
 
-.formulcotizacion .wpcf7-list-item-label{
+.formulsuscribirme .wpcf7-list-item-label{
     font-size: 16px;
     line-height: 19px;
     color: #929292; 
     font-family: 'Work Sans';
     letter-spacing: 0.020em;
-    margin-left: 21px;
+    margin-left: 10px;
 }
-.custemchulito{
+.custemequiss{
     left: 0px;
     position: absolute;
+    margin-top: 2px;
 }
-.custemchulito svg{
+.custemequiss svg{
     width: 26px;
     cursor: pointer;
 }
-.chulito{
+.equiss{
     opacity: 0;
 }
-.chulitomostar{
+.equissmostar{
     opacity: 1;
 }
 
-.formulcotizacion input[name="box[]"]{
+.formulsuscribirme input[name="box[]"]{
     display: none;
+}
+
+.terminos{
+    margin-top: 10px;
+}
+
+.boxsuscribir{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 27px;
 }
 
 .wpcf7-not-valid-tip{
@@ -96,7 +117,7 @@
     position: absolute;
     width: 155px;
     left: 7px;
-    bottom: -25px;
+    bottom: -35px; 
 }
 .wpcf7-response-output{
     display: none !important; 

@@ -181,6 +181,9 @@ get_header();
 				</div>
 		</div>
 	</div>
+</section>
+<section>
+	<?php echo get_template_part('partials/formulariosuscribirme') ?> 
 </section> 
 
 

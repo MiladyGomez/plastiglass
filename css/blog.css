@@ -5,7 +5,7 @@
     font-weight: bold;
     font-family: 'Work Sans';
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em; 
 }
 
 .content{
@@ -81,7 +81,7 @@
 }
 
 .recientes{
-    margin-bottom: 165px;
+    margin-bottom: 187px;
 }
 
 .textart{

@@ -1,15 +1,5 @@
-.formulcotizacion .title{
-    font-size: 26px;
-    line-height: 19px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.075em;
-    text-align: center;
-    margin-top: 54px;
-    margin-bottom: 53px;
-} 
-.formulcotizacion .editable input{
+
+.formulcontactanos .editable input{
     width: 100%;
     border-bottom: 1px #706F6F solid;
     border-top: none;
@@ -18,7 +8,7 @@
     padding-left: 7px;
     margin-bottom: 28px;
 }
-.formulcotizacion .editable input::placeholder {                 
+.formulcontactanos .editable input::placeholder {                 
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
@@ -27,7 +17,7 @@
     letter-spacing: 0.050em;
 }
   
-.formulcotizacion .editable input:-ms-input-placeholder { 
+.formulcontactanos .editable input:-ms-input-placeholder { 
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
@@ -37,7 +27,7 @@
 
 }
   
-.formulcotizacion .editable input::-ms-input-placeholder { 
+.formulcontactanos .editable input::-ms-input-placeholder { 
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
@@ -47,7 +37,7 @@
 
 }
 
-.formulcotizacion .wpcf7-submit{
+.formulcontactanos .wpcf7-submit{
     background-color: #698893;
     font-size: 20px;
     line-height: 20px;
@@ -60,7 +50,7 @@
     margin-top: 33px;
 }
 
-.formulcotizacion .wpcf7-list-item-label{
+.formulcontactanos .wpcf7-list-item-label{
     font-size: 16px;
     line-height: 19px;
     color: #929292; 
@@ -83,7 +73,7 @@
     opacity: 1;
 }
 
-.formulcotizacion input[name="box[]"]{
+.formulcontactanos input[name="box[]"]{
     display: none;
 }
 

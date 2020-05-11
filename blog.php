@@ -101,7 +101,6 @@ get_header();
             </div>
         </div>
     </section>
-
     <section>
         <div class="textproduct">
             <p> ARTICULOS RECIENTES </p>
@@ -117,24 +116,27 @@ get_header();
                             <?php $galeria = get_field("imgentop"); ?>
                             
                             <div class="col-4">
-                            <a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
-                                <div class="imgarticulo" style="background-image: url(<?php echo $galeria ["url"]?>)">
-                                </div>
-                                <div class="textart">
-                                <p class="tittle1"> <?php the_date()?> </p>
-                                <p class="tittle2"> <?php the_title()?> </p>
-                                </div>
-                            </a>
+                                <a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+                                    <div class="imgarticulo" style="background-image: url(<?php echo $galeria ["url"]?>)">
+                                    </div>
+                                    <div class="textart">
+                                        <p class="tittle1"> <?php the_date()?> </p>
+                                        <p class="tittle2"> <?php the_title()?> </p>
+                                    </div>
+                                </a>
                             </div>
                             
                             <?php endwhile ?>
                             <?php endif ?>
-                            <?php  wp_reset_postdata() ?>
+                            <?php  wp_reset_postdata() ?> 
                         </div>
                     </div>
                 </div>
             </div> 
 
+    </section> 
+    <section>
+        <?php echo get_template_part('partials/formulariosuscribirme') ?> 
     </section> 
 
 
