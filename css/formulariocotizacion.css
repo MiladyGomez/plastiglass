@@ -101,3 +101,41 @@
 .wpcf7-response-output{
     display: none !important; 
 }
+
+@media (max-width:767px){
+    .formulcotizacion .editable input::placeholder {                 
+        font-size: 16px;
+        line-height: 19px;
+    }
+      
+    .formulcotizacion .editable input:-ms-input-placeholder { 
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .formulcotizacion .editable input::-ms-input-placeholder { 
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .formulcotizacion .editable input {
+        margin-bottom: 6px;
+    }
+    .formulcotizacion .title {
+        margin-top: 39px;
+        margin-bottom: 16px;
+        line-height: 28px;
+    }
+    span.wpcf7-list-item {
+        margin-top: -13px;
+        margin-left: 40px;
+    }
+    .formulcotizacion .wpcf7-list-item-label {
+        letter-spacing: 0em;
+        margin-left: 0px;
+    }
+    .formulcotizacion .wpcf7-submit {
+        font-size: 16px;
+        margin-top: 18px;
+        padding: 9px 15px;
+    }
+}

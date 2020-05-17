@@ -1,0 +1,309 @@
+.catalogobox{
+    margin-top: 57px;
+}
+
+.filtros{
+    flex: 0 0 260px;
+    margin-top: 43px;
+    padding-left: 38px;
+}
+.filtros li{
+    list-style-type: none;
+
+}
+.filtros ul{
+    padding-left: 0px;
+    overflow: hidden;
+    max-height: 0px;
+}
+
+.filtrosmostrar ul{
+    max-height: 1000px;
+}
+
+.filtrosmostrar .colormas{
+    display: none;
+}
+
+.titlefiltro{
+    font-size: 18px; 
+    line-height: 21px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-fluid {
+    padding-left: 51px!important;
+    padding-right: 74px!important;
+}
+
+
+.titufiltro{
+    position: relative;
+    margin-bottom: 42px;
+}
+
+
+.gridproducto{
+    width: 100%;
+}
+
+.titufiltro:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #929292;
+    position: absolute;
+}
+
+.textcat{
+    font-size: 16px; 
+    line-height: 19px;
+    color: #929292; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.boxcolor{
+    display: inline-flex;
+}
+
+.circlec{
+    height: 33px;
+    width: 33px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Cuadrocolor, .Cuadromaterial, .Cuadroforma, .Cuadrotipo {
+    position: relative;
+    margin-bottom: 42px;
+}
+
+.Cuadrocolor:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #929292;
+    position: absolute;
+}
+.Cuadromaterial:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #929292;
+    position: absolute;
+}
+
+.Cuadroforma:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #929292;
+    position: absolute;
+}
+
+.Cuadrotipo:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #929292;
+    position: absolute;
+}
+
+
+.titlepag{
+    font-size: 49px; 
+    line-height: 51px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.tittleref{
+    font-size: 13.7px; 
+    line-height: 20.54px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    letter-spacing: 0.025em;
+    margin-bottom: 0px;
+    margin-top: 14px;
+}
+.tittleproc{ 
+    font-size: 17.61px; 
+    line-height: 20.54px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.boxproduc{
+    background-color: #F0F0F0;
+    padding: 14px 16px 14px 16px;
+    margin-bottom: 50px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.colormas{
+    height: 16px;
+    width: 2px;
+    background-color: #58595B;
+    position: absolute;
+    right: 7px;
+}
+
+.colormenos{
+    height: 2px;
+    width: 16px;
+    background-color: #58595B;
+    position: absolute;
+    right: 0px;
+    top: 7px;
+}
+
+.textcat svg{
+    width: 26.45px;
+    height: 27.7px;
+}
+
+.openchilito .chulitocategoria{
+    opacity: 1;
+}
+
+.chulitocategoria{
+    opacity: 0;
+}
+
+.openchilito .circlec{
+    border: 2px solid #000000;
+
+}
+
+.circlec{
+
+    border: none;
+}
+
+.menumobilefiltro {
+    height: 20px;
+    width: 38px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+
+.botonaplicar{
+    font-size: 16px; 
+    line-height: 18.43px;
+    color: #FFFFFF; 
+    font-family: 'Work Sans';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    padding: 8px;
+    background-color:#92A5AE;
+    border: none;
+}
+
+
+
+@media (min-width: 768px){ 
+    .menumobilefiltro {
+        display: none;
+    }
+    .botonaplicar{
+        display: none;
+    }
+}
+
+@media (max-width:991px){
+}
+@media (max-width:767px){
+    .equisprin{
+        cursor: pointer;
+        top: 23px;
+        right: 17px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        right: 35px;
+        z-index: 1;
+    }
+    .equis1, .equis2{
+        height: 2px;
+        width: 22px;
+        background-color: #58595B;
+        position: absolute;
+        top: 9px;
+    }
+    .equis1{
+        transform: rotate(45deg);
+        
+    }
+    .equis2{
+        transform: rotate(-45deg);
+        
+    }
+    .filtros {
+        position: fixed;
+        background-color: #F0F0F0;
+        top: -44px;
+        height: 0vh;
+        width: 100%;
+        z-index: 1;
+        padding-right: 35px;
+        overflow: hidden; 
+    }
+    .filtronopen{
+        overflow: auto;
+        height: 100vh;
+        padding-top: 23px;  
+        padding-bottom: 23px;
+
+    }
+    .titlepag {
+        font-size: 28px;
+        line-height: 29px;
+        position: absolute;
+    }
+    .tittleref {
+        font-size: 12.73px;
+        line-height: 19.09px;
+    }
+    .tittleproc {
+        font-size: 16.36px;
+        line-height: 19.09px;
+    }
+    .container-fluid {
+        padding-left: 35px!important;
+        padding-right: 35px!important; 
+    }
+    .catalogobox {
+        margin-top: 30px;
+    }
+    #galeriaproductos{
+        margin-top: 40px;
+    }
+
+    .titlefiltro {
+        font-size: 15.44px;
+        line-height: 18.01px;
+    }
+    .textcat {
+        font-size: 13.72px;
+        line-height: 16.29px;
+    }
+    .textcat svg {
+        margin-top: -5px;
+    }
+}

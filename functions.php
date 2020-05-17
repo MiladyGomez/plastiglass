@@ -62,3 +62,96 @@ if (function_exists('acf_add_options_page')) {
   'parent_slug' 	=> 'theme-settings',
 	));
 }
+
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'api/v1', 'producto', array(
+	  'methods' => 'GET',
+	  'callback' => 'catalogo',
+	) );
+} );
+
+function catalogo($request)
+{
+  $color = $request->get_param('color');
+  $material = $request->get_param('material');
+  $forma = $request->get_param('forma');
+  $tipo = $request->get_param('tipo');
+  $categoria = $request->get_param('categoria');
+  $taxonomies= [];
+
+  if ($color){
+    array_push($taxonomies, 
+      array(
+        'taxonomy' => 'color_disponible',
+        'field'	   => 'slug',
+        'terms'	   => $color
+      )				
+    );
+  }
+  if ($material){
+    array_push($taxonomies, 
+      array(
+        'taxonomy' => 'material',
+        'field'	   => 'slug',
+        'terms'	   => $material
+      )				
+    );
+  }
+  if ($forma){
+    array_push($taxonomies, 
+      array(
+        'taxonomy' => 'forma',
+        'field'	   => 'slug',
+        'terms'	   => $forma
+      )				
+    );
+  }
+  if ($tipo){
+    array_push($taxonomies, 
+      array(
+        'taxonomy' => 'tipo',
+        'field'	   => 'slug',
+        'terms'	   => $tipo
+      )				
+    );
+  }
+  if ($categoria){
+    array_push($taxonomies, 
+      array(
+        'taxonomy' => 'categoria_productos',
+        'field'	   => 'slug',
+        'terms'	   => $categoria
+      )				
+    );
+  }
+
+
+  $args_producto = array(
+    'post_type' => 'productos',
+    'posts_per_page' => -1, 
+    'post_status' => 'publish',
+    'tax_query' => array(
+      'relation' => 'AND',
+        $taxonomies
+     ),
+    );
+
+  $consultafiltro = new WP_Query( $args_producto );
+
+$response=[];
+
+
+foreach ($consultafiltro->posts as $_consultafiltro) {
+  $galeria = get_field("caracteristicas_caja_llave_nevera",$_consultafiltro->ID);
+  
+  array_push($response, array(
+    "title" 		=> $_consultafiltro->post_title,
+    "image"			=> $galeria["galeria_grifo"][0]["foto_grifo"],
+    "link"			=> get_the_permalink( $_consultafiltro->ID ),
+    "referencia"		=> $galeria["referencia_text"]			
+  ));
+}
+
+  return $response;
+  
+}

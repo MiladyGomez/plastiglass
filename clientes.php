@@ -6,6 +6,7 @@
  * 
  */
 $imagen_top=get_field("imagen_top");
+$imagen_top_mobile=get_field("imagen_top_mobile"); 
 $inscripcion_de_clientes=get_field("inscripcion_de_clientes"); /*Imagen de clientes top*/
 
 
@@ -19,11 +20,14 @@ get_header();
 ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/clientes.css' ?>" type="text/css" media="all">
 
-<main id="clientes-template">    
+<main id="clientes-template">     
  <section>
-     <div>
-        <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
-     </div>
+     <div class="d-none d-md-block">
+            <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
+    </div>
+    <div class="d-block d-md-none">
+        <img class="w-100" src="<?php echo $imagen_top_mobile["url"]?>" alt="<?php echo $imagen_top_mobile["alt"]?>">
+    </div>
  </section>
  <section>
     <div class="cliente_text">

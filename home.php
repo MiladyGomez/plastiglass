@@ -6,9 +6,11 @@
  * 
  */
 $hometop=get_field("hometop"); /*Imagen de home top*/
+$imagen_top_mobile=get_field("imagen_top_mobile");
 $homemiddeo=get_field("homemiddeo"); 
 $homemiddet=get_field("homemiddet");
 $homemiddf=get_field("homemiddf");
+
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
@@ -22,11 +24,14 @@ get_header();
 
 <main id="home-template">    
     <section>
-        <div>
+        <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $hometop["url"]?>" alt="<?php echo $hometop["alt"]?>">
         </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $imagen_top_mobile["url"]?>" alt="<?php echo $imagen_top_mobile["alt"]?>">
+        </div> 
     </section>
-    <section class="middensec  d-flex">
+    <section class="middensec  d-lg-flex">
         <div class="secleft">
             <div>
                 <img class="w-100" src="<?php echo $homemiddeo["homemiddeone"]["url"]?>" alt="<?php echo $homemiddeo["homemiddeone"]["alt"]?>">
@@ -51,13 +56,16 @@ get_header();
 
             </div> 
         </div>
-        <div class="secright">
+        <div class="secright">  
             <img class="w-100" src="<?php echo $homemiddeo["homemiddetwo"]["url"]?>" alt="<?php echo $homemiddeo["homemiddetwo"]["alt"]?>">
         </div>
     </section>
-    <section class="d-flex">
-        <div class="secleftimg">
+    <section class="d-md-flex">
+        <div class="secleftimg d-none d-lg-block">
             <img class="w-100" src="<?php echo $homemiddet["homemiddethree"]["url"]?>" alt="<?php echo $homemiddet["homemiddethree"]["alt"]?>">
+        </div>
+        <div class="secleftimg d-block d-lg-none">
+            <img class="w-100" src="<?php echo $homemiddet["homemiddethreemovile"]["url"]?>" alt="<?php echo $homemiddet["homemiddethreemovile"]["alt"]?>">
         </div>
         <div class="boxleft">
             <p class="textone"><?php echo $homemiddet["homemiddetextt"]?></p>
@@ -66,20 +74,22 @@ get_header();
                 <?php echo $homemiddet["homemiddeproducto"]["title"]?>
             </a>
         </div>
-    </section>
+    </section> 
     <section>
-        <div>
-            <p class="textcenter"> <?php echo $homemiddf["homemiddenttext"]?> </p>
-        </div>
-        <div class="products d-flex">
-            <?php if($homemiddf["homemiddenproduct"]): ?>
-                <?php foreach($homemiddf["homemiddenproduct"] as $categoria): ?> 
-                    <div class="product" >                  
-                    <img class="w-100" src="<?php echo $categoria["imgcat"]["url"]?>" alt="<?php echo $categoria["homemiddenproduct"]["alt"]?>">
-                    <p class="productext"><?php echo $categoria["cattxt"][0]->name; ?></p>
-                    </div>
-                    <?php endforeach ?>
-            <?php endif ?>
+            <div>
+                <p class="textcenter"> <?php echo $homemiddf["homemiddenttext"]?> </p>
+            </div>
+        <div class="overproductos">
+            <div class="products d-flex">
+                <?php if($homemiddf["homemiddenproduct"]): ?>
+                    <?php foreach($homemiddf["homemiddenproduct"] as $categoria): ?> 
+                        <div class="product" >                  
+                        <img class="w-100" src="<?php echo $categoria["imgcat"]["url"]?>" alt="<?php echo $categoria["homemiddenproduct"]["alt"]?>">
+                        <p class="productext"><?php echo $categoria["cattxt"][0]->name; ?></p>
+                        </div>
+                        <?php endforeach ?>
+                <?php endif ?>
+            </div>
         </div>
     </section>
 

@@ -9,6 +9,7 @@
 $color_casco = wp_get_post_terms($post->ID, "color_casco");
 $color_exterior = wp_get_post_terms($post->ID, "color_exterior");
 $jacuzziimgtop=get_field("jacuzziimgtop");
+$jacuzziimgtopmovile=get_field("jacuzziimgtopmovile");
 $jacuzziimgjacuzzi=get_field("jacuzziimgjacuzzi");
 $jacuzzicapacity=get_field("jacuzzicapacity");
 $jacuzzidimensions=get_field("jacuzzidimensions");
@@ -20,6 +21,9 @@ $personaliza_tu_jacuzzi_text=get_field("personaliza_tu_jacuzzi_text");
 $personaliza_tu_jazuzzi_contenido=get_field("personaliza_tu_jazuzzi_contenido");
 $boton_cotizar=get_field("boton_cotizar");
 $caracteristicas_jacuzzi=get_field("caracteristicas_jacuzzi");
+$caracteristicas_jacuzzi_movile=get_field("caracteristicas_jacuzzi_movile");
+$title_producto_similares=get_field("title_producto_similares");
+
 $productos_similares=get_field("producto_similar");
 
 
@@ -37,14 +41,17 @@ get_header();
 
 <main id="dt_single">
     <section>
-        <div>
+        <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $jacuzziimgtop["url"]?>" alt="<?php echo $jacuzziimgtop["alt"]?>">
         </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $jacuzziimgtopmovile["url"]?>" alt="<?php echo $jacuzziimgtopmovile["alt"]?>">
+        </div> 
     </section>
     <section class="infjacuzzi">
         <div class="container-fluid container-plastiglass">
             <div class="row">
-                <div class="col-7">
+                <div class="col-md-7">
                     <div class="sliderjacuzzi">
                         <?php if($jacuzziimgjacuzzi): ?>
                             <?php foreach($jacuzziimgjacuzzi as $imagen): ?>                     
@@ -55,7 +62,7 @@ get_header();
                         <?php endif ?>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                     <p class="title"><?php echo $post->post_title?></p>
                     <p class="content"><?php echo $post->post_content?></p>
                     <div class="characteristic">
@@ -120,17 +127,17 @@ get_header();
                     });
                 
             });
-        </script>
+        </script> 
     </section>
     <section class="customizejacuzzi">
         <div class="container-fluid container-plastiglass">
             <div class="row">
-                <div class="col-7">
+                <div class="col-md-7">
                         <div class="jacuzzi_imagen">
                             <img class="w-100" src="<?php echo $personaliza_tu_jacuzzi_imagen["url"]?>" alt="<?php echo $personaliza_tu_jacuzzi_imagen["alt"]?>">
                         </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                     <p class="text_jacuzzi_text"><?php echo $personaliza_tu_jacuzzi_text?></p>
                     <p class="text_jacuzzi_contenido"><?php echo $personaliza_tu_jazuzzi_contenido?></p>
                     <p class="color_casco">COLOR CASCO</p>
@@ -139,10 +146,10 @@ get_header();
                             <?php foreach ($color_casco as $colorc): ?>
                                 <?php $background = get_field("color", $colorc);  ?>
                                 
-                                <span onclick="circlecolorcasco(this)" namecolor="<?php echo $colorc->name ?>" class="circlec" style="background-color:<?php echo $background ?>"> 
+                                <span onclick="circlecolorcasco(this)" namecolor="<?php echo $colorc->name ?>" class="circlec" style="background-color:<?php echo $background ?>" > 
                                 </span>
                             <?php endforeach ?>
-                            <span id="colorcascoselet">
+                            <span id="colorcascoselet"> 
                                 
                             </span>
                         </div>
@@ -174,6 +181,7 @@ get_header();
                 jQuery("#colorcascoselet").text(textcolor)
                 jQuery(".circlec").removeClass("activo")
                 jQuery(elementoentrante).addClass("activo")
+                jQuery("input[name='casco']").val(textcolor)
             }
         </script>
         <script>
@@ -182,35 +190,43 @@ get_header();
                 jQuery("#colorexteriorselet").text(textcolorexterior)
                 jQuery(".circlee").removeClass("activo")
                 jQuery(elementoentranteexterior).addClass("activo")
+                jQuery("input[name='exterior']").val(textcolorexterior)
             }
         </script>
     </section>
     <section>
+        <div class="d-none d-md-block">
         <img class="w-100" src="<?php echo $caracteristicas_jacuzzi["url"]?>" alt="<?php echo $caracteristicas_jacuzzi["alt"]?>">
+        </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $caracteristicas_jacuzzi_movile["url"]?>" alt="<?php echo $caracteristicas_jacuzzi_movile["alt"]?>">
+        </div> 
+    
     </section>
     <section>
         <?php echo get_template_part('partials/formulariocotizacion') ?> 
     </section>
     <section class="productsimili">
         <div class="textproduct">
-            <p class="textproductsimil"> <?php echo $productos_similares["productos_similares_text"]?> </p>
+            <p class="textproductsimil"> <?php echo $title_producto_similares?> </p>
         </div>
-
-        <div class="productssimilares d-flex">
-            <?php if($productos_similares): ?>
-                <?php foreach($productos_similares as $producto): ?> 
-                    <div class="productsimilares" >
-                        <a href="<?php echo get_permalink($producto["producto"]->ID)?>">    
-                        <?php $galeria = get_field("jacuzziimgjacuzzi", $producto["producto"]->ID); ?>               
-                        <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
-                        <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
-                        </a>
-                    </div>
-                    <?php endforeach ?>  
-            <?php endif ?>   
+        <div class="overproductos">
+            <div class="productssimilares d-flex">
+                <?php if($productos_similares): ?>
+                    <?php foreach($productos_similares as $producto): ?> 
+                        <div class="productsimilares" >
+                            <a href="<?php echo get_permalink($producto["producto"]->ID)?>">    
+                            <?php $galeria = get_field("jacuzziimgjacuzzi", $producto["producto"]->ID); ?>               
+                            <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
+                            <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
+                            </a>
+                        </div>
+                        <?php endforeach ?>   
+                <?php endif ?>   
+            </div> 
         </div>            
-    </section>
+    </section>  
  
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?>   

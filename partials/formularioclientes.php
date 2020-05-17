@@ -34,7 +34,7 @@
             }
             else{
                 jQuery(this).find(".equiss").addClass("equissmostar")
-                jQuery('input[name="box[]"]').prop( "checked", true );
+                jQuery('input[name="box[]"]').prop( "checked", true ); 
             }
           
         
@@ -47,10 +47,10 @@
         `)
         jQuery("#Camara").change(function(e){
             console.log(e.target.files[0].name);
-            jQuery("#addcamara").text(e.target.files[0].name)
+            jQuery("#addcamara").text(e.target.files[0].name) 
         });
 
-        jQuery("#Cedula").parent().append(`
+        jQuery("#Cedula").parent().append(` 
 
             <span class="titlfile">Cédula representante legal</span>
             <span class="addart" id="addCedula">Agregar Documento</span>
@@ -63,7 +63,7 @@
 
         jQuery("#Rut").parent().append(`
 
-            <span class="titlfile">Cédula representante legal</span>
+            <span class="titlfile">RUT</span>
             <span class="addart" id="addrut">Agregar Documento</span>
             <label class="bottombuscar" for="Rut">BUSCAR ARCHIVO</label>
         `)
@@ -74,7 +74,7 @@
 
         jQuery("#Habeas").parent().append(`
 
-            <span class="titlfile">Cédula representante legal</span>
+            <span class="titlfile">Formulario habeas data</span>
             <span class="addart" id="addhabeas">Agregar Documento</span>
             <label class="bottombuscar" for="Habeas">BUSCAR ARCHIVO</label>
         `)

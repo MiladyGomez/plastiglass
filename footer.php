@@ -32,7 +32,7 @@ $footer=get_field("footer_main", "option");
 
 <footer id="footer-wrapper">
 
-    <div class="footermain d-flex">
+    <div class="footermain d-xl-flex">
         <div class="footerleft">
             <span >
                 <?php echo $footer["copyright"]?>

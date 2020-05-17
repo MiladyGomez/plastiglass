@@ -1,22 +1,33 @@
 <div class="container-fluid container-plastiglass">
     <div class="row">
-        <div class="col-6 editable">
-            [text* name placeholder "Nombre Completo"]
-            [email* emailclient placeholder "Correo"]
-            [file* Cmaradecomercio id:Camara]
-            [file* Cedulalegal id:Cedula]
-
+        <div class="col-md-6 editable">
+            [text* names placeholder "Nombre Completo"]
         </div>
-        <div class="col-6 editable">
+        <div class="col-md-6 editable">
             [text* cedula placeholder "Cédula"]
+        </div>
+        <div class="col-md-6 editable">
+            [email* emailclient placeholder "Correo"]
+        </div>
+        <div class="col-md-6 editable">
             [tel* phone placeholder "Teléfono"]
-            [file* Docrut id:Rut]
-            [file* ForHabeas id:Habeas]
-            
+        </div>
+        <div class="col-md-6 editable">
+            [file* Cmaradecomercio filetypes:pdf|doc|docx|jpg|jpeg|gif|png id:Camara]
+        </div>
+        <div class="col-md-6 editable">
+            [file* Docrut filetypes:pdf|doc|docx|jpg|jpeg|gif|png id:Rut]
+        </div>   
+        <div class="col-md-6 editable">
+            [file* Cedulalegal filetypes:pdf|doc|docx|jpg|jpeg|gif|png id:Cedula]
+        </div>
+        <div class="col-md-6 editable">
+            [file* ForHabeas filetypes:pdf|doc|docx|jpg|jpeg|gif|png id:Habeas] 
         </div>  
         <div class="col-12 text-center">
             [checkbox box "Acepto términos y condiciones."]
-            [submit "ENVIAR"]
+            [submit "ENVIAR"] 
         </div>
     </div>
 </div>
+

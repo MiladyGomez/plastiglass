@@ -28,6 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 300px;
 }
 
 .one{
@@ -36,12 +37,22 @@
     margin-right: 34px;
 }
 
+.one a:hover {
+    text-decoration: none;
+    color: #92A5AE;
+  }
+
 .two{
     margin-top: 120px;
     margin-left: 85px;
     margin-right: 34px;
     margin-bottom: 136px; 
 }
+
+.two a:hover {
+    text-decoration: none;
+    color: #92A5AE;
+  }
 
 .verarticulo{
     font-size: 18px;
@@ -81,8 +92,12 @@
 }
 
 .recientes{
-    margin-bottom: 187px;
+    margin-bottom: 90px;
 }
+
+.recientes a:hover { 
+    text-decoration: none;
+  }
 
 .textart{
     background-color: #92A5AE;
@@ -99,3 +114,67 @@
     letter-spacing: 0.075em;
     margin-bottom: 52px;
 }
+
+@media (max-width:991px){ 
+    .one {
+        margin-top: 60px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .two {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .tittle {
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .content {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .verarticulo {
+        font-size: 16px;
+    }
+    .arrowrigh {
+        margin-left: 0px;
+    }
+    .seccionart {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container-plastiglass{
+    width: calc(100% - 40px)!important;
+    margin-left: 20px!important;
+    margin-right: auto!important;
+    }
+}
+
+@media (max-width:767px){ 
+    .imgpost {
+        height: 300px;
+        margin-top: 34px;
+    }
+    .two {
+        margin-top: 37px;
+    }
+    .textproduct {
+        line-height: 28px;
+        margin-bottom: 23px;
+    }
+
+    .overproductos {
+        overflow: auto; 
+    }
+    .recientes{
+    width: max-content;
+    margin-bottom: 32px;
+    }
+    .imgarticulo {
+        min-height: 200px;
+    }
+ 
+} 
+

@@ -9,6 +9,7 @@
 
  
 $imgentop=get_field("imgentop");
+$imgentop_mobile=get_field("imgentop_mobile");
 $flechas=get_field("flechas");
 $mas_articulos=get_field("mas_articulos");
 
@@ -27,14 +28,17 @@ get_header();
 
 <main id="dt_single">
 <section>
-        <div>
+		<div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">
+        </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $imgentop_mobile["url"]?>" alt="<?php echo $imgentop_mobile["alt"]?>">
         </div>
 </section>
 <section>
 	<div class="blogcontent">
 		<div class="row">
-				<div class="col-8">
+				<div class="col-md-8">
 					<h1 class="title"><?php echo $post->post_title?></h1>
 					<p class="content"><?php echo $post->post_content?></p>
 					<div class="social"> 
@@ -150,34 +154,42 @@ get_header();
 					</div>
 
 				</div>
-				<div class="col-4">
+				<div class="col-md-4"> 
 					<div>
 						<p class="textproduct"> EXPLORA MÁS ARTÍCULOS </p>
 					</div> 
-					<div >	
-							<?php if($mas_articulos): ?>
-								<?php foreach($mas_articulos as $articulo): ?> 
-									 
-									<div class="articulossimilares">
-										<a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+					<div class="overproductos">
+						<div class="exploraarticulo" >	
+								<?php if($mas_articulos): ?>
+									<?php foreach($mas_articulos as $articulo): ?> 
+										
+										<div class="articulossimilares">
+											<a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
 
-											<?php $galeria= get_field("imgentop", $articulo["articulo"]->ID);?>
+												<?php $galeria= get_field("imgentop", $articulo["articulo"]->ID);?>
+												<?php $galeriamobile= get_field("imgentop_mobile", $articulo["articulo"]->ID);?>
 
-											<img class="w-100" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
-											<div class="boxtext">
-												<div>  
-													<p class="textdate"><?php echo $articulo["articulo"]->post_date; ?></p>
+												<div class="d-none d-md-block">
+													<img class="w-100" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
 												</div>
-												<div>  
-													<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
+												<div class="d-block d-md-none">
+													<img class="w-100" src="<?php echo $galeriamobile["url"]?>" alt="<?php echo $galeriamobile["alt"]?>">
 												</div>
-											</div>
-										</a>
-									</div>	 
-								<?php endforeach ?> 
-							<?php endif ?> 
-						
-					</div> 
+												<div class="boxtext">
+													<div>  
+														<p class="textdate"><?php echo $articulo["articulo"]->post_date; ?></p>
+													</div>
+													<div>  
+														<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
+													</div>
+												</div>
+											</a>
+										</div>	 
+									<?php endforeach ?> 
+								<?php endif ?> 
+							
+						</div> 
+					</div>
 				</div>
 		</div>
 	</div>

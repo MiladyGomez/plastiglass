@@ -11,7 +11,7 @@
     background-color: rgba(146, 165, 174, 0.22);
 }
 .sectext{
-    padding: 104px 135px 119px 40px;
+    padding: 104px 100px 119px 40px;
 }
 
 .tittle{
@@ -41,3 +41,58 @@
     background-color: #92A5AE;
     padding: 10px 10px 10px 10px;
 } 
+
+.sectext a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  } 
+
+@media (max-width:991px){
+    .tittle {
+        font-size: 28px;
+        line-height: 29px; 
+    }
+    .content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .verdetalles {
+        font-size: 16px;
+        line-height: 17.15px;
+    }
+    .sectext {
+        padding: 43px 15px 49px 6px;
+    }
+    .container-plastiglass {
+        width: calc(100% - 40px)!important; 
+        margin-left: 20px!important;
+        margin-right: auto!important;
+    }
+    .containerpost {
+        margin-left: 15px;
+        margin-top: 100px;
+        margin-right: 15px;
+    }
+
+}
+
+@media (max-width:767px){
+
+.containerpost {
+    margin-top: 59px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.marginbottomtext {
+    margin-right: 15px;
+    margin-bottom: 60px;
+    margin-left: 15px;
+}
+.marginbottomimg {
+    margin-bottom: 40px;
+}
+
+
+
+}

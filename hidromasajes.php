@@ -14,6 +14,7 @@ $args = array(
 
 $gjacuzzis = new WP_Query( $args ); 
 $imagen_top=get_field("imagen_top"); /*Imagen de clientes top*/
+$imagen_top_mobile=get_field("imagen_top_mobile");
 
 
 
@@ -30,11 +31,14 @@ get_header();
 
 <main id="hidromasajes-template">  
     <section>
-        <div>
+        <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
         </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $imagen_top_mobile["url"]?>" alt="<?php echo $imagen_top_mobile["alt"]?>">
+        </div> 
     </section>  
-    <section>
+    <section class="d-none d-md-block">
         <div class="container-fluid container-plastiglass">  
             <div class="containerpost">
                 <div class="row">
@@ -46,7 +50,7 @@ get_header();
                             <?php if ($content%2==0) : ?>
                                 <div class="col-6 marginbottomimg">  
                                     <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
-                                </div>                      
+                                </div>                        
                                 <div class="col-6 marginbottomtext"> 
                                     <div class="sectext">
                                         <p class="tittle"> <?php the_title()?> </p>
@@ -56,7 +60,7 @@ get_header();
                                         </a>
                                     </div>
                                 </div> 
-                            <?php else:?> 
+                            <?php else:?>  
                                 <div class="col-6 marginbottomtext">
                                     <div class="sectext">
                                         <p class="tittle"> <?php the_title()?></p>
@@ -71,6 +75,36 @@ get_header();
                                 </div>
                             <?php endif ?>
                             <?php $content++ ?>
+                        <?php endwhile ?>
+                    <?php endif ?>
+                    <?php  wp_reset_postdata() ?>
+                </div> 
+            </div>
+        </div>  
+    </section>
+    <section class="d-block d-md-none">
+        <div class="container-fluid container-plastiglass">  
+            <div class="containerpost">
+                <div class="row">
+                    <?php if ($gjacuzzis->have_posts()) : ?>
+                        
+                        <?php while ( $gjacuzzis->have_posts() ) : ?>
+                            <?php $gjacuzzis->the_post(); ?>  
+                            <?php $galeria = get_field("jacuzziimgjacuzzi"); ?>
+                            
+                                <div class="col-md-6 marginbottomimg">  
+                                    <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
+                                </div>                        
+                                <div class="col-md-6 marginbottomtext"> 
+                                    <div class="sectext">
+                                        <p class="tittle"> <?php the_title()?> </p>
+                                        <p class="content"> <?php the_content()?> </p>
+                                        <a class="verdetalles" href="<?php echo get_the_permalink()?>">
+                                            VER DETALLES
+                                        </a>
+                                    </div>
+                                </div> 
+
                         <?php endwhile ?>
                     <?php endif ?>
                     <?php  wp_reset_postdata() ?>

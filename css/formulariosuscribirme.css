@@ -122,3 +122,42 @@
 .wpcf7-response-output{
     display: none !important; 
 }
+
+
+@media (max-width:991px){ 
+
+    .formulsuscribirme .title {
+        line-height: 28px;
+        margin-bottom: -8px;
+    }
+    .boxsuscribir {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .formulsuscribirme .editablebotton {
+        padding-left: 15px !important;
+        margin-top: 10px;
+    }
+    .formulsuscribirme .editable {
+        padding-right: 15px !important;
+    }
+    .formulsuscribirme .editable input {
+        padding: 2px 15px 2px 15px;
+    }
+    .formulsuscribirme .wpcf7-submit {
+        padding: 12px 15px;
+        width: 100%;
+    }
+    .terminos {
+        margin-top: 0px;
+    }
+    .formulsuscribirme .wpcf7-list-item-label {
+        letter-spacing: 0.00em;
+    }
+    .formulsuscribirme {
+        padding-bottom: 14px;
+        padding-top: 27px;
+        margin-bottom: 93px;
+    }
+
+}

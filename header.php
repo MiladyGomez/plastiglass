@@ -38,7 +38,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php else: ?>
           <a class="navbar-brand mr-auto" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
         <?php endif ?>
-
+        <div class="menumobile" onclick="seemain()">
+          <span></span> 
+          <span></span>
+          <span></span>
+        </div>
         <?php
           wp_nav_menu([
             'menu'            => 'main_menu',
@@ -49,8 +53,26 @@ if ( ! defined( 'ABSPATH' ) ) {
             'menu_id'         => 'main_menu',
             'menu_class'      => 'navbar-nav ml-auto',
           ]);
-        ?>   
+        ?>
+   
       </nav>
+    </div>
+    <div class="see_main_mobile">
+    <?php
+          wp_nav_menu([
+            'menu'            => 'main_menu',
+            'theme_location'  => 'main_menu',
+            'container'       => 'nav',
+            'container_id'    => '',
+            'container_class' => 'main_mobile',
+            'menu_id'         => 'main_mobile',
+            'menu_class'      => '',
+          ]);
+        ?>
+        <div class="exit" onclick="seemain()">
+          <span></span> 
+          <span></span>
+        </div>
     </div>
   </header>
 
@@ -78,5 +100,9 @@ if ( ! defined( 'ABSPATH' ) ) {
        `);
        jQuery(".mainws a").attr("target" , "_blank");
       });
+      function seemain(){
+        jQuery(".see_main_mobile").toggleClass("mostrar")
+        jQuery("body").toggleClass("nonescroll")
+      } 
+  </script> 
 
-  </script>

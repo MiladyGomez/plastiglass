@@ -90,7 +90,7 @@
     letter-spacing: 0.1em;
     background-color: #D0CFD0;
     padding: 15px 11px 11px 11px;
-    width: 270px;
+    width: 200px;
 }
 
 .addart{
@@ -99,12 +99,12 @@
     color: #929292; 
     font-family: 'Work Sans';
     letter-spacing: 0.050em;
-    border: 1px #706F6F solid;
-    width: 100%;
+    border: 1px #706F6F solid; 
     height: 46px;
     padding-left: 7px;
     padding-top: 10px;
     margin-right: 24px;
+    width: calc(100% - 200px);
 }
 
 .Cmaradecomercio{

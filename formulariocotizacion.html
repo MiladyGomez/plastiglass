@@ -1,17 +1,26 @@
 <div class="container-fluid container-plastiglass">
     <div class="row">
-        <div class="col-6 editable">
-            [text* name placeholder "Nombre Completo"]
-            [tel* phone placeholder "Teléfono"]
+        <div class="col-md-6 editable">
+            [text* names placeholder "Nombre Completo"]
+            [hidden referencia]
+            [hidden casco]
+            [hidden exterior]
+            [hidden disponible]
         </div>
-        <div class="col-6 editable">
+        <div class="col-md-6 editable">
+            [tel* phone placeholder "Teléfono"] 
+        </div>
+        <div class="col-md-6 editable">
             [email* emailclient placeholder "Correo"]
-            [number* numbercantidad min:1 placeholder "Cantidad"]
-
         </div>
-        <div class="col-12 text-center">
+        <div class="col-md-6 editable">
+            [number* numbercantidad min:1 placeholder "Cantidad"]
+        </div>
+        <div class="col-12 text-center"> 
             [checkbox box "Me gustaría recibir correos promocionales y noticias."]
             [submit "ENVIAR"]
         </div>
     </div>
 </div>
+
+

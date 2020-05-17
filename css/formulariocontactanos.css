@@ -91,3 +91,38 @@
 .wpcf7-response-output{
     display: none !important; 
 }
+
+@media (max-width:767px){ 
+
+    .formulcontactanos .editable input {
+        margin-bottom: 7px;
+    }
+
+    .formulcontactanos .editable input::placeholder {                 
+        font-size: 16px;
+        line-height: 19,2px;
+    }
+      
+    .formulcontactanos .editable input:-ms-input-placeholder { 
+        font-size: 16px;
+        line-height: 19,2px;
+    }
+      
+    .formulcontactanos .editable input::-ms-input-placeholder { 
+        font-size: 16px;
+        line-height: 19,2px;  
+    }
+    span.wpcf7-list-item {
+        display: inline-flex;
+        margin-top: 20px;
+    }
+    .custemchulito {
+        margin-top: 17px;
+    }
+
+    .formulcontactanos .wpcf7-submit {
+        font-size: 16px;
+        margin-top: 22px; 
+    }
+
+}

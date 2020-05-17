@@ -6,6 +6,7 @@
  * 
  */
 $imagen_top=get_field("imagen_top"); /*Imagen de clientes top*/
+$imagen_top_mobile=get_field("imagen_top_mobile"); 
 $texto_informativo=get_field("texto_informativo");
 $historia=get_field("historia");
 
@@ -22,9 +23,12 @@ get_header();
 
 <main id="nosotros-template">    
  <section>
-     <div>
-        <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
-     </div>
+     <div class="d-none d-md-block">
+            <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
+        </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $imagen_top_mobile["url"]?>" alt="<?php echo $imagen_top_mobile["alt"]?>">
+        </div>
  </section>
  <section>
     <div class="nosotros_text">
@@ -33,7 +37,7 @@ get_header();
         <a class="botonvisitar" href="<?php echo $texto_informativo["visitanos"]["url"]?>">
                         <?php echo $texto_informativo["visitanos"]["title"]?>
         
-        <div class="arrow">
+        <div class="arrow"> 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
                 <defs>
                     <style>
@@ -52,7 +56,7 @@ get_header();
     </div>
 
  </section >
- <section class="texthistoria d-flex">
+ <section class="texthistoria d-md-flex">
         <div class="secleftimg">
             <img class="w-100" src="<?php echo $historia["imagen_historia"]["url"]?>" alt="<?php echo $homemiddet["homemiddethree"]["alt"]?>">
         </div>

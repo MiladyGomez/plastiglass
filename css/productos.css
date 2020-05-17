@@ -14,6 +14,13 @@
 
 }
 
+.Menu_link_Menu a:hover{
+    text-decoration: none;
+    color: #808080; 
+}
+
+
+
 .Menu_link_Menugrifo{
     font-size: 16.96px;
     line-height: 24.73px;
@@ -24,14 +31,15 @@
     position: relative;
 }
 
+
 .Menu_link_Menunevera{
     font-size: 16.96px;
     line-height: 24.73px;
     color: #808080; 
     font-family: 'Work Sans';
-    letter-spacing: 0.10em;
-    
+    letter-spacing: 0.10em;  
 }
+
 
 .Menu_link_Menu .Menu_link_Menuproducto:before {
     content: "";
@@ -41,6 +49,7 @@
     background-color: #808080; 
     top: 5px;
     left: 113px;
+    cursor: none;
 }
 
 .Menu_link_Menu .Menu_link_Menugrifo:before {
@@ -51,6 +60,7 @@
     background-color: #808080; 
     top: 5px;
     left: 114px;
+    cursor: none;
 }
 
 .col-7 {
@@ -152,7 +162,7 @@
     height: 1px;
     width: 80%;
     background-color: #698893;
-    left: 114px;
+    left: 10%;
     top: -86px;
     opacity: 0.1;
 }
@@ -164,12 +174,17 @@
     margin-top: 44px;
     text-align: center;
     justify-content: center;
-    width: fit-content;
+    width: 80%; 
 }
+
+.productsimilares:last-child {
+    margin-right: 0px !important;
+}
+
 .productsimilares{
     width: 50%;
     margin-right: 34px;
-    text-align: center;
+    text-align: center; 
 
     font-size: 20px;
     line-height: 19px;
@@ -177,8 +192,15 @@
     font-weight: 500;
     font-family: 'Work Sans';
     text-transform: uppercase; /*Mayusculas*/
+    
 
 }
+
+.productsimilares a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
 .productsimilarestext{
     margin-top: 15px;
     letter-spacing: 0.1em;
@@ -189,6 +211,9 @@
     width: 42px;
     display: inline-block;
     border-radius: 50%;
+}
+.circlec{
+    cursor: pointer;
 }
 
 #colordisponibleselet{
@@ -210,4 +235,112 @@
 
 .activo{
     border: 2px solid #000000;
+}
+
+
+@media (max-width:991px){
+    .title_grifo {
+        font-size: 28px;
+        line-height: 29px;
+        margin-top: 50px;
+    }
+    .imagen_nav {
+        margin-right: 12px;
+    }
+    .contenido_grifo {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width:767px){
+    .Menu_link {
+        margin-left: 35px;
+        margin-top: 0px;
+        margin-right: 35px;
+        display: none;
+    }
+    .contenido_grifo {
+        width: calc(100% - 75px)!important;
+        margin-left: 35px!important;
+        margin-right: auto!important;
+        margin-top: 20px;
+        margin-bottom: 73px;   
+    }  
+    .imagen_nav {
+        width: 70px;
+    }
+    .slider-nav {
+        margin-top: 12px;
+    }
+    .title_grifo {
+        margin-top: 64px;
+    }
+    .content_grifo, .classp {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .classp1 {
+        font-size: 14px;
+        line-height: 24.73px;
+        width: 55%;
+        margin-bottom: 10px;
+    }
+    .classp2 {
+        font-size: 14px;
+        line-height: 24.73px;
+        display: inline;
+        float: right;
+    }
+    .characteristic{
+        margin-top: 35px;
+    }
+    .colores_text {
+        font-size: 16px;
+        margin-top: 27px;
+    }
+    .circlec {
+        height: 35px;
+        width: 35px;
+        margin-right: 4px;
+    }
+    #colordisponibleselet {
+        font-size: 16px;
+        left: 0px;
+        top: 100%;
+        margin-top: 15px;
+    }
+    .textproduct{
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    .textproductsimil {
+         line-height: 28px; 
+    }
+    .overproductos {
+        overflow: auto;
+    }
+    .productsimilares {
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 14px;
+    }
+    .productssimilares {
+        margin-bottom: 70px;
+        margin-top: 11px;
+        width: 300vw;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .productsimili {
+        margin-top: 76px;
+    }
+    .textproduct .textproductsimil:before {
+        top: -35px;
+    }
+    .productsimilarestext {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
 }

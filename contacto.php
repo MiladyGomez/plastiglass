@@ -6,6 +6,7 @@
  * 
  */
 $imagen_top=get_field("imagen_top"); /*Imagen de clientes top*/
+$imagen_top_mobile=get_field("imagen_top_mobile"); 
 $box_contacto=get_field("box_contacto");
 $centro_mapa=get_field("centro_mapa");
 
@@ -22,8 +23,11 @@ get_header();
 
 <main id="contacto-template">  
     <section>
-        <div>
+        <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
+        </div>
+        <div class="d-block d-md-none">
+            <img class="w-100" src="<?php echo $imagen_top_mobile["url"]?>" alt="<?php echo $imagen_top_mobile["alt"]?>">
         </div>
     </section> 
     <section>
@@ -41,12 +45,14 @@ get_header();
         <div id="map">
 
         </div>
+        
         <script>
+            var zoom;
             var map;
-                function initMap() {
+                function initMap() { 
                     map = new google.maps.Map(document.getElementById('map'), {
                         center: {lat: <?php echo $centro_mapa["lat"]?>, lng: <?php echo $centro_mapa["lng"]?>},
-                        zoom: 15
+                        zoom: zoom
                     });
                     var marker = new google.maps.Marker({
                         position: {lat: <?php echo $centro_mapa["lat"]?>, lng: <?php echo $centro_mapa["lng"]?>},
@@ -54,6 +60,13 @@ get_header();
                     });
             }
             jQuery(document).ready(function(){
+                
+                if(jQuery(window).width()>991){
+                    zoom=15;
+                }
+                else{
+                    zoom=18;
+                }
                 initMap()
             })
 

@@ -5,11 +5,16 @@
     position: relative;
 }
 
+.nosotros_text a:hover {
+    text-decoration: none;
+    color: #92A5AE;;
+  } 
+
 .nosotros_tittle{
     font-size: 49px;
     line-height: 51px;
     color: #58595B; 
-    font-family: 'Work Sans';
+    font-family: 'Work Sans'; 
     font-weight: bold;
     letter-spacing: 0.050em;
     text-transform: uppercase; 
@@ -65,4 +70,53 @@
     line-height: 31px;
     color: #58595B; 
     font-family: 'Work Sans';
+}
+
+@media (max-width:991px){
+    .nosotros_tittle {
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .cliente_content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .nosotros_text {
+        margin-top: 58px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .botonvisitar {
+        font-size: 16px;
+    }
+    .arrow {
+        margin-left: 105px;
+    }
+    .texthistoria {
+        margin-top: 37px;
+    }
+    .textone {
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .texttwo {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .boxleft {
+        padding: 59px 35px 20px 35px;
+
+}
+
+@media (max-width:767px){ 
+
+    .secleftimg {
+        width: 100%;
+    }
+    .boxleft {
+        width: 100%;
+    }
+    .texthistoria {
+        margin-bottom: 70px;
+    }
 }

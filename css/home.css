@@ -35,8 +35,14 @@
 .boxleft{
     width: 52%;
     background-color: rgba(146, 165, 174, 0.22);
-    padding: 114px 160px 0px 38px;
+    padding: 114px 160px 20px 38px;
 }
+
+.boxleft a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+   
 .textone{
     font-size: 49px;
     line-height: 51px;
@@ -91,4 +97,88 @@
 .productext{
     margin-top: 15px;
     letter-spacing: 0.1em;
+} 
+
+
+.imgtopmobile{
+    height: 408px;
 }
+
+@media (max-width:991px){
+    .middensec {
+        padding-top: 40px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 56px;
+    }
+    .secleft {
+        width: 100%;
+    }
+    .secright {
+        width: 100%;
+        margin-top: 22px;
+        margin-left: 0px;
+    }
+    .sectext {
+        margin-top: 20px;
+    }
+    .textone {
+        font-size: 28px;
+        line-height: 29px;
+        color: #58595B;
+        font-family: 'Work Sans';
+        font-weight: bold;
+    }
+    .texttwo {
+        font-size: 16px;
+        line-height: 22px;
+        color: #58595B;
+        font-family: 'Work Sans';
+    }
+    .boxleft {
+        padding: 80px 45px 80px 38px;
+        width: 100%;
+    }
+
+    .textthree {
+        font-size: 16px;
+        line-height: 17.15px;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Work Sans';
+        background-color: #92A5AE;
+        padding: 8px 8px 8px 8px;
+    }
+    .secleftimg {
+        width: 100%;
+    }
+    
+    .products {
+        width: max-content;
+    }
+
+    .product {
+       display: inline-block;
+    }
+    .overproductos{
+        overflow: auto;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .textcenter {
+        margin-top: 53px;
+    }
+
+    .productext {
+        font-family: 'Work Sans';
+        font-size: 16px;
+        line-height: 19px;
+        color: #58595B;
+ 
+    }
+
+}
+

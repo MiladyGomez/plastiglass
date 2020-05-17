@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/formulariocotizacion.css' ?>" type="text/css" media="all">
 
+<?php global $post ?>
+
 <div class="formulcotizacion">
             <p class="title"> FORMULARIO DE COTIZACIÓN </p>
             <?php echo do_shortcode('[contact-form-7 id="274" title="Formulario de cotizacion"]')?>
@@ -8,6 +10,7 @@
 
 <script>
     jQuery(document).ready(function() {
+        jQuery("input[name='referencia']").val('<?php echo $post->post_title?>')
         jQuery(".formulcotizacion .box").append(`
             <span class="custemchulito" >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.65 28.54">
@@ -35,7 +38,6 @@
                 jQuery(this).find(".chulito").addClass("chulitomostar")
                 jQuery('input[name="box[]"]').prop( "checked", true );
             }
-            
         })
     });
 </script>

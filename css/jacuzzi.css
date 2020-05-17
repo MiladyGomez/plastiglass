@@ -144,12 +144,17 @@
 .productssimilares{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 145px;
-    margin-top: 55px;
+    margin-bottom: 110px;
+    margin-top: 60px;
     text-align: center;
     justify-content: center;
-    width: fit-content;
+    width: 97%;
 }
+
+.productsimilares:last-child {
+    margin-right: 0px !important;
+}
+
 .productsimilares{
     width: 25%;
     margin-right: 34px;
@@ -162,7 +167,13 @@
     font-family: 'Work Sans';
     text-transform: uppercase; /*Mayusculas*/
 
-}
+} 
+
+.productsimilares a:hover {
+    text-decoration: none;
+    color: #ffffff; 
+  } 
+
 .productsimilarestext{
     margin-top: 15px;
     letter-spacing: 0.1em;
@@ -175,7 +186,15 @@
     border-radius: 50%;
 }
 
-#colorcascoselet{
+.circlec, .circlee {
+    cursor: pointer; 
+}
+
+.nextArro, .prevArro {
+    cursor: pointer; 
+}
+
+#colorcascoselet{ 
     font-size: 18px;
     line-height: 21px;
     color: #58595B; 
@@ -206,6 +225,127 @@
     margin-top: 47px;
 }
 
+.boxboton a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
 .activo{
     border: 2px solid #000000;
 }
+
+@media (max-width:991px){
+    .container-plastiglass {
+        width: calc(100% - 40px)!important; 
+        margin-left: 20px!important;
+        margin-right: auto!important;
+    }
+
+}
+
+@media (max-width:767px){
+    .title {
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .classp1 {
+        font-size: 14px;
+        line-height: 24.73px;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .classp2 {
+        font-size: 14px;
+        line-height: 24.73px;
+        display: inline;
+        float: right;
+    }
+    .text_jacuzzi_text {
+        font-size: 19px;
+        line-height: 13.7px;
+        letter-spacing: 0.050em;
+        margin-top: 17px;
+        margin-bottom: 5px;
+    }
+    .text_jacuzzi_contenido {
+        font-size: 16px;
+        line-height: 21.64px;
+    }
+    .color_casco {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .color_exterior {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    #colorcascoselet {
+        font-size: 16px;
+        left: 0px;
+        top: 100%;
+        margin-top: 15px;
+    }
+    #colorexteriorselet {
+        font-size: 16px;
+        left: 0px;
+        top: 100%;
+        margin-top: 15px;
+    }
+    .boxboton {
+        margin-top: 67px;
+        margin-bottom: 46px;
+    }
+    .botoncotizar {
+        font-size: 16px;
+        line-height: 17.15px;
+    }
+    .infjacuzzi {
+        margin-top: 64px;
+    }
+    .slick-slider {
+        margin-bottom: 60px;
+    }
+    .customizejacuzzi {
+        margin-top: 67px;
+    }
+    .circlec, .circlee {
+        height: 35px;
+        width: 35px;
+        margin-right: 4px;
+    }
+    .infcolor{
+        margin-bottom: 50px;
+    }
+    .productsimili {
+        margin-top: 76px;
+    }
+    .textproduct .textproductsimil:before {
+        top: -38px;
+    }
+    .textproductsimil {
+        line-height: 28px;
+    }
+    .textproduct{
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    .productssimilares {
+        margin-top: 35px;
+        margin-bottom: 43px;
+        width: 300vw;
+    }
+    .overproductos{
+        overflow: auto;
+    }
+    .productsimilares {
+        font-size: 16px;
+        display: inline-block;
+        width: 30%; 
+    }
+}
+
