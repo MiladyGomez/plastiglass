@@ -24,7 +24,7 @@ $caracteristicas_jacuzzi=get_field("caracteristicas_jacuzzi");
 $caracteristicas_jacuzzi_movile=get_field("caracteristicas_jacuzzi_movile");
 $title_producto_similares=get_field("title_producto_similares");
 
-$productos_similares=get_field("producto_similar");
+
 
 
 
@@ -208,7 +208,7 @@ get_header();
     </section>
     <section class="productsimili">
         <div class="textproduct">
-            <p class="textproductsimil"> <?php echo $title_producto_similares?> </p>
+            <p class="textproductsimil"> Productos similares </p> 
         </div>
         <div class="overproductos">
             <div class="productssimilares d-flex">
@@ -221,7 +221,7 @@ get_header();
                             <p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
                             </a>
                         </div>
-                        <?php endforeach ?>   
+                        <?php endforeach ?>    
                 <?php endif ?>   
             </div> 
         </div>            

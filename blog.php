@@ -46,7 +46,7 @@ get_header();
                     <div class="col-md-5">
                         <p class="tittle"><?php echo $onepost->post_title?></p>
                         <p class="content"><?php echo get_field("resumen", $onepost->ID);?></p>
-                        <a class="verarticulo" href="<?php echo get_the_permalink()?>">
+                        <a class="verarticulo" href="<?php echo get_permalink($onepost)?>">
                             VER ARTICULO
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
                                 <defs>
@@ -94,7 +94,7 @@ get_header();
                     <div class="col-md-5">
                         <p class="tittle"> <?php echo $twopost->post_title?></p>
                         <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p>
-                        <a class="verarticulo" href="<?php echo get_the_permalink()?>">
+                        <a class="verarticulo" href="<?php echo get_permalink($twopost)?>">
                             VER ARTICULO
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
                                 <defs>
@@ -122,7 +122,7 @@ get_header();
                      <div class="col-md-5">
                         <p class="tittle"> <?php echo $twopost->post_title?></p>
                         <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p>
-                        <a class="verarticulo" href="<?php echo get_the_permalink()?>">
+                        <a class="verarticulo" href="<?php echo get_permalink($twopost)?>">
                             VER ARTICULO
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
                                 <defs>
@@ -179,7 +179,7 @@ get_header();
                                         <p class="tittle2"> <?php the_title()?> </p>
                                     </div>
                                 </div>
-                                </a>
+                                </a> 
                             </div>
                             
                             <?php endwhile ?>

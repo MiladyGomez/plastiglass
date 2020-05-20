@@ -8,12 +8,16 @@
  global $post;
 
 $color_disponible = wp_get_post_terms($post->ID, "color_disponible");
+$material_disponible = wp_get_post_terms($post->ID, "material");
+$forma_disponible = wp_get_post_terms($post->ID, "forma");
+$tipo_disponible = wp_get_post_terms($post->ID, "tipo");
 $Menu_link=get_field("Menu_link");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
 $productos_similar=get_field("productos_similares");
 $productos_similares=get_field("producto_similar");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
- 
+$main_category = wp_get_post_terms($post->ID, "categoria_productos");
+
 
 
 
@@ -29,14 +33,14 @@ get_header();
 <main id="dt_single">
 	<section class="Menu_link">
 		<div class="Menu_link_Menu">
-			<a class="Menu_link_Menuproducto" href="<?php echo $Menu_link["productos_link"]["url"]?>">
-                <?php echo $Menu_link["productos_link"]["title"]?>
+			<a class="Menu_link_Menuproducto" href="catalogo">
+                Productos
             </a>
-			<a class="Menu_link_Menugrifo" href="<?php echo $Menu_link["cajagrifos_link"]["url"]?>">
-                <?php echo $Menu_link["cajagrifos_link"]["title"]?>
+			<a class="Menu_link_Menugrifo" href="catalogo/?categoria=<?php echo $main_category[0]->slug?>">
+				<?php echo $main_category[0]->name?>
             </a>
-			<a class="Menu_link_Menunevera" href="<?php echo $Menu_link["caja_llave_nevera_link"]["url"]?>">
-                <?php echo $Menu_link["caja_llave_nevera_link"]["title"]?>
+			<a class="Menu_link_Menunevera">
+                <?php echo $post->post_title?>
             </a>
 		</div>
 	</section>
@@ -84,8 +88,53 @@ get_header();
 								<p class="classp2"><?php echo $caracteristicas_caja_llave_nevera["cantidad_de_agua"]?></p> 
 							</div>
 							<div>
-								<p class="classp1">MATERIAL</p> 
-								<p class="classp2"><?php echo $caracteristicas_caja_llave_nevera["material_text"]?></p> 
+								<div class="row materialcol">
+									<div class="col-7">
+										<p class="classp3">MATERIAL</p>
+									</div>
+									<div class="col-5">
+										<ul class="listacaracteristicas">
+											<?php if ($material_disponible): ?>
+												<?php foreach ($material_disponible as $materiald): ?>
+														<li class="classp4"><?php echo $materiald->name ?></li>
+												<?php endforeach ?>
+											<?php endif ?> 
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="row">
+									<div class="col-7">
+										<p class="classp3">FORMA</p> 
+									</div>
+									<div class="col-5">
+										<ul class="listacaracteristicas">
+											<?php if ($forma_disponible): ?>								
+												<?php foreach ($forma_disponible as $formad): ?>
+													<li class="classp4"><?php echo $formad->name ?></li>
+												<?php endforeach ?>								
+											<?php endif ?>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="row">
+									<div class="col-7">
+										<p class="classp3">TIPO</p> 
+									</div>
+									<div class="col-5">
+										<ul class="listacaracteristicas">
+											<?php if ($tipo_disponible): ?>								
+												<?php foreach ($tipo_disponible as $tipod): ?>
+													<li class="classp4"><?php echo $tipod->name ?></li>
+												<?php endforeach ?>								
+											<?php endif ?>
+										</ul>
+									</div>
+								</div>
+								
 							</div>
 							<p class="colores_text">colores disponibles</p>
 							<?php if ($color_disponible): ?>
@@ -140,7 +189,9 @@ get_header();
     </section>
 	<section class="productsimili">
 		<div class="textproduct">
-            <p class="textproductsimil"> <?php echo $productos_similar["productos_similares"]?> </p>
+            
+			<p class="textproductsimil"> Productos similares </p>
+			
 		</div>
 		<div class="overproductos">
 			<div class="productssimilares d-flex"> 

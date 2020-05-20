@@ -11,6 +11,10 @@ $homemiddeo=get_field("homemiddeo");
 $homemiddet=get_field("homemiddet");
 $homemiddf=get_field("homemiddf");
 
+$productos_similares=get_field("producto_similar");
+
+
+
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
@@ -36,25 +40,27 @@ get_header();
             <div>
                 <img class="w-100" src="<?php echo $homemiddeo["homemiddeone"]["url"]?>" alt="<?php echo $homemiddeo["homemiddeone"]["alt"]?>">
             </div> 
-            <div class="sectext">
-                <?php echo $homemiddeo["homemiddetext"]?>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                        <defs>
-                            <style>
-                                .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                            </style>
-                        </defs>
-                        <g id="Capa_2" data-name="Capa 2">
-                            <g id="Layer_1" data-name="Layer 1">
-                                <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
-                                <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+            <a class="boxdescrip" href="<?php echo $homemiddeo["link_home"]["url"]?>">
+                <div class="sectext">
+                    <?php echo $homemiddeo["homemiddetext"]?>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
+                            <defs>
+                                <style>
+                                    .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
+                                </style>
+                            </defs>
+                            <g id="Capa_2" data-name="Capa 2">
+                                <g id="Layer_1" data-name="Layer 1">
+                                    <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
+                                    <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
-                </p> 
+                        </svg>
+                    </p> 
 
-            </div> 
+                </div> 
+            </a>
         </div>
         <div class="secright">  
             <img class="w-100" src="<?php echo $homemiddeo["homemiddetwo"]["url"]?>" alt="<?php echo $homemiddeo["homemiddetwo"]["alt"]?>">
@@ -74,21 +80,23 @@ get_header();
                 <?php echo $homemiddet["homemiddeproducto"]["title"]?>
             </a>
         </div>
-    </section> 
-    <section>
+    </section>  
+    <section>  
             <div>
                 <p class="textcenter"> <?php echo $homemiddf["homemiddenttext"]?> </p>
             </div>
         <div class="overproductos">
             <div class="products d-flex">
                 <?php if($homemiddf["homemiddenproduct"]): ?>
-                    <?php foreach($homemiddf["homemiddenproduct"] as $categoria): ?> 
-                        <div class="product" >                  
-                        <img class="w-100" src="<?php echo $categoria["imgcat"]["url"]?>" alt="<?php echo $categoria["homemiddenproduct"]["alt"]?>">
-                        <p class="productext"><?php echo $categoria["cattxt"][0]->name; ?></p>
-                        </div>
-                        <?php endforeach ?>
-                <?php endif ?>
+                    <?php foreach($homemiddf["homemiddenproduct"] as $categoria): ?>  
+                        <a href="<?php echo $categoria["link_productos"]["url"]?>">
+                            <div class="product" >                  
+                            <img class="w-100" src="<?php echo $categoria["imgcat"]["url"]?>" alt="<?php echo $categoria["homemiddenproduct"]["alt"]?>">
+                            <p class="productext"><?php echo $categoria["cattxt"][0]->name; ?></p>
+                            </div>
+                            <?php endforeach ?>
+                        </a>
+                <?php endif ?> 
             </div>
         </div>
     </section>

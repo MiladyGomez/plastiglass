@@ -15,6 +15,8 @@ $args = array(
 
 $categoriasopen = get_categories( $args );
 
+
+
 $imagen_top=get_field("imagen_top"); /*Imagen de clientes top*/
 $imagen_top_movile=get_field("imagen_top_movile");
 
@@ -54,7 +56,7 @@ get_header();
                                         <div class="paddingtext">
                                             <p class="name"><?php echo $productocat->name; ?></p>
                                             <p class="descri"><?php echo $productocat->description; ?></p>
-                                            <a class="verproducto" href="<?php echo get_the_permalink()?>">
+                                            <a class="verproducto" href="catalogo/?categoria=<?php echo $productocat->slug?>">
                                                 VER PRODUCTOS
                                             </a>
                                         </div> 
@@ -65,7 +67,7 @@ get_header();
                                     <div class="paddingtext"> 
                                         <p class="name"><?php echo $productocat->name; ?></p>
                                         <p class="descri"><?php echo $productocat->description; ?></p>
-                                        <a class="verproducto" href="<?php echo get_the_permalink()?>">
+                                        <a class="verproducto" href="catalogo/?categoria=<?php echo $productocat->slug?>">
                                             VER PRODUCTOS
                                         </a>
                                     </div>
@@ -96,7 +98,7 @@ get_header();
                                         <div class="paddingtext">
                                             <p class="name"><?php echo $productocat->name; ?></p>
                                             <p class="descri"><?php echo $productocat->description; ?></p>
-                                            <a class="verproducto" href="<?php echo get_the_permalink()?>">
+                                            <a class="verproducto" href="catalogo/?categoria=<?php echo $productocat->slug?>">
                                                 VER PRODUCTOS
                                             </a>
                                         </div> 

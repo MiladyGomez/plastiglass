@@ -78,12 +78,20 @@
 }
 .products{
     margin-left: 75px;
-    margin-right: 48px;
+    margin-right: 66px;
     margin-bottom: 125px;
     
 }
+
+.products a:hover{
+    text-decoration: none;
+}
+
+.middensec a:hover {
+    text-decoration: none;
+}
 .product{
-    width: 25%;
+    width: 88%;
     margin-right: 42px;
     text-align: center;
 

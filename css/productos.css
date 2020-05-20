@@ -111,7 +111,7 @@
 
 .classp1{
     display: inline-block;
-    width: 310px;  
+    width: 60%;  
     font-size: 17px;
     line-height: 14.4px;
     color: #58595B; 
@@ -124,6 +124,23 @@
     display: contents;
     font-size: 17px;
     line-height: 14.4px;
+    color: #58595B; 
+    font-family: 'Work Sans';
+}
+
+.classp3{
+    
+    font-size: 17px;
+    line-height: 24.4px;
+    color: #58595B; 
+    font-weight: bold;
+    font-family: 'Work Sans';
+
+}
+ 
+.classp4{
+    font-size: 17px;
+    line-height: 21.4px;
     color: #58595B; 
     font-family: 'Work Sans';
 }
@@ -234,7 +251,17 @@
 }
 
 .activo{
-    border: 2px solid #000000;
+    border: 2px solid #000000; 
+}
+
+ul.listacaracteristicas
+{
+    list-style-type: none;
+    margin-left: -41px;
+}
+
+.materialcol{
+    margin-top: 6px;
 }
 
 
@@ -291,6 +318,21 @@
         line-height: 24.73px;
         display: inline;
         float: right;
+    }
+    .classp3 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .classp4 {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        
+    }
+
+    .materialcol{
+        margin-top: 10px;
     }
     .characteristic{
         margin-top: 35px;

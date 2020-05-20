@@ -47,7 +47,7 @@ get_header();
                         <?php while ( $gjacuzzis->have_posts() ) : ?>
                             <?php $gjacuzzis->the_post(); ?>  
                             <?php $galeria = get_field("jacuzziimgjacuzzi"); ?>
-                            <?php if ($content%2==0) : ?>
+                            <?php if ($content%2==0) : ?> 
                                 <div class="col-6 marginbottomimg">  
                                     <img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
                                 </div>                        
@@ -101,7 +101,7 @@ get_header();
                                         <p class="content"> <?php the_content()?> </p>
                                         <a class="verdetalles" href="<?php echo get_the_permalink()?>">
                                             VER DETALLES
-                                        </a>
+                                        </a> 
                                     </div>
                                 </div> 
 

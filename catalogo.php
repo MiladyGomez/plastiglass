@@ -428,7 +428,7 @@ get_header();
                     $.get(url, function(data, status){
                         console.log(data);
                         $("#galeriaproductos").empty();
-                        data.forEach(function(producto){
+                        data.forEach(function(producto){ 
                             $("#galeriaproductos").append(`                                
                                 <div class="col-lg-4 col-md-6" >
                                     <a href="${producto.link}">

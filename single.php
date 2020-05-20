@@ -136,7 +136,7 @@ get_header();
 							<?php echo $flechas["arrowleft"]["title"]?>
 						</a>
 						<a class="botonsiguiente" href="<?php echo $flechas["arrowrigh"]["url"]?>">
-						<?php echo $flechas["arrowrigh"]["title"]?>
+							<?php echo $flechas["arrowrigh"]["title"]?>
 								<svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
 									<defs> 
 										<style>
@@ -150,7 +150,7 @@ get_header();
 										</g>
 									</g>
 								</svg>
-							</a> 
+						</a> 
 					</div>
 
 				</div>
