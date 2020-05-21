@@ -35,7 +35,7 @@
             else{
                 jQuery(this).find(".equiss").addClass("equissmostar")
                 jQuery('input[name="box[]"]').prop( "checked", true ); 
-            }
+            } 
           
         
         })

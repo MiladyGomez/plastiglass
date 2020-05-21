@@ -180,3 +180,31 @@
     margin-top: 40px;
 } 
 
+@media (max-width:767px){  
+
+    .Cmaradecomercio {
+        flex-wrap: wrap;
+    }
+    .Docrut, .Cedulalegal, .ForHabeas{
+        flex-wrap: wrap;
+    }
+    .addart {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .bottombuscar {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 183px;
+        margin-top: 25px;
+    }
+    .addart {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .bottombuscar {
+        padding: 8px 8px 9px 9px;
+    }    
+} 
+

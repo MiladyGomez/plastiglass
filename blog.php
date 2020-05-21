@@ -42,7 +42,7 @@ get_header();
     <section>
         <div class="container-fluid container-plastiglass">
             <div class="one">
-                <div class="row">
+                <div class="row"> 
                     <div class="col-lg-6 col-xl-5">
                         <p class="tittle"><?php echo $onepost->post_title?></p>
                         <p class="content"><?php echo get_field("resumen", $onepost->ID);?></p>
