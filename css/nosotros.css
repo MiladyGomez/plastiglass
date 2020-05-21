@@ -50,12 +50,15 @@
 
 .secleftimg{
     width: 46%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .boxleft{
     width: 54%;
     background-color: rgba(146, 165, 174, 0.22);
-    padding: 118px 165px 0 105px;
+    padding: 118px 165px 45px 105px;
 }
 .textone{
     font-size: 49px;

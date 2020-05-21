@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $footer=get_field("footer_main", "option");
-
+$terminos=get_field("pagina_de_terminos", "option");
 ?>
 <div class="uparrow">
 
@@ -77,6 +77,20 @@ $footer=get_field("footer_main", "option");
             jQuery('.uparrow').hide(600);        
         }
     });
+</script>
+
+<script>
+    <?php if ($terminos) :?>
+        jQuery(document).ready(function() {
+            jQuery('.wpcf7-list-item-label').each(function(index, element) {
+                console.log(jQuery(element).text())
+                if (jQuery(element).text() == 'Acepto términos y condiciones.') {
+                    jQuery(element).html('Acepto <a href="<?php echo $terminos['url'] ?>">términos y condiciones.</a>')
+
+                }
+            })
+        })
+    <?php endif ?>
 </script>
 
 <!-- comentario -->

@@ -43,7 +43,7 @@ get_header();
         <div class="container-fluid container-plastiglass">
             <div class="one">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-6 col-xl-5">
                         <p class="tittle"><?php echo $onepost->post_title?></p>
                         <p class="content"><?php echo get_field("resumen", $onepost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($onepost)?>">
@@ -65,14 +65,10 @@ get_header();
                     </div>
                     <?php $imgentoppost= get_field("imgentop", $onepost->ID)?>
                     <?php $imgentoppostmobile= get_field("imgentop_mobile", $onepost->ID)?>
-                    <div class="d-none d-md-block col-md-7">
+                    <div class="col-lg-6 col-xl-7">
                         <div class="imgpost" style="background-image: url(<?php echo $imgentoppost["url"]?>)">
                         </div>
-                    </div> 
-                    <div class="d-block d-md-none col-md-7">
-                        <div class="imgpost" style="background-image: url(<?php echo $imgentoppostmobile["url"]?>)">
-                        </div>
-                    </div> 
+                    </div>                     
                 </div>
             </div>
         </div>
@@ -83,15 +79,11 @@ get_header();
                 <div class="row">
                     <?php $imgentoppost= get_field("imgentop", $twopost->ID)?>
                     <?php $imgentoppostmobile= get_field("imgentop_mobile", $twopost->ID)?>
-                    <div class="d-none d-md-block col-md-7">
+                    <div class="col-lg-6 col-xl-7">
                         <div class="imgpost" style="background-image: url(<?php echo $imgentoppost["url"]?>)">
                         </div>
-                    </div> 
-                    <div class="d-block d-md-none col-md-7">
-                        <div class="imgpost" style="background-image: url(<?php echo $imgentoppostmobile["url"]?>)">
-                        </div>
-                    </div> 
-                    <div class="col-md-5">
+                    </div>                    
+                    <div class="col-lg-6 col-xl-5">
                         <p class="tittle"> <?php echo $twopost->post_title?></p>
                         <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($twopost)?>">

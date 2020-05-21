@@ -87,6 +87,7 @@
     width: 155px;
     left: 7px;
     bottom: -25px;
+    z-index: 1;
 }
 .wpcf7-response-output{
     display: none !important; 

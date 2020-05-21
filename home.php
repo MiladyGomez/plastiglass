@@ -67,8 +67,8 @@ get_header();
         </div>
     </section>
     <section class="d-md-flex">
-        <div class="secleftimg d-none d-lg-block">
-            <img class="w-100" src="<?php echo $homemiddet["homemiddethree"]["url"]?>" alt="<?php echo $homemiddet["homemiddethree"]["alt"]?>">
+        <div class="secleftimg d-none d-lg-block" style="background-image: url(<?php echo $homemiddet["homemiddethree"]["url"]?>)">
+            
         </div>
         <div class="secleftimg d-block d-lg-none">
             <img class="w-100" src="<?php echo $homemiddet["homemiddethreemovile"]["url"]?>" alt="<?php echo $homemiddet["homemiddethreemovile"]["alt"]?>">

@@ -133,6 +133,13 @@
     margin-top: 35px;
 }
 
+.Cmaradecomercio .wpcf7-not-valid-tip,
+.Docrut .wpcf7-not-valid-tip,
+.ForHabeas .wpcf7-not-valid-tip,
+.Cedulalegal .wpcf7-not-valid-tip {
+    bottom: -11px;
+}
+
 .Cedulalegal input{
     display: none;
 }
@@ -168,4 +175,8 @@
 .wpcf7-response-output{
     display: none !important; 
 }
- 
+
+.checkboxterminos {
+    margin-top: 40px;
+} 
+

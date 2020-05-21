@@ -57,8 +57,8 @@ get_header();
 
  </section >
  <section class="texthistoria d-md-flex">
-        <div class="secleftimg">
-            <img class="w-100" src="<?php echo $historia["imagen_historia"]["url"]?>" alt="<?php echo $homemiddet["homemiddethree"]["alt"]?>">
+        <div class="secleftimg" style="background-image: url(<?php echo $historia["imagen_historia"]["url"]?>)">
+            
         </div>
         <div class="boxleft">
             <p class="textone"><?php echo $historia["historia_tittle"]?></p>

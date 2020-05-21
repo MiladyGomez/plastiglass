@@ -102,9 +102,7 @@
     margin-top: 10px;
 }
 
-.boxsuscribir{
-    padding-left: 200px;
-    padding-right: 200px;
+.boxsuscribir{    
     margin-top: 27px;
 }
 
@@ -117,7 +115,8 @@
     position: absolute;
     width: 155px;
     left: 7px;
-    bottom: -35px; 
+    top: -26px;
+    z-index: 1;
 }
 .wpcf7-response-output{
     display: none !important; 

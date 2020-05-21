@@ -22,8 +22,7 @@ $personaliza_tu_jazuzzi_contenido=get_field("personaliza_tu_jazuzzi_contenido");
 $boton_cotizar=get_field("boton_cotizar");
 $caracteristicas_jacuzzi=get_field("caracteristicas_jacuzzi");
 $caracteristicas_jacuzzi_movile=get_field("caracteristicas_jacuzzi_movile");
-$title_producto_similares=get_field("title_producto_similares");
-
+$productos_similares=get_field("producto_similar");
 
 
 
@@ -212,7 +211,7 @@ get_header();
         </div>
         <div class="overproductos">
             <div class="productssimilares d-flex">
-                <?php if($productos_similares): ?>
+                <?php if($productos_similares): ?>                    
                     <?php foreach($productos_similares as $producto): ?> 
                         <div class="productsimilares" >
                             <a href="<?php echo get_permalink($producto["producto"]->ID)?>">    

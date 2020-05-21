@@ -22,6 +22,7 @@
     font-family: 'Work Sans';
     background-color: rgba(146, 165, 174, 0.22);
     padding: 56px 39px 23px 38px;
+    min-height: 52.8%;
 }
 
 .sectext svg {
@@ -30,12 +31,15 @@
 
 .secleftimg{
     width: 48%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .boxleft{
     width: 52%;
     background-color: rgba(146, 165, 174, 0.22);
-    padding: 114px 160px 20px 38px;
+    padding: 114px 160px 55px 38px;
 }
 
 .boxleft a:hover {
@@ -80,7 +84,7 @@
     margin-left: 75px;
     margin-right: 66px;
     margin-bottom: 125px;
-    
+    justify-content: center;
 }
 
 .products a:hover{
