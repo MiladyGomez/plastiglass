@@ -57,27 +57,15 @@ get_header();
             font-family: Ready;
             src: url(<?php echo get_template_directory_uri() ?>/3d-render/Ready.woff);
             }
-			body, div, h1, h2, span, p {
+
+			.3d-render div, .3d-render h1, .3d-render h2, .3d-render span, .3d-render p {
 				font-family: Visby-regular,Verdana,Arial,Helvetica,sans-serif;
 			}
-			h3 {
+			.3d-render h3 {
 				font-family: Visby-regular;
 			}
 			/* fullscreen */
-			html {
-				height:100%;
-				width: 100%;
-			}
-			body {
-				height:100%;
-				width: 100%;
-				margin: 0px;
-				
-			}
-			body {
-    		    font-size: 10pt;
-	    	    background : #ffffff; 
-			}
+			
 			table,tr,td {
 				font-size: 10pt;
 				border-color : #777777;
@@ -88,10 +76,10 @@ get_header();
 				padding: 5px;
 				border-collapse:collapse;
 			}
-			h1 {
+			.3d-render h1 {
 				font-size: 18pt;
 			}
-			h2 {
+			.3d-render h2 {
 				font-size: 14pt;
 			}
 			.warning { 
