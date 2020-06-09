@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="17950" appversion="6.1.6" start="node2">
+  <panorama hideabout="1" id="node2">
+    <input levelingpitch="0" width="2500" height="2500" overlap="1" levelingroll="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" leveltilesize="510" levelbias="0.400">
+      <level width="2500" height="2500" preload="0" predecode="0"/>
+      <level width="1250" height="1250" preload="0" predecode="0"/>
+      <level width="625" height="625" preload="0" predecode="0"/>
+      <level width="312" height="312" preload="1" predecode="1"/>
+      <preview color="0x0b0b0b" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start projection="4" tilt="-8.85" fov="70.59" pan="0"/>
+      <flyin projection="4" tilt="-8.85" fov="99" pan="0"/>
+      <min tilt="-90" fov="30" pan="-90"/>
+      <max tilt="90" scaletofit="1" fov="100" fovfisheye="360" pan="90" fovstereographic="270"/>
+    </view>
+    <userdata heading="0" title="Jacuzzi Royal - Plastiglass" description="Descubre nuestro configurador intéractivo." customnodeid="" source="" nodeid="node2" latitude="" copyright="" tags="152-royal_v4" author="" datetime="" comment="8 pax | 223 x 223 cm" info="Royal" longitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label background="1" enabled="1" width="180" textcolor="0x000000" borderalpha="1" backgroundcolor="0xffffff" height="20" wordwrap="1" textalpha="1" backgroundalpha="1" borderradius="1" bordercolor="0x000000" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" backgroundcolor="0x0000ff" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff"/>
+      <hotspot tilt="-28" title="" description="" customimagewidth="2112" customimageheight="784" fov="67.11" distance3D="1592.12" target="_blank" skinid="color" pan="0" url="" customimage="media/beige.png" use3D="1" id="Color"/>
+      <hotspot tilt="-28" title="" description="" target="_blank" skinid="variaciones" pan="0" url="" id="variaciones"/>
+      <hotspot tilt="-27.24" title="Hydros" description="Esta es una descripción de ejemplo de un detalle intéractivo." target="" skinid="info" pan="-19.11" url="images/hydro detalle.JPG" id="Point01"/>
+      <hotspot tilt="-30.29" title="Blowers" description="Descripción de ejemplo" target="_blank" skinid="info" pan="-12.71" url="" id="Point02"/>
+    </hotspots>
+    <media>
+      <lensflare alpha="80.000" tilt="36.160" color="0xffffff" blinding="50.000" pan="-308.870" type="3" id="Lensflare01"/>
+    </media>
+    <transition softedge="0" zoomspeed="2" enabled="1" blendtime="1" blendcolor="0x000000" zoomin="0" zoomout="0" zoomfov="20" zoomoutpause="1" type="crossdissolve"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control lockedmouse="0" speedwheel="2.5" lockedwheel="0" contextprojections="0" hideabout="1" lockedkeyboardzoom="0" invertwheel="0" sensitivity="14" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" rubberband="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <masternode>
+    <userdata heading="0" title="Jacuzzi Royal - Plastiglass" description="Descubre nuestro configurador intéractivo." customnodeid="" source="" nodeid="master" latitude="" copyright="" tags="" author="" datetime="" comment="8 pax | 223 x 223 cm" info="Royal" longitude=""/>
+  </masternode>
+</tour>

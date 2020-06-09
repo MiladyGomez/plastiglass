@@ -9,7 +9,7 @@ include_once 'inc/dt-user-agent.php';
 /*** +Register Theme Scripts ***/
 function ditto_theme_scripts() {
   wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'fonts', get_template_directory_uri() . 'fonts/stylesheet.css' );
+  wp_enqueue_style( 'fonts', get_template_directory_uri() . '/fonts/stylesheet.css' );
 }
 add_action( 'wp_enqueue_scripts', 'ditto_theme_scripts');
 /*** -Register Theme Scripts ***/

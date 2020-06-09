@@ -36,6 +36,86 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/3d-render/pano2vr_player.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/3d-render/skin.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/3d-render/pano2vrgyro.js"></script>
+
+<style type="text/css" title="Default">
+			@font-face{
+            font-family: Lane;
+            src: url(<?php echo get_template_directory_uri() ?>/3d-render/LANENAR_.woff);
+            }
+			@font-face{
+            font-family: Visby-bold;
+            src: url(<?php echo get_template_directory_uri() ?>/3d-render/VisbyCF-Bold.woff);
+            }
+			@font-face{
+            font-family: Visby-regular;
+            src: url(<?php echo get_template_directory_uri() ?>/3d-render/VisbyCF-Regular.woff);
+            }
+			@font-face{
+            font-family: Ready;
+            src: url(<?php echo get_template_directory_uri() ?>/3d-render/Ready.woff);
+            }
+			body, div, h1, h2, span, p {
+				font-family: Visby-regular,Verdana,Arial,Helvetica,sans-serif;
+			}
+			h3 {
+				font-family: Visby-regular;
+			}
+			/* fullscreen */
+			html {
+				height:100%;
+				width: 100%;
+			}
+			body {
+				height:100%;
+				width: 100%;
+				margin: 0px;
+				
+			}
+			body {
+    		    font-size: 10pt;
+	    	    background : #ffffff; 
+			}
+			table,tr,td {
+				font-size: 10pt;
+				border-color : #777777;
+				background : #dddddd; 
+				color: #000000; 
+				border-style : solid;
+				border-width : 2px;
+				padding: 5px;
+				border-collapse:collapse;
+			}
+			h1 {
+				font-size: 18pt;
+			}
+			h2 {
+				font-size: 14pt;
+			}
+			.warning { 
+				font-weight: bold;
+			} 
+			/* fix for scroll bars on webkit & Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+            }
+            div.ggskin_scrollarea .ggskin.ggskin_text div {
+                
+                line-height: 9px;
+            }
+
+            .ggskin.ggskin_text div {
+                overflow: hidden!important;
+                line-height: 21px;
+            }
+            
+</style>	
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/jacuzzi.css' ?>" type="text/css" media="all">
 
 <main id="dt_single">
@@ -128,82 +208,13 @@ get_header();
             });
         </script> 
     </section>
-    <section class="customizejacuzzi">
-        <div class="container-fluid container-plastiglass">
-            <div class="row">
-                <div class="col-md-7">
-                        <div class="jacuzzi_imagen">
-                            <img class="w-100" src="<?php echo $personaliza_tu_jacuzzi_imagen["url"]?>" alt="<?php echo $personaliza_tu_jacuzzi_imagen["alt"]?>">
-                        </div>
-                </div>
-                <div class="col-md-5">
-                    <p class="text_jacuzzi_text"><?php echo $personaliza_tu_jacuzzi_text?></p>
-                    <p class="text_jacuzzi_contenido"><?php echo $personaliza_tu_jazuzzi_contenido?></p>
-                    <p class="color_casco">COLOR CASCO</p>
-                    <?php if ($color_casco): ?>
-                        <div class="infcolor">
-                            <?php foreach ($color_casco as $colorc): ?>
-                                <?php $background = get_field("color", $colorc);  ?>
-                                
-                                <span onclick="circlecolorcasco(this)" namecolor="<?php echo $colorc->name ?>" class="circlec" style="background-color:<?php echo $background ?>" > 
-                                </span>
-                            <?php endforeach ?>
-                            <span id="colorcascoselet"> 
-                                
-                            </span>
-                        </div>
-                    <?php endif ?>
-                    <p class="color_exterior">COLOR EXTERIOR</p>
-                    <?php if ($color_exterior): ?>
-                        <div class="infcolor">
-                            <?php foreach ($color_exterior as $colore): ?>
-                                <?php $backgrounde = get_field("color", $colore);  ?>
-                                    <span onclick="circlecolorexterior(this)" namecolore="<?php echo $colore->name ?>" class="circlee" style="background-color:<?php echo $backgrounde ?>"> 
-                                    </span>
-                            <?php endforeach ?>
-                                <span id="colorexteriorselet">
-                                
-                                </span>
-                        </div>
-                    <?php endif ?>          
-                    <div class="boxboton">
-                        <a class="botoncotizar" href="<?php echo $boton_cotizar["url"]?>">
-                            <?php echo $boton_cotizar["title"]?>  
-                        </a>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <script>
-            function circlecolorcasco(elementoentrante) {
-                var textcolor=jQuery(elementoentrante).attr("namecolor");
-                jQuery("#colorcascoselet").text(textcolor)
-                jQuery(".circlec").removeClass("activo")
-                jQuery(elementoentrante).addClass("activo")
-                jQuery("input[name='casco']").val(textcolor)
-            }
-        </script>
-        <script>
-            function circlecolorexterior(elementoentranteexterior) {
-                var textcolorexterior=jQuery(elementoentranteexterior).attr("namecolore");
-                jQuery("#colorexteriorselet").text(textcolorexterior)
-                jQuery(".circlee").removeClass("activo")
-                jQuery(elementoentranteexterior).addClass("activo")
-                jQuery("input[name='exterior']").val(textcolorexterior)
-            }
-        </script>
+  
+    <section class="3d-render" id="jacuzzi-3D">
+
     </section>
+   
     <section>
-        <div class="d-none d-md-block">
-        <img class="w-100" src="<?php echo $caracteristicas_jacuzzi["url"]?>" alt="<?php echo $caracteristicas_jacuzzi["alt"]?>">
-        </div>
-        <div class="d-block d-md-none">
-            <img class="w-100" src="<?php echo $caracteristicas_jacuzzi_movile["url"]?>" alt="<?php echo $caracteristicas_jacuzzi_movile["alt"]?>">
-        </div> 
-    
-    </section>
-    <section>
-        <?php echo get_template_part('partials/formulariocotizacion') ?> 
+        <?php echo get_template_part('partials/formulariojacuzzis') ?> 
     </section>
     <section class="productsimili">
         <div class="textproduct">
@@ -227,5 +238,70 @@ get_header();
     </section>  
  
 </main>
+<script type="text/javascript">
+	
+    // check for CSS3 3D transformations and WebGL
+    if (ggHasHtml5Css3D() || ggHasWebGL()) {
+    // use HTML5 panorama
 
+        // create the panorama player with the container
+        pano=new pano2vrPlayer("jacuzzi-3D");
+        // add the skin object
+        skin=new pano2vrSkin(pano, "<?php echo get_template_directory_uri() ?>/3d-render/");
+        // load the configuration
+        pano.readConfigUrl("<?php echo get_template_directory_uri() ?>/3d-render/pano.xml");
+        // hide the URL bar on the iPhone
+        setTimeout(function() { hideUrlBar(); }, 10);
+        // add gyroscope controller
+        gyro=new pano2vrGyro(pano,"jacuzzi-3D");
+            gyro.disable(); // disable on startup
+            } else 
+    if (swfobject.hasFlashPlayerVersion("10.0.0")) {
+        var flashvars = {};
+        var params = {};
+        // enable javascript interface
+        flashvars.externalinterface="1";
+        params.quality = "high";
+        params.bgcolor = "#ffffff";
+        params.allowscriptaccess = "sameDomain";
+        params.allowfullscreen = "true";
+        var attributes = {};
+        attributes.id = "pano";
+        attributes.name = "pano";
+        attributes.align = "middle";
+        flashvars.panoxml="pano.xml";
+        params.base=".";
+        swfobject.embedSWF(
+            "pano2vr_player.swf", "jacuzzi-3D", 
+            "100%", "100%",
+            "9.0.0", "", 
+            flashvars, params, attributes);
+        
+    }
+</script>
+<script>
+    jQuery('.formulcotizacion form').submit(function(e) {
+        
+        jQuery('input[name="color"]').val(pano.getVariableValue('color'));
+        jQuery('input[name="hidros"]').val(pano.getVariableValue('hidros'));
+        jQuery('input[name="luces"]').val(pano.getVariableValue('luces'));
+        if (pano.getVariableValue('blower')) {
+            jQuery('input[name="blower"]').val('Si');
+        } else {
+            jQuery('input[name="blower"]').val('No');
+        }
+        
+        if (pano.getVariableValue('cabeceros')) {
+            jQuery('input[name="cabeceros"]').val('Si');
+        } else {
+            jQuery('input[name="cabeceros"]').val('No');
+        }
+
+        if (pano.getVariableValue('cascada')) {
+            jQuery('input[name="cascada"]').val('Si');
+        } else {
+            jQuery('input[name="cascada"]').val('No');
+        }        
+    })
+</script>
 <?php get_footer(); ?>   
