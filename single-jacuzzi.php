@@ -197,8 +197,12 @@ get_header();
         </script> 
     </section>
   
-    <section class="3d-render" id="jacuzzi-3D">
-
+    <section class="section-render">
+        <button class="btn-cotizar" onclick="cotizarJacuzzi()">COTIZAR</button>
+        <div class="over-render">
+            <button onclick="configureJacuzzi()">CONFIGURAR</button>
+        </div>
+        <div class="3d-render" id="jacuzzi-3D"></div>
     </section>
    
     <section>
@@ -291,5 +295,22 @@ get_header();
             jQuery('input[name="cascada"]').val('No');
         }        
     })
+
+    function configureJacuzzi() {
+        jQuery('.over-render').hide(500);
+        jQuery('.btn-cotizar').show(500);
+        
+    }
+
+    function cotizarJacuzzi() {
+        jQuery('.over-render').show(500);
+        jQuery('.btn-cotizar').hide(500);
+        detination = jQuery('.formulcotizacion');
+        if (detination.length > 0) {
+            jQuery([document.documentElement, document.body]).animate({
+                scrollTop: detination.offset().top
+            }, 1500);
+        }
+    }
 </script>
-<?php get_footer(); ?>   
+<?php get_footer(); ?>
