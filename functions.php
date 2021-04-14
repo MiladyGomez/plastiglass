@@ -166,3 +166,26 @@ add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_
 function woocommerce_custom_product_add_to_cart_text() {
     return __( 'Comprar', 'woocommerce' );
 }
+
+add_filter( 'woocommerce_default_address_fields' , 'bbloomer_rename_city_province', 9999 );
+ 
+function bbloomer_rename_city_province( $fields ) {
+    $fields['city']['label'] = 'Cuidad';
+    return $fields;
+}
+
+
+add_filter( 'woocommerce_default_address_fields' , 'bbloomer_rename_state_province', 9999 );
+ 
+function bbloomer_rename_state_province( $fields ) {
+    $fields['state']['label'] = 'Departamento';
+    return $fields;
+}
+
+
+add_filter( 'woocommerce_default_address_fields' , 'bbloomer_rename_address_1_province', 9999 );
+ 
+function bbloomer_rename_address_1_province( $fields ) {
+    $fields['address_1']['label'] = 'Dirección';
+    return $fields;
+}
