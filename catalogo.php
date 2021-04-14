@@ -74,7 +74,7 @@ if (isset($_GET['categoria'])) {
                 'posts_per_page' => -1,  
                 'tax_query' => array(
                     array(
-                        'taxonomy' => 'categoria_productos',
+                        'taxonomy' => 'product_cat',
                         'field' => 'slug',
                         'terms' => $categoria["categoria"][0]->slug,
                     )
