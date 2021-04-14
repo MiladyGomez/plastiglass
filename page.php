@@ -14,7 +14,9 @@ get_header();
 
 <main id="dt_page">
 	<section>
-		<p>- Default page -</p>
+		<?php while (have_posts()) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; ?>
 	</section>
 </main>
 
