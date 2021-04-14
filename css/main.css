@@ -390,8 +390,8 @@ header {
         border: none;
     }
     .custom-logo {
-        max-width: 55px; 
-        height: auto;
+        max-width: 55px!important; 
+        height: auto!important;
     }
 
     .container-header {

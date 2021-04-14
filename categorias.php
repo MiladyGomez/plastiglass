@@ -6,7 +6,7 @@
  * 
  */
 $args = array(
-	'taxonomy'     => "categoria_productos",
+	'taxonomy'     => "product_cat",
 	'parent'	   => 0,
 	'hide_empty'   => 0,
 	'orderby'      => 'id',

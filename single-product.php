@@ -1,12 +1,28 @@
 <?php
 /**
- * productos.
+ * The Template for displaying all single products
  *
- * @package ditto_theme
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see         https://docs.woocommerce.com/document/template-structure/
+ * @package     WooCommerce/Templates
+ * @version     1.6.4
  */
 
- global $post;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+global $product;
+
+$_product = wc_get_product( $post->ID);
 $color_disponible = wp_get_post_terms($post->ID, "color_disponible");
 $material_disponible = wp_get_post_terms($post->ID, "material");
 $forma_disponible = wp_get_post_terms($post->ID, "forma");
@@ -18,14 +34,8 @@ $productos_similares=get_field("producto_similar");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
 $main_category = wp_get_post_terms($post->ID, "categoria_productos");
 
-
-
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
-
 get_header();
+
 ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/productos.css' ?>" type="text/css" media="all">
@@ -149,6 +159,10 @@ get_header();
 										</span> 
 								</div>
 							<?php endif ?>
+							<p class="precio"><?php echo wc_price($_product->price);  ?> COP</p>
+							<form class="cart" action="<?php echo esc_url( get_permalink($post->ID)); ?>" method="post" enctype='multipart/form-data'>
+								<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $post->ID ); ?>" class="single_add_to_cart_button button alt buttomcomprar">Comprar</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -185,7 +199,7 @@ get_header();
         </script>
 	</section> 
     <section> 
-        <?php echo get_template_part('partials/formulariocotizacion') ?>
+        <!-- <?php echo get_template_part('partials/formulariocotizacion') ?> -->
     </section>
 	<section class="productsimili">
 		<div class="textproduct">

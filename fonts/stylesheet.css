@@ -67,3 +67,13 @@
     src:url("Raleway-ExtraBold.woff") format("woff");
 }
 
+@font-face {
+    font-family: "Raleway-Light" ;
+    src:url("Raleway-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Raleway-Medium" ;
+    src:url("Raleway-Medium.woff") format("woff");
+}
+

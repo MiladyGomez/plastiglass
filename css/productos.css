@@ -1,14 +1,14 @@
 .Menu_link{
     margin-left: 81px;
-    margin-top: 46px;
+    margin-top: 60px;
 }
 
 .Menu_link_Menuproducto{
-    font-size: 16.96px;
+    font-size: 18px;
     line-height: 24.73px;
     color: #808080; 
-    font-family: 'Work Sans';
-    letter-spacing: 0.10em;
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.01em;
     margin-right: 20px;
     position: relative;
 
@@ -22,44 +22,44 @@
 
 
 .Menu_link_Menugrifo{
-    font-size: 16.96px;
+    font-size: 18px;
     line-height: 24.73px;
     color: #808080; 
-    font-family: 'Work Sans';
-    letter-spacing: 0.10em;
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.01em;
     margin-right: 20px;
     position: relative;
 }
 
 
 .Menu_link_Menunevera{
-    font-size: 16.96px;
+    font-size: 18px;
     line-height: 24.73px;
     color: #808080; 
-    font-family: 'Work Sans';
-    letter-spacing: 0.10em;  
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.01em;  
 }
 
 
 .Menu_link_Menu .Menu_link_Menuproducto:before {
     content: "";
     position: absolute;
-    height: 11px;
+    height: 13px;
     width: 1px;
     background-color: #808080; 
     top: 5px;
-    left: 113px;
+    right: -9px;
     cursor: none;
 }
 
 .Menu_link_Menu .Menu_link_Menugrifo:before {
     content: "";
     position: absolute;
-    height: 11px;
+    height: 13px;
     width: 1px;
     background-color: #808080; 
     top: 5px;
-    left: 114px;
+    right: -9px;
     cursor: none;
 }
 
@@ -80,80 +80,83 @@
 .contenido_grifo{
     width: calc(100% - 194px)!important;
     margin-left: 83px!important;
-    margin-top: 98px;
+    margin-top: 55px;
     margin-bottom: 94px;
 }
 
 .title_grifo{
-    font-size: 49.27px;
-    line-height: 49.27px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    text-transform: uppercase;  
-    letter-spacing: 0.1em;
+    font-size: 49px;
+    line-height: 50px;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';  
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
 }
 
 .content_grifo{
-    font-size: 22px;
-    line-height: 35px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    font-size: 21px;
+    line-height: 33px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
 
 }
 
+.characteristic{
+    margin-top: 30px;
+}
 .classp{
-    font-size: 16.96px;
+    font-size: 18px;
     line-height: 24.73px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Light';
+    letter-spacing: 0.01em;
 }
 
 .classp1{
     display: inline-block;
     width: 60%;  
-    font-size: 17px;
-    line-height: 14.4px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-
+    font-size: 21px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
+    margin-bottom: 25px;
 }
  
 .classp2{
     display: contents;
-    font-size: 17px;
-    line-height: 14.4px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    font-size: 21px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.1em;
 }
 
 .classp3{
-    
-    font-size: 17px;
-    line-height: 24.4px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-
+    font-size: 21px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
+    margin-bottom: 25px;
 }
  
 .classp4{
-    font-size: 17px;
-    line-height: 21.4px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    font-size: 21px;
+    line-height: 24.73px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.1em;
 }
 
 .colores_text{
     margin-top: 40px;
-    font-size: 26px;
+    margin-bottom: 25px;
+    font-size: 21px;
     line-height: 19px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
 }
 
 .productsimili{
@@ -164,11 +167,9 @@
     text-align: center;
     font-size: 26px;
     line-height: 19px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    letter-spacing: 0.075em;
-    text-transform: uppercase;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
     position: relative;
 }
 
@@ -220,7 +221,11 @@
 
 .productsimilarestext{
     margin-top: 15px;
-    letter-spacing: 0.1em;
+    font-size: 20px;
+    line-height: 19px;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
 }
 
 .circlec{
@@ -236,8 +241,8 @@
 #colordisponibleselet{
     font-size: 18px;
     line-height: 21px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     
     position: absolute;
     right: 0px;
@@ -248,6 +253,28 @@
 .infcolor{
     position: relative;
     padding-top: 10px;
+}
+
+.precio{
+    font-family: 'Raleway-Medium';
+    font-size: 26px;
+    line-height: 19px;
+    color: #808080;
+    letter-spacing: 0.05em;
+    margin-top: 35px;
+}
+.cart button{
+    background-color: #A67EB1!important;
+    font-size: 20px!important;
+    line-height: 20px!important;
+    color: #ffffff!important;
+    font-family: 'Raleway-Heavy'!important;
+    letter-spacing: 0.05em!important;
+    padding: 15px 50px!important;
+    border: none!important;
+    margin-top: 20px!important;
+    border-radius: 0!important;
+    width: 100%!important;
 }
 
 .activo{
@@ -355,6 +382,9 @@ ul.listacaracteristicas
     .textproduct{
         margin-right: 35px;
         margin-left: 35px;
+    }
+    .precio{
+        font-size: 21px;
     }
     .textproductsimil {
          line-height: 28px; 

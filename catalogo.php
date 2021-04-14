@@ -58,7 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $consulta;
 
 $args = array(
-    'post_type' => 'productos',
+    'post_type' => 'product',
     'posts_per_page' => -1,  
 
 );
@@ -70,7 +70,7 @@ if (isset($_GET['categoria'])) {
             $imagen_top=$categoria["imagen_top_categoria_producto"];
             $tilte_productos=$categoria["categoria"][0]->name;
             $args = array(
-                'post_type' => 'productos',
+                'post_type' => 'product',
                 'posts_per_page' => -1,  
                 'tax_query' => array(
                     array(
@@ -90,7 +90,7 @@ if (isset($_GET['categoria'])) {
 } 
 else{
     $args = array(
-        'post_type' => 'productos',
+        'post_type' => 'product',
         'posts_per_page' => -1,  
 
     );
