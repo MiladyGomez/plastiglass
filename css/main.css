@@ -342,6 +342,63 @@ header {
     color: #929292;
     text-decoration: underline;
 }
+.woocommerce-content{
+    padding-top: 90px;
+    padding-bottom: 95px;
+}
+.woocommerce-content .container-plastiglass{
+    margin-left: auto!important;
+}
+.woocommerce-content h1{
+    font-size: 49px;
+    line-height: 51px;
+    letter-spacing: 0.05em;
+    color: #00263A;
+    font-family: 'Raleway-Heavy';
+    margin-bottom: 20px;
+    text-align: center;
+}
+.woocommerce-content .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    font-size: 20px!important;
+    line-height: 20px!important;
+    letter-spacing: 0.05em!important;
+    color: #ffffff!important;
+    font-family: 'Raleway-Heavy'!important;
+    background-color: #A67EB1!important;
+    padding: 15px 25px 15px 25px!important;
+    border-radius: 0!important;
+}
+.woocommerce-content .woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 200px!important;
+}
+.woocommerce-content  h2{
+    font-size: 26px;
+}
+.woocommerce-content  .product-name a, .woocommerce-content .woocommerce-privacy-policy-text a{
+    font-size: 21px;
+    line-height: 24px;
+    color: #A67EB1;
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
+}
+
+.woocommerce-content .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    -ms-flex: 0 0 38%;
+    flex: 0 0 38%;
+    max-width: 38%;
+}
+.woocommerce-content .col2-set .col-1, .woocommerce-page .col2-set .col-1{
+    width: 60%!important;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.woocommerce-content #order_comments_field{
+    display: block;
+}
+.woocommerce-content .checkout p{
+    font-size: 20px;
+}
 @media (max-width:1180px){
     .maincarrito svg, .mainws svg {
         width: 25px;
@@ -439,6 +496,18 @@ header {
     .footermain .mail {
         display: table;
         margin-bottom: 5px;
+    }
+    .woocommerce-content .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+        width: 100%!important;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .woocommerce-content .col2-set .col-1, .woocommerce-page .col2-set .col-1{
+        width: 100%!important;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
