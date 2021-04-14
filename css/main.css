@@ -181,7 +181,7 @@ header {
 }
 .footermain .footerright span{
     font-size: 15px;
-    line-height: 25px;
+    line-height: 17px;
     color: #FFFFFF; 
     font-family: 'Raleway-Regular';
     letter-spacing: 0.025em;
@@ -320,8 +320,7 @@ header {
     font-size: 14px;
     line-height: 35px;
     color: #546B77;
-    font-weight: bold;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.075em;
     text-transform: uppercase;
     position: relative;
@@ -360,8 +359,7 @@ header {
     font-size: 16px;
     line-height: 19px;
     color: #92A5AE;
-    font-weight: bold;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.075em;
     text-transform: uppercase;
 }
@@ -445,6 +443,22 @@ header {
 }
 .woocommerce-content .checkout p{
     font-size: 20px;
+}
+.woocommerce-content .woocommerce form .form-row{
+    display: block;
+}
+.woocommerce-content  #order_review_heading{
+    margin-top: 25px;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    font-size: 20px!important;
+    line-height: 20px!important;
+    letter-spacing: 0.05em!important;
+    color: #ffffff!important;
+    font-family: 'Raleway-Heavy'!important;
+    background-color: #A67EB1!important;
+    padding: 15px 25px 15px 25px!important;
+    border-radius: 0!important;
 }
 @media (max-width:1180px){
     .maincarrito svg, .mainws svg {

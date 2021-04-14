@@ -70,8 +70,7 @@
     font-size: 26px;
     line-height: 19px;
     color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    font-family: 'Raleway-Heavy';
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -79,7 +78,7 @@
     font-size: 22px;
     line-height: 30px;
     color: #58595B; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     
 }
 
@@ -87,8 +86,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    font-family: 'Raleway-Heavy';
     margin-bottom: 11px;
     margin-top: 24px
 
@@ -98,16 +96,14 @@
     font-size: 18px;
     line-height: 21px;
     color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    font-family: 'Raleway-Heavy';
 }
 
 .botoncotizar{
     font-size: 18px;
     line-height: 14.4px;
-    color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #ffffff;
+    font-family: 'Raleway-Heavy';
     background-color: #92A5AE;
     padding: 9px 13px 9px 13px;
     letter-spacing: 0.1em;
@@ -161,8 +157,7 @@
     font-size: 20px;
     line-height: 19px;
     color: #58595B; 
-    font-weight: 500;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     text-transform: uppercase; /*Mayusculas*/
 
 } 
@@ -201,7 +196,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #58595B; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     
     position: absolute;
     right: 0px;
@@ -216,7 +211,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #58595B; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     
     position: absolute;
     right: 0px;
@@ -252,8 +247,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #ffffff;
-    font-weight: bold;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.1em;
     padding: 10px 20px;
     border: none;
@@ -278,8 +272,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #ffffff;
-    font-weight: bold;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.1em;
     padding: 10px 20px;
     border: none;
