@@ -342,7 +342,18 @@ header {
     color: #929292;
     text-decoration: underline;
 }
-
+@media (max-width:1180px){
+    .maincarrito svg, .mainws svg {
+        width: 25px;
+    }
+    #main_menu li a{
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .maincarrito{
+        margin-left: 25px !important;
+    }
+}
 @media (min-width:1060px){
     .menumobile{
         display: none;
@@ -356,9 +367,6 @@ header {
         margin-right: 15px;
         width: fit-content;
         float: right;
-    }
-    .maincarrito svg, .mainws svg {
-        width: 25px;
     }
     .mainws:before{
         height: 34px!important;
