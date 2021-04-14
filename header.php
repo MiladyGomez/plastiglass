@@ -29,7 +29,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 <body <?php body_class(); ?>>
 <div id="page"> <!-- +Page container -->
-
   <header id="header-wrapper">
     <div class="container-header">
       <nav class="d-flex" id="PR-navbar">
@@ -103,6 +102,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </g>
             </g>
           </svg>
+          <?php if (WC()->cart->get_cart_contents_count() > 0): ?>
+            <span><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+          <?php endif ?>
         `);
         jQuery(".maincarrito a").attr("target" , "_blank");
       });

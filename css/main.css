@@ -136,7 +136,25 @@ header {
 .maincarrito svg{
     width: 48px;
 }
-
+.maincarrito a:hover{
+    text-decoration: none;
+}
+.maincarrito span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #00263A;
+    font-family: 'Raleway-Regular';
+}
 
 .footermain {
     background-color: #00263A;
@@ -456,6 +474,14 @@ header {
     }
     .mainws:before{
         height: 34px!important;
+    }
+
+    .maincarrito span{
+        top: 0px;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        line-height: 10px;
     }
     
     /* .menu-main-container li:not(.mainws){

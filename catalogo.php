@@ -15,6 +15,16 @@ $categorias_args = array(
 
 $categoriaforma = get_categories( $categorias_args );
 
+$precio_args = array(
+	'taxonomy'     => "precio",
+	'parent'	   => 0,
+	'hide_empty'   => 0,
+	'orderby'      => 'name',
+    'order'        => 'ASC'
+);
+
+$precio = get_categories( $precio_args);
+
 $material_args = array(
 	'taxonomy'     => "material",
 	'parent'	   => 0,
@@ -126,6 +136,37 @@ get_header();
             </div>
             <div class="titufiltro">
                 <p class="titlefiltro"> Filtrar por: </p>
+            </div>
+            <div class="Cuadroprecio">
+                <p class="titlefiltro" onclick="mostrarfiltro(this)"> Precio 
+                    <span class="colormas">
+                    </span>
+                    <span class="colormenos">
+                    </span>
+                </p>
+                <ul>
+                    <?php if ($precio) : ?>
+                        <?php foreach($precio as $_precio): ?>
+                            <li onclick="filtrar('<?php echo $_precio->slug ?>','precio',this)">
+                            <p class="textcat"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.7 28.04">
+                                <defs>
+                                    <style>
+                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#5fd0df;}
+                                    </style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Layer_1" data-name="Layer 1">
+                                        <rect class="cls-3" x="0.25" y="5" width="22.79" height="22.79" style="fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px" />
+                                        <path class="cls-2 chulitocategoria" d="M12.89,20.16H11.27L8.19,12.61H9.85l2.22,5.94h0L25.11,0H26.7Z" style="fill:#5fd0df" />
+                                    </g>
+                                </g>
+                            </svg>                                                      
+                            <?php echo $_precio->name?> </p>
+                            </li>
+                        <?php endforeach ?>
+                    <?php endif ?>
+                </ul>
             </div>
             <div class="Cuadrocolor">
                 <p class="titlefiltro" onclick="mostrarfiltro(this)"> Color 
@@ -250,7 +291,7 @@ get_header();
             </div>
             <div>
                 <button class="botonaplicar" onclick="busquedabottom()">
-                    APLICAR FILTROS
+                    Aplicar filtros
                 </button>
             </div>
         </div>
@@ -306,6 +347,7 @@ get_header();
         </div>
         <script>
             var parametros={
+                precio:'',
                 color:'',
                 material:'',
                 forma:'',
@@ -314,6 +356,19 @@ get_header();
 
             var categoriaselecciona='<?php echo $categoriaurl?>'
             function filtrar(value,atributo,elemento) {
+                
+                if (atributo=='precio'){
+                    if(parametros.precio==value){
+                        parametros.precio=''
+                        jQuery(elemento).removeClass("openchilito")
+                    }
+                    else{
+                    parametros.precio=value
+                    jQuery(elemento).parent().find('li').removeClass("openchilito")
+                    jQuery(elemento).addClass("openchilito")
+                        
+                    }
+                }
 
                 if (atributo=='color'){
                     if(parametros.color==value){

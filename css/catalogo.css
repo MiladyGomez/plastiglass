@@ -6,6 +6,7 @@
     flex: 0 0 260px;
     margin-top: 43px;
     padding-left: 38px;
+    width: 20%;
 }
 .filtros li{
     list-style-type: none;
@@ -46,7 +47,7 @@
 
 
 .gridproducto{
-    width: 100%;
+    width: 80%;
 }
 
 .titufiltro:after{
@@ -79,11 +80,17 @@
     margin-right: 10px;
 }
 
-.Cuadrocolor, .Cuadromaterial, .Cuadroforma, .Cuadrotipo {
+.Cuadroprecio, .Cuadrocolor, .Cuadromaterial, .Cuadroforma, .Cuadrotipo {
     position: relative;
     margin-bottom: 42px;
 }
-
+.Cuadroprecio:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #929292;
+    position: absolute;
+}
 .Cuadrocolor:after{
     content: "";
     height: 1px;
@@ -143,6 +150,7 @@
     background-color: #F1F2F2;
     padding: 14px 16px 14px 16px;
     margin-bottom: 50px;
+    height: calc(100% - 50px);
 }
 
 a:hover{
@@ -201,7 +209,7 @@ a:hover{
     font-size: 16px; 
     line-height: 18.43px;
     color: #FFFFFF; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     font-weight: bold;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -223,6 +231,9 @@ a:hover{
 }
 
 @media (max-width:991px){
+    .gridproducto{
+        width: 100%;
+    }
     .equisprin{
         cursor: pointer;
         top: 23px;
