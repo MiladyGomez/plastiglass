@@ -1,16 +1,15 @@
 .formulsuscribirme .title{
     font-size: 26px;
     line-height: 14.4px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.075em;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.025em;
     text-align: center;
 }
 
 .formulsuscribirme{
-    background-color: rgb(146, 165, 174, 0.22); 
-    padding-bottom: 10px;
+    background-color: rgb(241, 242, 242, 1); 
+    padding-bottom: 25px;
     padding-top: 31px;
 } 
 .formulsuscribirme .editable{
@@ -18,31 +17,30 @@
 }
 .formulsuscribirme .editablebotton{
     padding-left: 0px !important; 
+    height: 46px;
 }
 
 .formulsuscribirme .editable input{
     width: 100%;
-    border: 1px rgb(112, 111, 111, 0.25) solid;
+    border: none;
     padding-left: 16px;
-    background-color: rgb(146, 165, 174, -0.75);
-    padding: 5px 13px 8px 13px;
+    background-color: rgb(255, 255, 255, 1);
+    padding: 7px 13px 8px 13px;
        /* margin-bottom: 28px;*/
 }
 .formulsuscribirme .editable input::placeholder {                 
     font-size: 18px;
     line-height: 21.6px;
-    color: #929292; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.050em; 
 }
   
 .formulsuscribirme .editable input:-ms-input-placeholder { 
     font-size: 18px;
     line-height: 21.6px;
-    color: #929292; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.050em;
 
 }
@@ -50,33 +48,39 @@
 .formulsuscribirme .editable input::-ms-input-placeholder { 
     font-size: 18px;
     line-height: 21.6px;
-    color: #929292; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.050em;
 
 }
 
 .formulsuscribirme .wpcf7-submit{
-    background-color: #698893;
+    background-color: #A67EB1;
     font-size: 20px;
     line-height: 20px;
     color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.1em;
-    padding: 13px 15px;
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
+    padding: 13px 30px;
     border: none;
+
     /*margin-top: 33px;*/
 }
 
 .formulsuscribirme .wpcf7-list-item-label{
     font-size: 16px;
     line-height: 19px;
-    color: #929292; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.020em;
     margin-left: 10px;
+}
+.formulsuscribirme .wpcf7-list-item-label a{
+    font-size: 16px;
+    line-height: 19px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.020em;
 }
 .custemequiss{
     left: 0px;

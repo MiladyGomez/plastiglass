@@ -1,19 +1,22 @@
 
 .formulcontactanos .editable input{
     width: 100%;
-    border-bottom: 1px #706F6F solid;
+    border-bottom: 1px #808080 solid;
     border-top: none;
     border-left: none;
     border-right: none;
     padding-left: 7px;
     margin-bottom: 28px;
 }
+.formulcontactanos  .container-plastiglass{
+    max-width: 995px;
+    margin: auto!important;
+}
 .formulcontactanos .editable input::placeholder {                 
     font-size: 18px;
     line-height: 21.6px;
-    color: #929292; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
 }
   
@@ -21,8 +24,8 @@
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
 
 }
@@ -31,30 +34,32 @@
     font-size: 18px;
     line-height: 21.6px;
     color: #929292; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
 
 }
 
 .formulcontactanos .wpcf7-submit{
-    background-color: #698893;
-    font-size: 20px;
-    line-height: 20px;
-    color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.1em;
-    padding: 10px 20px;
+    background-color: #A67EB1;
+    font-size: 23px;
+    line-height: 14.4px;
+    color: #ffffff;
+    font-family: 'Raleway-ExtraBold';
+    letter-spacing: 0.075em;
+    padding: 15px 50px;
     border: none;
     margin-top: 33px;
+    margin-left: 75px;
 }
-
+.formulcontactanos .box-checkbox {
+    margin-top: 10px;
+}
 .formulcontactanos .wpcf7-list-item-label{
     font-size: 16px;
     line-height: 19px;
     color: #929292; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.020em;
     margin-left: 21px;
 }

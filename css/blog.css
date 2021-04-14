@@ -1,19 +1,22 @@
 .tittle{
-    font-size: 43.5px;
-    line-height: 45.27px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    text-transform: uppercase;
-    letter-spacing: 0.1em; 
+    font-size: 49px;
+    line-height: 50px;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em; 
+}
+
+.tittle span{
+    -webkit-text-stroke: 1px #00263A;
+    color: transparent;
 }
 
 .content{
     font-size: 22px;
     line-height: 31px;
-    color: #58595B; 
-    font-family: 'Work Sans'; 
-    letter-spacing: 0.1em;
+    color: #808080; 
+    font-family: 'Raleway-Regular'; 
+    letter-spacing: 0.05em;
 }
 
 .imgpost{
@@ -23,6 +26,10 @@
     background-size: cover;
 }
 
+.box-articulo{
+    height: 100%;
+    display: grid;
+}
 .imgarticulo{
     height: 100%;
     background-position: center;
@@ -39,7 +46,7 @@
 
 .one a:hover {
     text-decoration: none;
-    color: #92A5AE;
+    color: #A67EB1;
   }
 
 .two{
@@ -51,16 +58,15 @@
 
 .two a:hover {
     text-decoration: none;
-    color: #92A5AE;
+    color: #A67EB1;
   }
 
 .verarticulo{
-    font-size: 18px;
+    font-size: 21px;
     line-height: 24px;
-    color: #92A5AE; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.075em;
+    color: #A67EB1; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
 }
 
 .arrowrigh{
@@ -77,18 +83,17 @@
 }
 
 .tittle1{
-    font-size: 14.26px;
+    font-size: 14px;
     line-height: 0px;
     color: #ffffff; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.025em;
 }
 .tittle2{
-    font-size: 18.34px;
+    font-size: 18px;
     line-height: 21.4px;
     color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans'; 
+    font-family: 'Raleway-Heavy'; 
 }
 
 .recientes{
@@ -100,18 +105,17 @@
   }
 
 .textart{
-    background-color: #92A5AE;
-    padding: 15px 17px 12px 29px;
+    background-color: #00263A;
+    padding: 20px 17px 12px 29px;
 }
 
-.textproduct{
+.textproduct p{
     text-align: center;
     font-size: 26px;
     line-height: 19px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.075em;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
     margin-bottom: 52px;
 }
 
@@ -171,6 +175,9 @@
     .recientes{
     width: max-content;
     margin-bottom: 32px;
+    }
+    .recientes{
+        max-width: 900px;
     }
     .imgarticulo {
         min-height: 200px;

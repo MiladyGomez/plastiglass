@@ -5,19 +5,22 @@
 }
 
 .title{
-    font-size: 43.5px;
+    font-size: 49px;
     line-height: 45.27px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
 }
+.title span{
+    -webkit-text-stroke: 1px #00263A;
+    color: transparent;
+}
 .content{
-    font-size: 22px;
-    line-height: 31px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    letter-spacing: 0.01em;
+    font-size: 21px;
+    line-height: 33px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.001em;
     margin-top: 30px;
 }
 .content img{
@@ -54,6 +57,14 @@
 }
 .social{
     margin-top: 27px;
+    display: flex;
+}
+.social a{
+    display: block;
+    margin-right: 10px;
+}
+.social img{
+    height: 18px;
 }
 
 .bottomarrow{
@@ -64,7 +75,7 @@
 
 .bottomarrow a:hover {
     text-decoration: none;
-    color: #92A5AE; 
+    color: #A67EB1; 
   }
 
 .arrowleft{
@@ -77,34 +88,32 @@
     margin-top: -3px;
 }
 .botonanterior{
-    font-size: 18px;
-    line-height: 14.5px;
-    color: #92A5AE; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    letter-spacing: 0.075em;
+    font-size: 21px;
+    line-height: 24.5px;
+    color: #A67EB1; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
     margin-right: 34px;
 }
 .botonsiguiente{
-    font-size: 18px;
-    line-height: 14.5px;
-    color: #92A5AE; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    letter-spacing: 0.075em;
+    font-size: 21px;
+    line-height: 24.5px;
+    color: #A67EB1; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
 }
 
 .social a:hover {
     text-decoration: none;
+    color: #A67EB1; 
   } 
 
   .textproduct{
     text-align: center;
     font-size: 21px;
     line-height: 21px;
-    color: #92A5AE; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
     margin-bottom: 22px;
   }
@@ -120,19 +129,19 @@
     font-size: 14.26px;
     line-height: 21.4px;
     color: #ffffff; 
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.025em;
+    margin-bottom: 5px;
 }
 .texttitle{
-    font-size: 18.34px;
+    font-size: 18px;
     line-height: 21.4px;
     color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Heavy';
 }
 
 .boxtext{
-    background-color: #92A5AE;
+    background-color: #00263A;
     padding: 10px 17px 12px 29px;
 }
 
@@ -198,6 +207,8 @@
     .textproduct {
         font-size: 26px;
         line-height: 28px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
     .overproductos {
         overflow: auto;
@@ -206,9 +217,11 @@
         display: inline-block;
         margin-right: 10px;
         margin-bottom: 48px;
+        width: 285px;
     }
     .exploraarticulo{
         display: flex;
+        width: fit-content;
     }
 }
 

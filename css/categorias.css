@@ -5,25 +5,27 @@
 }
 .name{
     font-size: 49px;
-    line-height: 51px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    line-height: 50px;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
-    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 .descri{
     font-size: 22px;
     line-height: 31px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.1em;
+    margin-bottom: 35px;
 }
 
 .paddingtext{
     height: 100%;
     padding: 102px 41px 102px 41px;
-    background-color: rgb(146, 165, 174, 0.22); 
+    background-color: rgb(241, 242, 242, 1); 
+    position: relative;
+    overflow: hidden;
 }
 
 .paddingtext a:hover {
@@ -32,15 +34,13 @@
   }
 
 .verproducto{
-    font-size: 18px; 
+    font-size: 20px;
     line-height: 20px;
+    letter-spacing: 0.05em;
     color: #ffffff; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    letter-spacing: 0.1em;
-
-    background-color: #92A5AE;
-    padding: 15px;
+    font-family: 'Raleway-Heavy';
+    background-color: #A67EB1;
+    padding: 11px 25px 10px 25px;
 }
 
 .boximg{
@@ -49,6 +49,14 @@
 
 .boxtext{
     margin-bottom: 60px;
+    position: relative;
+}
+.icon-fondo{
+    position: absolute;
+    top: 30%;
+    left: 96%;
+    transform: translate(-50%,-50%);
+    width: 480px;
 }
 
 @media (max-width:991px){
@@ -68,7 +76,9 @@
     .paddingtext {
         padding: 47px 27px 58px 22px;
     }
-
+    .icon-fondo{
+        width: 240px;
+    }
 }
 
 @media (max-width:767px){

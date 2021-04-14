@@ -134,23 +134,23 @@ get_header();
                     <p class="content"><?php echo $post->post_content?></p>
                     <div class="characteristic">
                         <div>
-                            <p class="classp1">CAPACIDAD</p> 
+                            <p class="classp1">Capacidad</p> 
                             <p class="classp2"><?php echo $jacuzzicapacity?></p> 
                         </div>
                         <div>
-                            <p class="classp1">DIMENSIONES</p> 
+                            <p class="classp1">Dimensiones</p> 
                             <p class="classp2"><?php echo $jacuzzidimensions?></p>
                         </div>
                         <div> 
-                            <p class="classp1">CHORROS</p> 
+                            <p class="classp1">Chorros</p> 
                             <p class="classp2"><?php echo $jacuzzijets?></p> 
                         </div>
                         <div>
-                            <p class="classp1">CANTIDAD DE AGUA</p> 
+                            <p class="classp1">Cantidad de agua</p> 
                             <p class="classp2"><?php echo $jacuzziwateramount?></p> 
                         </div>
                         <div>
-                            <p class="classp1">MATERIAL</p> 
+                            <p class="classp1">Material</p> 
                             <p class="classp2"><?php echo $jacuzzimaterial?></p> 
                         </div>
                     </div>
@@ -163,33 +163,23 @@ get_header();
                     arrows: true,
                     prevArrow: `
                     <svg class="prevArro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                        <defs>
-                            <style>
-                                .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                            </style>
-                        </defs>
                         <g id="Capa_2" data-name="Capa 2">
                             <g id="Layer_1" data-name="Layer 1">
-                                <line class="cls-1" x1="29.63" y1="8.18" x2="2.17" y2="8.18" />
-                                <polygon class="cls-2" points="8.8 0 10.16 1.47 2.94 8.18 10.16 14.89 8.8 16.36 0 8.18 8.8 0" />
+                                <line x1="29.63" y1="8.18" x2="2.17" y2="8.18" style="fill:none;stroke:gray;stroke-miterlimit:10;stroke-width:2px"/>
+                                <polygon points="8.8 0 10.16 1.47 2.94 8.18 10.16 14.89 8.8 16.36 0 8.18 8.8 0" style="fill:gray"/>
                             </g>
                         </g>
                     </svg>
                     `,
                     nextArrow:`
                     <svg class="nextArro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                        <defs>
-                             <style>
-                                 .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                             </style>
-                            </defs>
-                            <g id="Capa_2" data-name="Capa 2">
-                                <g id="Layer_1" data-name="Layer 1">
-                                    <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
-                                    <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
-                                </g>
+                        <g id="Capa_2" data-name="Capa 2">
+                            <g id="Layer_1" data-name="Layer 1">
+                                <line y1="8.18" x2="27.46" y2="8.18" style="fill:none;stroke:gray;stroke-miterlimit:10;stroke-width:2px"/>
+                                <polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:gray"/>
                             </g>
-                        </svg>
+                        </g>
+                    </svg>
                     `
                     });
                 

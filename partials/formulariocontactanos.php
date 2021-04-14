@@ -9,20 +9,21 @@
     jQuery(document).ready(function() {
         jQuery(".formulcontactanos .box").append(`
             <span class="custemchulito" >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.65 28.54">
-                <defs>
-                    <style>
-                        .cls{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls,.chulito{stroke-miterlimit:10;}.chulito{fill:#698893;stroke:#698893;}
-                    </style>
-                </defs>
-                <g id="Capa_2" data-name="Capa 2">
-                    <g id="Layer_1" data-name="Layer 1">
-                        <rect class="cls" x="0.25" y="5.5" width="22.79" height="22.79" />
-                        <path class="chulito" d="M12.89,20.66H11.27L8.19,13.11H9.85l2.22,5.94h0L25.11.5H26.7Z" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 26.42">
+                    <defs>
+                        <style>
+                            .cls{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls,.chulito{stroke-miterlimit:10;}.chulito{fill:#5fd0df;}
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Layer_1" data-name="Layer 1">
+                            <rect x="0.25" y="3.37" width="22.79" height="22.79" style="fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px"/>
+                            <path class="chulito" d="M12.38,20.66H10.75L7.68,13.11H9.33l2.22,5.94h0L24.6.5h1.59Z" style="fill:#5fd0df"/>
+                            <path class="chulito" d="M12.64,21.16H10.42L6.93,12.61H9.68l2,5.4L24.34,0h2.8Zm-1.55-1h1L25.24,1h-.39l-13,18.55h-.61l-.15-.32L9,13.61H8.42Z" style="fill:#5fd0df"/>
+                        </g>
                     </g>
-                </g>
-            </svg>
-        </span>
+                </svg>
+            </span>
         `)
         jQuery(".formulcontactanos .box svg").click(function(){
             if(jQuery(this).find(".chulito").hasClass("chulitomostar")){

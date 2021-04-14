@@ -1,42 +1,40 @@
 .inforcontactos{
     text-align: center;
-    margin-top: 120px;
+    margin-top: 85px;
     margin-bottom: 49px;
 }
 
 .tittlecontantacnos{
-    font-size: 26px;
+    font-size: 31px;
     line-height: 19px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.075em;
-    margin-bottom: 13px;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
+    margin-bottom: 25px;
 }
 
 .textcontactanos p{
     font-size: 16px;
     line-height: 25px;
-    color: #698893;
-    font-family: 'Work Sans'; 
-    letter-spacing: 0.050em;
+    color: #808080;
+    font-family: 'Raleway-Regular'; 
+    letter-spacing: 0.025em;
 }
 
 .textcontactanos a{
     font-size: 16px;
     line-height: 25px;
-    color: #698893;
-    font-family: 'Work Sans';
-    letter-spacing: 0.050em;
+    color: #808080;
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.025em;
 }
 
 .textcontactanos a:nth-child(3){
     font-size: 16px;
     line-height: 25px;
-    color: #698893;
-    font-family: 'Work Sans';
+    color: #808080;
+    font-family: 'Raleway-Bold';
     letter-spacing: 0.050em;
-    font-weight: 600; 
 }
 
 #map{

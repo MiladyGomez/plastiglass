@@ -3,42 +3,42 @@
 }
 
 .title{
-    font-size: 49.27px;
-    line-height: 49.27px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 49px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
 }
 
 .content{
-    font-size: 22px;
-    line-height: 35px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    font-size: 21px;
+    line-height: 32px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
 }
 
 .infjacuzzi{
-    margin-top: 126px;
+    margin-top: 100px;
 }
 
 .classp1{
     display: inline-block;
     width: 310px;  
-    font-size: 17px;
+    font-size: 21px;
     line-height: 24.73px;
-    color: #58595B; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    letter-spacing: 0.025em;
+    color: #808080;
+    font-family: 'Raleway-Heavy';
 
 }
  
 .classp2{
     display: contents;
-    font-size: 17px;
+    font-size: 21px;
     line-height: 24.73px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    letter-spacing: 0.025em;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
 }
 
 .prevArro{
@@ -121,11 +121,9 @@
     text-align: center;
     font-size: 26px;
     line-height: 19px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    letter-spacing: 0.075em;
-    text-transform: uppercase;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.05em;
     position: relative;
 }
 
@@ -134,11 +132,10 @@
     content: "";
     position: absolute;
     height: 1px;
-    width: 80%;
-    background-color: #698893;
-    left: 10%;
+    width: 84%;
+    background-color: #808080;
+    left: 8%;
     top: -86px;
-    opacity: 0.1;
 }
 
 
@@ -176,8 +173,13 @@
   } 
 
 .productsimilarestext{
-    margin-top: 15px;
-    letter-spacing: 0.1em;
+    margin-top: 30px;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    line-height: 14.4px;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
+    text-transform: capitalize; 
 }
 
 .circlec, .circlee{
@@ -303,14 +305,13 @@
         margin-left: 20px!important;
         margin-right: auto!important;
     }
-
-}
-
-@media (max-width:767px){
     .title {
         font-size: 28px;
         line-height: 29px;
     }
+}
+
+@media (max-width:767px){
     .content {
         font-size: 16px;
         line-height: 22px;

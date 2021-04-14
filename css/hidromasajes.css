@@ -1,3 +1,5 @@
+
+
 .containerpost {
     margin-left: 42px;
     margin-top: 113px;
@@ -6,41 +8,59 @@
 .marginbottomimg{
     margin-bottom: 70px;
 }
+
+.marginbottomimg img{
+    height: 100%;
+    object-fit: cover;
+}
+
 .marginbottomtext{
     margin-bottom: 70px;
 }
 .sectext{
-    padding: 104px 100px 40px 40px;
+    padding: 104px 100px 140px 40px;
     height: 100%;
-    background-color: rgba(146, 165, 174, 0.22);
+    background-color: rgba(241, 242, 242, 1);
+    position: relative;
+}
+
+.sectext svg{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0;
 }
 
 .tittle{
     font-size: 49px;
     line-height: 51px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    text-transform: capitalize;
     letter-spacing: 0.05em;
+    margin-bottom: 5px;
 }
+
 .content{
+    margin-bottom: 40px;
+}
+
+.content p{
     font-size: 22px;
     line-height: 31px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.1em;
-    }
+}
 
 .verdetalles{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
-    color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    letter-spacing: 0.1em;
-    background-color: #92A5AE;
-    padding: 10px 10px 10px 10px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    font-family: 'Raleway-Heavy';
+    background-color: #A67EB1;
+    padding: 11px 25px 10px 25px;
 } 
 
 .sectext a:hover {
@@ -53,7 +73,7 @@
         font-size: 28px;
         line-height: 29px; 
     }
-    .content {
+    .content p{
         font-size: 16px;
         line-height: 22px;
     }
@@ -62,7 +82,7 @@
         line-height: 17.15px;
     }
     .sectext {
-        padding: 43px 15px 49px 15px;
+        padding: 43px 15px 80px 15px;
     }
     .container-plastiglass {
         width: calc(100% - 40px)!important; 

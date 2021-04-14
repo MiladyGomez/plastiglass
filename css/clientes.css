@@ -8,18 +8,17 @@
     text-align: center;
     font-size: 26px;
     line-height: 19px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    letter-spacing: 0.075em;
-    text-transform: uppercase;  
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.025em;
 }
 .cliente_content{
     text-align: center;
     font-size: 22px;
     line-height: 35px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    margin-bottom: 65px;
 }
 
 @media (max-width:991px){

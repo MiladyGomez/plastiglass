@@ -26,12 +26,11 @@
 }
 
 .titlefiltro{
-    font-size: 18px; 
+    font-size: 19px; 
     line-height: 21px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
-    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
 }
 
 .container-fluid {
@@ -54,15 +53,15 @@
     content: "";
     height: 1px;
     width: 100%;
-    background-color: #929292;
+    background-color: #808080;
     position: absolute;
 }
 
 .textcat{
     font-size: 16px; 
     line-height: 19px;
-    color: #929292; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.02em;
     cursor: pointer;
 }
@@ -120,17 +119,15 @@
 .titlepag{
     font-size: 49px; 
     line-height: 51px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
     letter-spacing: 0.05em;
-    text-transform: uppercase;
 }
 .tittleref{
     font-size: 13.7px; 
     line-height: 20.54px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    color: #808080; 
+    font-family: 'Raleway-Regular';
     letter-spacing: 0.025em;
     margin-bottom: 0px;
     margin-top: 14px;
@@ -138,13 +135,12 @@
 .tittleproc{ 
     font-size: 17.61px; 
     line-height: 20.54px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
     margin-bottom: 0px;
 }
 .boxproduc{
-    background-color: #F0F0F0;
+    background-color: #F1F2F2;
     padding: 14px 16px 14px 16px;
     margin-bottom: 50px;
 }
@@ -164,7 +160,7 @@ a:hover{
 .colormenos{
     height: 2px;
     width: 16px;
-    background-color: #58595B;
+    background-color: #00263A;
     position: absolute;
     right: 0px;
     top: 7px;
@@ -217,7 +213,7 @@ a:hover{
 
 
 
-@media (min-width: 768px){ 
+@media (min-width: 992px){ 
     .menumobilefiltro {
         display: none;
     }
@@ -227,8 +223,6 @@ a:hover{
 }
 
 @media (max-width:991px){
-}
-@media (max-width:767px){
     .equisprin{
         cursor: pointer;
         top: 23px;

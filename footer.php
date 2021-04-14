@@ -13,16 +13,10 @@ $footer=get_field("footer_main", "option");
 $terminos=get_field("pagina_de_terminos", "option");
 ?>
 <div class="uparrow">
-
     <svg class="uparrowsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.71 7.56">
-        <defs>
-            <style>
-                .cls-1{fill:#a4a4a4;}
-            </style>
-        </defs>
         <g id="Capa_2" data-name="Capa 2">
             <g id="Layer_1" data-name="Layer 1">
-                <polygon class="cls-1" points="13 7.56 6.85 1.41 0.71 7.56 0 6.85 6.85 0 13.71 6.85 13 7.56" />
+                <polygon points="13 7.56 6.85 1.41 0.71 7.56 0 6.85 6.85 0 13.71 6.85 13 7.56" style="fill:gray"/>
             </g>
         </g>
     </svg>

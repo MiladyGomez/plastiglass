@@ -45,15 +45,10 @@ get_header();
                     <?php echo $homemiddeo["homemiddetext"]?>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                            <defs>
-                                <style>
-                                    .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                                </style>
-                            </defs>
                             <g id="Capa_2" data-name="Capa 2">
                                 <g id="Layer_1" data-name="Layer 1">
-                                    <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
-                                    <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+                                    <line y1="8.18" x2="27.46" y2="8.18" style="fill:none;stroke:#a67eb1;stroke-miterlimit:10;stroke-width:2px"/>
+                                    <polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
                                 </g>
                             </g>
                         </svg>
@@ -74,7 +69,7 @@ get_header();
             <img class="w-100" src="<?php echo $homemiddet["homemiddethreemovile"]["url"]?>" alt="<?php echo $homemiddet["homemiddethreemovile"]["alt"]?>">
         </div>
         <div class="boxleft">
-            <p class="textone"><?php echo $homemiddet["homemiddetextt"]?></p>
+            <div class="textone"><?php echo $homemiddet["homemiddetextt"]?></div>
             <p class="texttwo"><?php echo $homemiddet["homemiddetextf"]?></p>
             <a class="textthree" href="<?php echo $homemiddet["homemiddeproducto"]["url"]?>">
                 <?php echo $homemiddet["homemiddeproducto"]["title"]?>

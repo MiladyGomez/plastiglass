@@ -23,7 +23,7 @@ $twopost=get_field("destacado_dos");
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 
-}
+} 
 
 get_header();
 
@@ -47,17 +47,12 @@ get_header();
                         <p class="tittle"><?php echo $onepost->post_title?></p>
                         <p class="content"><?php echo get_field("resumen", $onepost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($onepost)?>">
-                            VER ARTICULO
+                            Ver articulo
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                                <defs>
-                                    <style>
-                                        .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                                    </style>
-                                </defs>
                                 <g id="Capa_2" data-name="Capa 2">
                                     <g id="Layer_1" data-name="Layer 1">
-                                        <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
-                                        <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+                                        <rect y="7.18" width="27.46" height="2" style="fill:#a67eb1"/>
+                                        <polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
                                     </g>
                                 </g>
                             </svg>
@@ -87,20 +82,15 @@ get_header();
                         <p class="tittle"> <?php echo $twopost->post_title?></p>
                         <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($twopost)?>">
-                            VER ARTICULO
+                            Ver articulo
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                                <defs>
-                                    <style>
-                                        .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                                    </style>
-                                </defs>
                                 <g id="Capa_2" data-name="Capa 2">
                                     <g id="Layer_1" data-name="Layer 1">
-                                        <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
-                                        <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+                                        <rect y="7.18" width="27.46" height="2" style="fill:#a67eb1"/>
+                                        <polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
                                     </g>
                                 </g>
-                            </svg> 
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -115,20 +105,15 @@ get_header();
                         <p class="tittle"> <?php echo $twopost->post_title?></p>
                         <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($twopost)?>">
-                            VER ARTICULO
+                            Ver articulo
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-                                <defs>
-                                    <style>
-                                        .cls-1{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#92a5ae;}
-                                    </style>
-                                </defs>
                                 <g id="Capa_2" data-name="Capa 2">
                                     <g id="Layer_1" data-name="Layer 1">
-                                        <line class="cls-1" y1="8.18" x2="27.46" y2="8.18" />
-                                        <polygon class="cls-2" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+                                        <rect y="7.18" width="27.46" height="2" style="fill:#a67eb1"/>
+                                        <polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
                                     </g>
                                 </g>
-                            </svg> 
+                            </svg>
                         </a>
                     </div>
                     <?php $imgentoppost= get_field("imgentop", $twopost->ID)?>
@@ -147,7 +132,7 @@ get_header();
     </section>
     <section>
         <div class="textproduct">
-            <p> ARTICULOS RECIENTES </p> 
+            <p> Articulos recientes </p> 
         </div>
 
         <div class="container-fluid container-plastiglass">
@@ -163,7 +148,7 @@ get_header();
                             
                             <div class="col-4">
                                 <a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
-                                <div>
+                                <div class="box-articulo">
                                     <div class="imgarticulo" style="background-image: url(<?php echo $galeria ["url"]?>)">
                                     </div>
                                     <div class="textart">

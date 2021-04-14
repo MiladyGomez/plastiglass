@@ -1,8 +1,9 @@
+
 .middensec {
-    padding-top: 110px;
+    padding-top: 90px;
     padding-left: 225px;
     padding-right: 225px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
 }
 
 .secleft{
@@ -17,12 +18,13 @@
 .sectext{
     font-size: 22px;
     line-height: 31px;
-    color: #58595B; 
+    letter-spacing: 0.1em;
+    color: #808080; 
     margin-top: 30px;
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     background-color: rgba(146, 165, 174, 0.22);
     padding: 56px 39px 23px 38px;
-    min-height: 52.8%;
+    min-height: 52.3%;
 }
 
 .sectext svg {
@@ -39,7 +41,7 @@
 .boxleft{
     width: 52%;
     background-color: rgba(146, 165, 174, 0.22);
-    padding: 114px 160px 55px 38px;
+    padding: 114px 160px 100px 68px;
 }
 
 .boxleft a:hover {
@@ -47,43 +49,51 @@
     color: #ffffff;
   }
    
-.textone{
+.textone p{
     font-size: 49px;
     line-height: 51px;
-    color: #58595B; 
-    font-family: 'Work Sans';
-    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    margin: 0;
+}
+.textone p:nth-child(2){
+    -webkit-text-stroke: 1px #00263A;
+    color: transparent;
 }
 .texttwo{
     font-size: 22px;
     line-height: 31px;
-    color: #58595B; 
-    font-family: 'Work Sans';
+    letter-spacing: 0.1em;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    margin-bottom: 40px;
+    margin-top: 15px;
 }
 .textthree{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
+    letter-spacing: 0.05em;
     color: #ffffff; 
-    font-weight: bold;
-    font-family: 'Work Sans';
-    background-color: #92A5AE;
-    padding: 8px 8px 8px 8px;
+    font-family: 'Raleway-Heavy';
+    background-color: #A67EB1;
+    padding: 11px 25px 10px 25px;
 }
 
 .textcenter{
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 38px;
+    letter-spacing: 0.05em;
+    margin-top: 90px;
+    margin-bottom: 45px;
     font-size: 26px;
     line-height: 19px;
-    color: #595757; 
-    font-weight: bold;
-    font-family: 'Work Sans';
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
 }
 .products{
     margin-left: 75px;
     margin-right: 66px;
-    margin-bottom: 125px;
+    margin-bottom: 130px;
     justify-content: center;
 }
 
@@ -98,14 +108,18 @@
     width: 88%;
     margin-right: 42px;
     text-align: center;
-
-    font-size: 20px;
-    line-height: 19px;
-    color: #58595B; 
-    font-weight: 500;
-    font-family: 'Work Sans';
-    text-transform: uppercase; /*Mayusculas*/
 }
+
+.product p{
+    letter-spacing: 0.05em;
+    font-size: 20px; 
+    line-height: 19px;
+    color: #808080; 
+    font-weight: 500;
+    font-family: 'Raleway-Heavy';
+    text-transform: capitalize; /*Mayusculas*/
+}
+
 .productext{
     margin-top: 15px;
     letter-spacing: 0.1em;
@@ -114,6 +128,13 @@
 
 .imgtopmobile{
     height: 408px;
+}
+
+@media (max-width:1024px){
+    .middensec {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media (max-width:991px){
@@ -133,19 +154,16 @@
     }
     .sectext {
         margin-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
     }
-    .textone {
+    .textone p{
         font-size: 28px;
         line-height: 29px;
-        color: #58595B;
-        font-family: 'Work Sans';
-        font-weight: bold;
     }
     .texttwo {
         font-size: 16px;
         line-height: 22px;
-        color: #58595B;
-        font-family: 'Work Sans';
     }
     .boxleft {
         padding: 80px 45px 80px 38px;
@@ -155,11 +173,6 @@
     .textthree {
         font-size: 16px;
         line-height: 17.15px;
-        color: #ffffff;
-        font-weight: bold;
-        font-family: 'Work Sans';
-        background-color: #92A5AE;
-        padding: 8px 8px 8px 8px;
     }
     .secleftimg {
         width: 100%;
@@ -185,11 +198,8 @@
     }
 
     .productext {
-        font-family: 'Work Sans';
-        font-size: 16px;
-        line-height: 19px;
-        color: #58595B;
- 
+        font-size: 16px!important;
+        line-height: 19px!important;
     }
 
 }

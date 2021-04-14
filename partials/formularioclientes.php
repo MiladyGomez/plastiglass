@@ -10,18 +10,10 @@
         jQuery(".formulcliente .box").append(`
             <span class="custemequiss" > 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.29 27.92">
-                    <defs>
-                        <style>
-                            .cls{fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px;}.equiss{font-size:23.43px;fill:#698893;font-family:WorkSans-Medium, Work Sans;font-weight:500;letter-spacing:0.04em;}
-                            
-                        </style>
-                    </defs>
                     <g id="Capa_2" data-name="Capa 2">
                         <g id="Layer_1" data-name="Layer 1">
-                            <rect class="cls" x="0.25" y="0.25" width="22.79" height="22.79" />
-                            <text class="equiss" transform="translate(3.81 20)">
-                                X
-                            </text>
+                            <rect x="0.25" y="0.25" width="22.79" height="22.79" style="fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px" />
+                            <text class="equiss" transform="translate(3.81 20)" style="font-size:23.431800842285156px;fill:#698893;font-family:WorkSans-Medium, Work Sans;font-weight:500;letter-spacing:0.042010215374637em">X</text>
                         </g>
                     </g>
                 </svg>
@@ -43,7 +35,7 @@
 
             <span class="titlfile">Cámara de comercio</span>
             <span class="addart" id="addcamara">Agregar Documento</span>
-            <label class="bottombuscar" for="Camara">BUSCAR ARCHIVO</label>
+            <label class="bottombuscar" for="Camara">Buscar archivo</label>
         `)
         jQuery("#Camara").change(function(e){
             console.log(e.target.files[0].name);
@@ -54,7 +46,7 @@
 
             <span class="titlfile">Cédula representante legal</span>
             <span class="addart" id="addCedula">Agregar Documento</span>
-            <label class="bottombuscar" for="Cedula">BUSCAR ARCHIVO</label>
+            <label class="bottombuscar" for="Cedula">Buscar archivo</label>
         `)
         jQuery("#Cedula").change(function(e){
             console.log(e.target.files[0].name);
@@ -65,7 +57,7 @@
 
             <span class="titlfile">RUT</span>
             <span class="addart" id="addrut">Agregar Documento</span>
-            <label class="bottombuscar" for="Rut">BUSCAR ARCHIVO</label>
+            <label class="bottombuscar" for="Rut">Buscar archivo</label>
         `)
         jQuery("#Rut").change(function(e){
             console.log(e.target.files[0].name);
@@ -76,7 +68,7 @@
 
             <span class="titlfile">Formulario habeas data</span>
             <span class="addart" id="addhabeas">Agregar Documento</span>
-            <label class="bottombuscar" for="Habeas">BUSCAR ARCHIVO</label>
+            <label class="bottombuscar" for="Habeas">Buscar archivo</label>
         `)
         jQuery("#Habeas").change(function(e){
             jQuery("#addhabeas").text(e.target.files[0].name)

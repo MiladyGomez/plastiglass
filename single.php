@@ -10,6 +10,7 @@
  
 $imgentop=get_field("imgentop");
 $imgentop_mobile=get_field("imgentop_mobile");
+$social=get_field("social");
 
 $mas_articulos=get_field("mas_articulos");
 
@@ -43,11 +44,11 @@ get_header();
 					<h1 class="title"><?php echo $post->post_title?></h1>
 					<p class="content"><?php echo $post->post_content?></p>
 					<div class="social"> 
-						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>" target="_blank">
+						<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>" target="_blank">
 							<svg class="icono1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.76 18.85">
 								<defs>
 									<style>
-										.cls-icon1{fill:#92a5ae;}
+										.cls-icon1{fill:#A67EB1;}
 									</style>
 								</defs>
 								<g id="Capa_2" data-name="Capa 2">
@@ -61,7 +62,7 @@ get_header();
 							<svg class="icono2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 18.6">
 								<defs>
 									<style>
-										.cls-icono-2{fill:#92a5ae;}
+										.cls-icono-2{fill:#A67EB1;}
 									</style>
 								</defs>
 								<g id="Capa_2" data-name="Capa 2">
@@ -77,7 +78,7 @@ get_header();
 							<svg class="icono3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.74 19.8">
 								<defs>
 									<style>
-										.cls-icono-3{fill:#92a5ae;}
+										.cls-icono-3{fill:#A67EB1;}
 									</style>
 								</defs>
 								<g id="Capa_2" data-name="Capa 2">
@@ -93,7 +94,7 @@ get_header();
 							<svg class="icono4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.18 18.84">
 								<defs>
 									<style>
-										.cls-icono-4{fill:#92a5ae;}
+										.cls-icono-4{fill:#A67EB1;}
 									</style>
 								</defs>
 								<g id="Capa_2" data-name="Capa 2">
@@ -107,7 +108,7 @@ get_header();
 							<svg class="icono5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.63 15.63">
 								<defs>
 									<style>
-										.cls-icono-5{fill:#92a5ae;}
+										.cls-icono-5{fill:#A67EB1;}
 									</style>
 								</defs>
 								<g id="Capa_2" data-name="Capa 2">
@@ -117,40 +118,37 @@ get_header();
 									</g>
 								</g>
 							</svg>
-						</a>
+						</a> -->
+						<?php if($social): ?>
+							<?php foreach($social as $social_icon): ?>
+								<a href="<?php echo $social_icon["link"]["url"]?>" target="_blank">
+									<img src="<?php echo $social_icon["icon"]["url"]?>" alt="<?php echo $social_icon["icon"]["alt"]?>">
+								</a>
+							<?php endforeach ?> 
+						<?php endif ?> 
 					</div>
 					<div class="bottomarrow">
 						<?php if ($previous) : ?>
 						<a class="botonanterior" href="<?php echo get_the_permalink($previous) ?>">
-							<svg class="arrowleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-								<defs>
-									<style>
-										.cls-icono-6{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2-icono-6{fill:#92a5ae;}
-									</style>
-								</defs>
+							<svg class="arrowleft"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Layer_1" data-name="Layer 1">
-										<line class="cls-icono-6" x1="29.63" y1="8.18" x2="2.17" y2="8.18" />
-										<polygon class="cls-2-icono-6" points="8.8 0 10.16 1.47 2.94 8.18 10.16 14.89 8.8 16.36 0 8.18 8.8 0" />
+										<line x1="29.63" y1="8.18" x2="2.17" y2="8.18" style="fill:none;stroke:#a67eb1;stroke-miterlimit:10;stroke-width:2px" />
+										<polygon points="8.8 0 10.16 1.47 2.94 8.18 10.16 14.89 8.8 16.36 0 8.18 8.8 0" style="fill:#a67eb1" />
 									</g>
 								</g>
 							</svg>
-							ANTERIOR
+							Anterior
 						</a>
 						<?php endif ?>
 						<?php if ($next) : ?>
 						<a class="botonsiguiente" href="<?php echo get_the_permalink($next) ?>">
-							SIGUIENTE
+							Siguiente
 								<svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-									<defs> 
-										<style>
-											.cls-icono-7{fill:none;stroke:#92a5ae;stroke-miterlimit:10;stroke-width:2px;}.cls-2-icono-7{fill:#92a5ae;}
-										</style>
-									</defs>
 									<g id="Capa_2" data-name="Capa 2">
 										<g id="Layer_1" data-name="Layer 1">
-											<line class="cls-icono-7" y1="8.18" x2="27.46" y2="8.18" />
-											<polygon class="cls-2-icono-7" points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" />
+											<rect y="7.18" width="27.46" height="2" style="fill:#a67eb1"/>
+											<polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
 										</g>
 									</g>
 								</svg>
@@ -159,9 +157,9 @@ get_header();
 					</div>
 
 				</div>
-				<div class="col-md-4"> 
+				<div class="col-md-4 d-none d-md-block"> 
 					<div>
-						<p class="textproduct"> EXPLORA MÁS ARTÍCULOS </p>
+						<p class="textproduct"> Explora más artículos </p>
 					</div> 
 					<div class="overproductos">
 						<div class="exploraarticulo" >	
@@ -181,8 +179,8 @@ get_header();
 													<img class="w-100" src="<?php echo $galeriamobile["url"]?>" alt="<?php echo $galeriamobile["alt"]?>">
 												</div>
 												<div class="boxtext">
-													<div>  
-														<p class="textdate"><?php echo $articulo["articulo"]->post_date; ?></p>
+													<div> 
+														<p class="textdate"><?php echo date('M d, Y', strtotime($articulo["articulo"]->post_date)); ?></p>
 													</div>
 													<div>  
 														<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
@@ -196,6 +194,43 @@ get_header();
 						</div> 
 					</div>
 				</div>
+		</div>
+	</div>
+	<div class="d-block d-md-none"> 
+		<div>
+			<p class="textproduct"> Explora más artículos </p>
+		</div> 
+		<div class="overproductos">
+			<div class="exploraarticulo" >	
+					<?php if($mas_articulos): ?>
+						<?php foreach($mas_articulos as $articulo): ?> 
+							
+							<div class="articulossimilares">
+								<a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+
+									<?php $galeria= get_field("imgentop", $articulo["articulo"]->ID);?>
+									<?php $galeriamobile= get_field("imgentop_mobile", $articulo["articulo"]->ID);?>
+
+									<div class="d-none d-md-block">
+										<img class="w-100" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
+									</div>
+									<div class="d-block d-md-none">
+										<img class="w-100" src="<?php echo $galeriamobile["url"]?>" alt="<?php echo $galeriamobile["alt"]?>">
+									</div>
+									<div class="boxtext">
+										<div> 
+											<p class="textdate"><?php echo date('M d, Y', strtotime($articulo["articulo"]->post_date)); ?></p>
+										</div>
+										<div>  
+											<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
+										</div>
+									</div>
+								</a>
+							</div>	 
+						<?php endforeach ?> 
+					<?php endif ?> 
+				
+			</div> 
 		</div>
 	</div>
 </section>

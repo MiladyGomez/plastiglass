@@ -10,19 +10,11 @@
     jQuery(document).ready(function() { 
         jQuery(".formulsuscribirme .box").append(`
             <span class="custemequiss" > 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.29 27.92">
-                    <defs>
-                        <style>
-                            .cls{fill:rgb(146, 165, 174, -0.75);stroke:rgb(112, 111, 111, 0.25);stroke-miterlimit:10;}.equiss{font-size:23.43px;fill:#698893;font-family:WorkSans-Medium, Work Sans;font-weight:500;letter-spacing:0.04em;}
-                            
-                        </style>
-                    </defs>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.29 23.29">
                     <g id="Capa_2" data-name="Capa 2">
                         <g id="Layer_1" data-name="Layer 1">
-                            <rect class="cls" x="0.25" y="0.25" width="22.79" height="22.79" />
-                            <text class="equiss" transform="translate(3.81 20)">
-                                X
-                            </text>
+                            <rect x="0.25" y="0.25" width="22.79" height="22.79" style="fill:#fff;stroke:gray;stroke-miterlimit:10;stroke-width:0.5px" />
+                            <text class="equiss" transform="translate(7.35 16.15)" style="font-size:18px;fill:gray;font-family:Raleway-Regular, Raleway;letter-spacing:0.05002170138888889em">x</text>
                         </g>
                     </g>
                 </svg>

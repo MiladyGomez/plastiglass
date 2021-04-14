@@ -125,7 +125,7 @@ get_header();
                 </span>
             </div>
             <div class="titufiltro">
-                <p class="titlefiltro"> FILTRAR POR: </p>
+                <p class="titlefiltro"> Filtrar por: </p>
             </div>
             <div class="Cuadrocolor">
                 <p class="titlefiltro" onclick="mostrarfiltro(this)"> Color 
@@ -164,19 +164,19 @@ get_header();
                         <?php foreach($material as $_material): ?>
                             <li onclick="filtrar('<?php echo $_material->slug ?>','material',this)">
                             <p class="textcat"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.65 28.54">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.7 28.04">
                                 <defs>
                                     <style>
-                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#698893;stroke:#698893;}
+                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#5fd0df;}
                                     </style>
                                 </defs>
                                 <g id="Capa_2" data-name="Capa 2">
                                     <g id="Layer_1" data-name="Layer 1">
-                                        <rect class="cls-3" x="0.25" y="5.5" width="22.79" height="22.79" />
-                                        <path class="cls-2 chulitocategoria" d="M12.89,20.66H11.27L8.19,13.11H9.85l2.22,5.94h0L25.11.5H26.7Z" />
+                                        <rect class="cls-3" x="0.25" y="5" width="22.79" height="22.79" style="fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px" />
+                                        <path class="cls-2 chulitocategoria" d="M12.89,20.16H11.27L8.19,12.61H9.85l2.22,5.94h0L25.11,0H26.7Z" style="fill:#5fd0df" />
                                     </g>
                                 </g>
-                            </svg>                                                       
+                            </svg>                                                      
                             <?php echo $_material->name?> </p>
                             </li>
                         <?php endforeach ?>
@@ -196,16 +196,16 @@ get_header();
                         <?php foreach($categoriaforma as $_categoriaforma): ?>
                             <li onclick="filtrar('<?php echo $_categoriaforma->slug ?>','forma',this)">
                             <p class="textcat"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.65 28.54">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.7 28.04">
                                 <defs>
                                     <style>
-                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#698893;stroke:#698893;}
+                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#5fd0df;}
                                     </style>
                                 </defs>
                                 <g id="Capa_2" data-name="Capa 2">
                                     <g id="Layer_1" data-name="Layer 1">
-                                        <rect class="cls-3" x="0.25" y="5.5" width="22.79" height="22.79" />
-                                        <path class="cls-2 chulitocategoria" d="M12.89,20.66H11.27L8.19,13.11H9.85l2.22,5.94h0L25.11.5H26.7Z" />
+                                        <rect class="cls-3" x="0.25" y="5" width="22.79" height="22.79" style="fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px" />
+                                        <path class="cls-2 chulitocategoria" d="M12.89,20.16H11.27L8.19,12.61H9.85l2.22,5.94h0L25.11,0H26.7Z" style="fill:#5fd0df" />
                                     </g>
                                 </g>
                             </svg> 
@@ -228,16 +228,16 @@ get_header();
                         <?php foreach($tipo as $_tipo): ?>
                             <li onclick="filtrar('<?php echo $_tipo->slug ?>','tipo',this)">
                             <p class="textcat"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.65 28.54">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.7 28.04">
                                 <defs>
                                     <style>
-                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#698893;stroke:#698893;}
+                                        .cls-3{fill:#fff;stroke:#d0cfd0;stroke-width:0.5px;}.cls-3,.cls-2{stroke-miterlimit:10;}.cls-2{fill:#5fd0df;}
                                     </style>
                                 </defs>
                                 <g id="Capa_2" data-name="Capa 2">
                                     <g id="Layer_1" data-name="Layer 1">
-                                        <rect class="cls-3" x="0.25" y="5.5" width="22.79" height="22.79" />
-                                        <path class="cls-2 chulitocategoria" d="M12.89,20.66H11.27L8.19,13.11H9.85l2.22,5.94h0L25.11.5H26.7Z" />
+                                        <rect class="cls-3" x="0.25" y="5" width="22.79" height="22.79" style="fill:#fff;stroke:#d0cfd0;stroke-miterlimit:10;stroke-width:0.5px" />
+                                        <path class="cls-2 chulitocategoria" d="M12.89,20.16H11.27L8.19,12.61H9.85l2.22,5.94h0L25.11,0H26.7Z" style="fill:#5fd0df" />
                                     </g>
                                 </g>
                             </svg> 

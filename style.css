@@ -9,11 +9,16 @@ Version: 1.0.5
 
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
+@font-face {
+    font-family: "Raleway-Regular" ;
+    src:url("./fonts/Raleway-Regular.woff") format("woff");
+}
+
 body, * p {
-    font-family: 'Work Sans';
+    font-family: 'Raleway-Regular';
     font-size: 22px;
     line-height: 31px;
-    color: #58595B;
+    color: #808080;
     -webkit-font-smoothing: antialiased !important;
 }
 button:focus,
