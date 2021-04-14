@@ -233,6 +233,7 @@
     width: 42px;
     display: inline-block;
     border-radius: 50%;
+    border: 1px solid #000000;
 }
 .circlec{
     cursor: pointer;
