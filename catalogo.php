@@ -277,7 +277,7 @@ get_header();
                             </svg> 
                         </p>
                     </div>
-                </div>
+                </div> 
                 
                     <?php if ($consulta->have_posts()) : ?>
                         <div class="row" id="galeriaproductos">
@@ -285,12 +285,14 @@ get_header();
                                 <?php $consulta->the_post(); ?>  
                                 <?php $galeria = get_field("caracteristicas_caja_llave_nevera"); ?>
                                 <?php $referencia = $galeria["referencia_text"]; ?>
+                                <?php $_product = wc_get_product( $post->ID);?>
                                 <div class="col-lg-4 col-md-6" >
                                     <a href="<?php the_permalink() ?>">
                                         <div class="boxproduc">
                                             <img class="w-100" src="<?php echo $galeria["galeria_grifo"][0]["foto_grifo"]["url"]?>" alt="<?php echo $galeria["galeria_grifo"][0]["foto_grifo"]["alt"]?>">
                                             <p class="tittleref"> REF <?php echo $referencia?> </p>
                                             <p class="tittleproc"> <?php the_title()?> </p>
+                                            <p class="precio"><?php echo wc_price($_product->price); ?></p>
                                         </div>
                                     </a>
                                 </div>

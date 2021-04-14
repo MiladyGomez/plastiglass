@@ -112,6 +112,10 @@ get_header();
                                     </div>
                                 
                             <?php else:?> 
+                                <?php 
+                                    $thumbnail_id = get_woocommerce_term_meta($productocat->term_id, 'thumbnail_id', true);
+                                    $image = wp_get_attachment_url($thumbnail_id);
+                                ?>
                                 <div class="col-6 boxtext">
                                     <div class="paddingtext"> 
                                         <svg class="icon-fondo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479.56 557.87">

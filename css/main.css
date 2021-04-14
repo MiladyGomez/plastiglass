@@ -37,7 +37,36 @@
     text-transform: capitalize; /*Mayusculas*/
     
 }
-
+#main_menu .sub-menu{
+    display: none;
+    padding: 80px 0px 50px 20px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    background-color: #00263A;
+    width: 225px;
+    text-align: left;
+}
+#main_menu .sub-menu li{
+    margin-left: 0;
+    width: 100%;
+}
+#main_menu .sub-menu li:before{
+    content: unset;
+}
+#main_menu .sub-menu li a{
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    padding: 5px 20px 5px 0px;
+}
+#main_menu .sub-menu li a:hover{
+    text-decoration: none;
+    background-color: #5FD0DF;
+}
+#main_menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
 .custom-logo {
     max-width: 271px;
 }
@@ -265,7 +294,7 @@ header {
     top: 0px;
     background-color: #92A5AE;
     height: 0vh;
-    overflow: hidden;
+    overflow: auto;
     transition: .5s;
     z-index: 1;
 }
