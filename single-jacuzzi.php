@@ -18,7 +18,6 @@ $jacuzziwateramount=get_field("jacuzziwateramount");
 $jacuzzimaterial=get_field("jacuzzimaterial");
 $productos_similares=get_field("producto_similar");
 $configurador_jacuzzi = get_field('configurador_jacuzzi');
-print_r($configurador_jacuzzi);
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
