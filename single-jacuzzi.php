@@ -186,6 +186,7 @@ get_header();
     </section>
   
     <?php if ($configurador_jacuzzi) : ?>
+    <h2 class="title-render">CONFIGURA TU JACUZZI</h2>
     <section class="section-render">
         <button class="btn-cotizar" onclick="cotizarJacuzzi()">COTIZAR</button>
         <div class="over-render">

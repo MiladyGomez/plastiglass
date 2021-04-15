@@ -235,7 +235,15 @@
 #jacuzzi-3D {
     width: 100%;
     height: 90vh;
-    margin-top: 150px;
+    margin-top: 50px;
+}
+
+.title-render {
+    color: #00263A;
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .section-render {
