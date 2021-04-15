@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="6.1.10" apprev="18007" start="node2">
+  <panorama hideabout="1" id="node2">
+    <input width="4000" levelbias="0.400" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingpitch="0" height="4000" levelingroll="0" levelbiashidpi="1.000">
+      <level width="4000" preload="0" predecode="0" height="4000"/>
+      <level width="2000" preload="0" predecode="0" height="2000"/>
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x0b0b0b" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start fov="70.59" projection="4" tilt="-14.45" pan="0.24"/>
+      <flyin fov="99" projection="4" tilt="-8.85" pan="0"/>
+      <min fov="30" tilt="-90" pan="-90"/>
+      <max fov="100" fovstereographic="270" fovfisheye="360" scaletofit="1" tilt="90" pan="90"/>
+    </view>
+    <userdata nodeid="node2" comment="5 pax | 197 x 172 cm" info="Rio" tags="152-royal_v4" description="Descubre nuestro configurador intéractivo." latitude="" heading="0" title="Jacuzzi Rio - Plastiglass" customnodeid="" author="" longitude="" datetime="" copyright="" source=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label backgroundalpha="1" wordwrap="1" textalpha="1" bordercolor="0x000000" width="180" border="1" enabled="1" background="1" borderalpha="1" backgroundcolor="0xffffff" height="20" textcolor="0x000000" borderradius="1"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" borderalpha="1" backgroundcolor="0x0000ff" handcursor="1"/>
+      <hotspot url="media/blower.mp4" tilt="-27.4" description="" target="" pan="-351.37" id="Point01" skinid="ht_video_file" title=""/>
+      <hotspot url="media/cascada.mp4" tilt="-35.56" description="" target="" pan="-7.48001" id="Point02" skinid="ht_video_file" title=""/>
+      <hotspot url="media/prendido.mp4" tilt="-18.67" description="" target="" pan="-357.86" id="Point04" skinid="ht_video_file" title=""/>
+      <hotspot url="media/hidros2.mp4" tilt="-28.54" description="" target="" pan="-339.4" id="Point03" skinid="ht_video_file" title=""/>
+      <hotspot url="" tilt="-25.9" description="" target="_blank" pan="0.86" id="Variaciones" skinid="variaciones" title=""/>
+    </hotspots>
+    <media>
+      <lensflare color="0xffffff" tilt="30.440" pan="-68.270" blinding="50.000" type="3" id="Lensflare01" alpha="80.000"/>
+    </media>
+    <transition zoomoutpause="1" zoomfov="20" zoomafterinfov="90" softedge="0" blendtime="1" zoomspeed="2" type="crossdissolve" enabled="1" blendcolor="0x000000" zoomafteroutfov="20" zoomin="0" zoomout="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control sensitivity="14" contextprojections="0" lockedkeyboardzoom="0" invertcontrol="1" lockedmouse="0" hideabout="1" rubberband="0" lockedwheel="0" invertwheel="0" contextfullscreen="1" lockedkeyboard="0" dblclickfullscreen="1" speedwheel="0.9" simulatemass="1"/>
+  </panorama>
+  <panorama hideabout="1" id="node3">
+    <input width="6244" levelbias="0.400" overlap="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" flat="1" leveltilesize="510" levelingpitch="0" height="4500" cylinder="1" levelingroll="0" levelbiashidpi="1.000">
+      <level width="6244" preload="0" predecode="0" height="4500"/>
+      <level width="3122" preload="0" predecode="0" height="2250"/>
+      <level width="1561" preload="0" predecode="0" height="1125"/>
+      <level width="780" preload="0" predecode="0" height="562"/>
+      <level width="390" preload="1" predecode="1" height="281"/>
+      <preview color="0x0b0b0b"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start fov="72.52" projection="4" tilt="-0.64" pan="-0.12"/>
+      <flyin fov="170" projection="9" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max fov="120" fovstereographic="270" fovfisheye="360" scaletofit="1" tilt="90" pan="360"/>
+    </view>
+    <userdata nodeid="node3" comment="5 pax | 197 x 172 cm" info="Rio" tags="png" description="Descubre nuestro configurador intéractivo." latitude="" heading="0" title="Jacuzzi Rio - Plastiglass" customnodeid="" author="" longitude="" datetime="30/11/2020 5:22 p. m." copyright="" source=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label backgroundalpha="1" wordwrap="1" textalpha="1" bordercolor="0x000000" width="180" border="1" enabled="1" background="1" borderalpha="1" backgroundcolor="0xffffff" height="20" textcolor="0x000000" borderradius="1"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" borderalpha="1" backgroundcolor="0x0000ff" handcursor="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomoutpause="1" zoomfov="20" zoomafterinfov="90" softedge="0" blendtime="1" zoomspeed="2" type="crossdissolve" enabled="1" blendcolor="0x000000" zoomafteroutfov="20" zoomin="0" zoomout="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control sensitivity="14" contextprojections="0" lockedkeyboardzoom="0" invertcontrol="1" lockedmouse="0" hideabout="1" rubberband="0" lockedwheel="0" invertwheel="0" contextfullscreen="1" lockedkeyboard="0" dblclickfullscreen="1" speedwheel="0.9" simulatemass="1"/>
+  </panorama>
+  <masternode>
+    <userdata nodeid="master" comment="5 pax | 197 x 172 cm" info="Rio" tags="" description="Descubre nuestro configurador intéractivo." latitude="" heading="0" title="Jacuzzi Rio - Plastiglass" customnodeid="" author="" longitude="" datetime="" copyright="" source=""/>
+  </masternode>
+</tour>

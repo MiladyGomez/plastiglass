@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node2" apprev="18007" appversion="6.1.10">
+  <panorama id="node2" hideabout="1">
+    <input levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="4000" levelbiashidpi="1.000" leveltilesize="510" levelbias="0.400" levelingroll="0" height="4000" overlap="1">
+      <level predecode="0" width="4000" preload="0" height="4000"/>
+      <level predecode="0" width="2000" preload="0" height="2000"/>
+      <level predecode="0" width="1000" preload="0" height="1000"/>
+      <level predecode="1" width="500" preload="1" height="500"/>
+      <preview color="0x0b0b0b" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="-13.85" pan="0" projection="4" fov="70.59"/>
+      <flyin tilt="-8.85" pan="0" projection="4" fov="99"/>
+      <min tilt="-90" pan="-90" fov="30"/>
+      <max tilt="90" scaletofit="1" pan="90" fovstereographic="270" fovfisheye="360" fov="100"/>
+    </view>
+    <userdata latitude="" nodeid="node2" author="" heading="0" description="Descubre nuestro configurador intéractivo." datetime="" info="Caribean" comment="3-4 pax | 200 x 140 cm" tags="152-royal_v4" copyright="" title="Jacuzzi Caribean - Plastiglass" source="" customnodeid="" longitude=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label backgroundcolor="0xffffff" textcolor="0x000000" enabled="1" width="180" backgroundalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" wordwrap="1" height="20" textalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+      <hotspot tilt="-28.97" skinid="ht_video_file" pan="-352.06" description="" id="Point01" url="media/blower.mp4" title="" target=""/>
+      <hotspot tilt="-18.32" skinid="ht_video_file" pan="-19.62" description="" id="Point04" url="media/prendido.mp4" title="" target=""/>
+      <hotspot tilt="-23.33" skinid="ht_video_file" pan="-8.32999" description="" id="Point03" url="media/hidros2.mp4" title="" target=""/>
+      <hotspot tilt="-25.6" skinid="variaciones" pan="0.07" description="" id="Variaciones" url="" title="" target="_blank"/>
+    </hotspots>
+    <media>
+      <lensflare tilt="30.440" type="3" pan="-68.270" id="Lensflare01" alpha="80.000" blinding="50.000" color="0xffffff"/>
+    </media>
+    <transition type="crossdissolve" zoomafterinfov="90" blendtime="1" zoomoutpause="1" blendcolor="0x000000" enabled="1" zoomfov="20" zoomafteroutfov="20" zoomin="0" zoomspeed="2" zoomout="0" softedge="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control lockedmouse="0" speedwheel="0.9" invertcontrol="1" lockedkeyboardzoom="0" contextprojections="0" lockedkeyboard="0" dblclickfullscreen="1" simulatemass="1" rubberband="0" hideabout="1" lockedwheel="0" sensitivity="11" invertwheel="0" contextfullscreen="1"/>
+  </panorama>
+  <panorama id="node3" hideabout="1">
+    <input levelingpitch="0" flat="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" width="6244" levelbiashidpi="1.000" leveltilesize="510" levelbias="0.400" levelingroll="0" height="4500" overlap="1">
+      <level predecode="0" width="6244" preload="0" height="4500"/>
+      <level predecode="0" width="3122" preload="0" height="2250"/>
+      <level predecode="0" width="1561" preload="0" height="1125"/>
+      <level predecode="0" width="780" preload="0" height="562"/>
+      <level predecode="1" width="390" preload="1" height="281"/>
+      <preview color="0x0b0b0b"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" pan="0" projection="4" fov="100"/>
+      <flyin tilt="-90" pan="0" projection="9" fov="170"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360" fov="120"/>
+    </view>
+    <userdata latitude="" nodeid="node3" author="" heading="0" description="Descubre nuestro configurador intéractivo." datetime="30/11/2020 5:22 p. m." info="Caribean" comment="3-4 pax | 200 x 140 cm" tags="png" copyright="" title="Jacuzzi Caribean - Plastiglass" source="" customnodeid="" longitude=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label backgroundcolor="0xffffff" textcolor="0x000000" enabled="1" width="180" backgroundalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" wordwrap="1" height="20" textalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomafterinfov="90" blendtime="1" zoomoutpause="1" blendcolor="0x000000" enabled="1" zoomfov="20" zoomafteroutfov="20" zoomin="0" zoomspeed="2" zoomout="0" softedge="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control lockedmouse="0" speedwheel="0.9" invertcontrol="1" lockedkeyboardzoom="0" contextprojections="0" lockedkeyboard="0" dblclickfullscreen="1" simulatemass="1" rubberband="0" hideabout="1" lockedwheel="0" sensitivity="11" invertwheel="0" contextfullscreen="1"/>
+  </panorama>
+  <masternode>
+    <userdata latitude="" nodeid="master" author="" heading="0" description="Descubre nuestro configurador intéractivo." datetime="" info="Caribean" comment="3-4 pax | 200 x 140 cm" tags="" copyright="" title="Jacuzzi Caribean - Plastiglass" source="" customnodeid="" longitude=""/>
+  </masternode>
+</tour>

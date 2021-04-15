@@ -16,18 +16,9 @@ $jacuzzidimensions=get_field("jacuzzidimensions");
 $jacuzzijets=get_field("jacuzzijets");
 $jacuzziwateramount=get_field("jacuzziwateramount");
 $jacuzzimaterial=get_field("jacuzzimaterial");
-$personaliza_tu_jacuzzi_imagen=get_field("personaliza_tu_jacuzzi_imagen");
-$personaliza_tu_jacuzzi_text=get_field("personaliza_tu_jacuzzi_text");
-$personaliza_tu_jazuzzi_contenido=get_field("personaliza_tu_jazuzzi_contenido");
-$boton_cotizar=get_field("boton_cotizar");
-$caracteristicas_jacuzzi=get_field("caracteristicas_jacuzzi");
-$caracteristicas_jacuzzi_movile=get_field("caracteristicas_jacuzzi_movile");
 $productos_similares=get_field("producto_similar");
-
-
-
-
-
+$configurador_jacuzzi = get_field('configurador_jacuzzi');
+print_r($configurador_jacuzzi);
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -36,26 +27,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/3d-render/pano2vr_player.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/3d-render/skin.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/3d-render/pano2vrgyro.js"></script>
+<?php if ($configurador_jacuzzi) : ?>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/pano2vr_player.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/skin.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/pano2vrgyro.js"></script>
+
 
 <style type="text/css" title="Default">
 			@font-face{
             font-family: Lane;
-            src: url(<?php echo get_template_directory_uri() ?>/3d-render/LANENAR_.woff);
+            src: url(<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/LANENAR_.woff);
             }
 			@font-face{
             font-family: Visby-bold;
-            src: url(<?php echo get_template_directory_uri() ?>/3d-render/VisbyCF-Bold.woff);
+            src: url(<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/VisbyCF-Bold.woff);
             }
 			@font-face{
             font-family: Visby-regular;
-            src: url(<?php echo get_template_directory_uri() ?>/3d-render/VisbyCF-Regular.woff);
+            src: url(<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/VisbyCF-Regular.woff);
             }
 			@font-face{
             font-family: Ready;
-            src: url(<?php echo get_template_directory_uri() ?>/3d-render/Ready.woff);
+            src: url(<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/Ready.woff);
             }
 
 			.3d-render div, .3d-render h1, .3d-render h2, .3d-render span, .3d-render p {
@@ -104,16 +97,22 @@ get_header();
             }
             
 </style>	
+<?php endif ?>
+
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/jacuzzi.css' ?>" type="text/css" media="all">
 
 <main id="dt_single">
     <section>
+        <?php if ($jacuzziimgtop) : ?>
         <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $jacuzziimgtop["url"]?>" alt="<?php echo $jacuzziimgtop["alt"]?>">
         </div>
+        <?php endif ?>
+        <?php if ($jacuzziimgtopmovile) : ?>
         <div class="d-block d-md-none">
             <img class="w-100" src="<?php echo $jacuzziimgtopmovile["url"]?>" alt="<?php echo $jacuzziimgtopmovile["alt"]?>">
         </div> 
+        <?php endif ?>
     </section>
     <section class="infjacuzzi">
         <div class="container-fluid container-plastiglass">
@@ -187,6 +186,7 @@ get_header();
         </script> 
     </section>
   
+    <?php if ($configurador_jacuzzi) : ?>
     <section class="section-render">
         <button class="btn-cotizar" onclick="cotizarJacuzzi()">COTIZAR</button>
         <div class="over-render">
@@ -194,7 +194,8 @@ get_header();
         </div>
         <div class="3d-render" id="jacuzzi-3D"></div>
     </section>
-   
+   <?php endif ?>
+
     <section>
         <?php echo get_template_part('partials/formulariojacuzzis') ?> 
     </section>
@@ -220,6 +221,8 @@ get_header();
     </section>  
  
 </main>
+
+<?php if ($configurador_jacuzzi) : ?>
 <script type="text/javascript">
 	
     // check for CSS3 3D transformations and WebGL
@@ -229,9 +232,9 @@ get_header();
         // create the panorama player with the container
         pano=new pano2vrPlayer("jacuzzi-3D");
         // add the skin object
-        skin=new pano2vrSkin(pano, "<?php echo get_template_directory_uri() ?>/3d-render/");
+        skin=new pano2vrSkin(pano, "<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/");
         // load the configuration
-        pano.readConfigUrl("<?php echo get_template_directory_uri() ?>/3d-render/pano.xml");
+        pano.readConfigUrl("<?php echo get_template_directory_uri() ?>/jacuzzis-3d/<?= $configurador_jacuzzi ?>/pano.xml");
         // hide the URL bar on the iPhone
         setTimeout(function() { hideUrlBar(); }, 10);
         // add gyroscope controller
@@ -261,6 +264,8 @@ get_header();
         
     }
 </script>
+<?php endif ?>
+
 <script>
     jQuery('.formulcotizacion form').submit(function(e) {
         
@@ -298,7 +303,7 @@ get_header();
         detination = jQuery('.formulcotizacion');
         if (detination.length > 0) {
             jQuery([document.documentElement, document.body]).animate({
-                scrollTop: detination.offset().top
+                scrollTop: detination.offset().top - 100
             }, 1500);
         }
     }

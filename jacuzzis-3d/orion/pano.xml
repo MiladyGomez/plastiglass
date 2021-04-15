@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node2" apprev="18007" appversion="6.1.10">
+  <panorama hideabout="1" id="node2">
+    <input overlap="1" levelbias="0.400" width="4000" levelbiashidpi="1.000" height="4000" levelingpitch="0" leveltilesize="510" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0">
+      <level width="4000" height="4000" predecode="0" preload="0"/>
+      <level width="2000" height="2000" predecode="0" preload="0"/>
+      <level width="1000" height="1000" predecode="0" preload="0"/>
+      <level width="500" height="500" predecode="1" preload="1"/>
+      <preview color="0x0b0b0b" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0.24" tilt="-14.45" fov="70.59" projection="4"/>
+      <flyin pan="0" tilt="-8.85" fov="99" projection="4"/>
+      <min pan="-90" tilt="-90" fov="30"/>
+      <max scaletofit="1" pan="90" tilt="90" fovfisheye="360" fovstereographic="270" fov="100"/>
+    </view>
+    <userdata description="Descubre nuestro configurador intéractivo." customnodeid="" nodeid="node2" tags="152-royal_v4" source="" author="" info="Orion" latitude="" longitude="" datetime="" comment="6 pax | 200 cm Diam" heading="0" title="Jacuzzi Orion - Plastiglass" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label borderalpha="1" backgroundalpha="1" textalpha="1" wordwrap="1" width="180" enabled="1" textcolor="0x000000" height="20" borderradius="1" background="1" backgroundcolor="0xffffff" bordercolor="0x000000" border="1"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot pan="-9.63" description="" tilt="-26.32" id="Point01" target="" skinid="ht_video_file" url="media/blower.mp4" title=""/>
+      <hotspot pan="-21.6" description="" tilt="-21.26" id="Point02" target="" skinid="ht_video_file" url="media/cascada.mp4" title=""/>
+      <hotspot pan="-357.02" description="" tilt="-16" id="Point04" target="" skinid="ht_video_file" url="media/prendido.mp4" title=""/>
+      <hotspot pan="-340.72" description="" tilt="-22.66" id="Point03" target="" skinid="ht_video_file" url="media/hidros2.mp4" title=""/>
+      <hotspot pan="1" description="" tilt="-24.87" id="Variaciones" target="_blank" skinid="variaciones" url="" title=""/>
+    </hotspots>
+    <media>
+      <lensflare pan="-68.270" tilt="30.440" alpha="80.000" type="3" id="Lensflare01" color="0xffffff" blinding="50.000"/>
+    </media>
+    <transition zoomoutpause="1" blendcolor="0x000000" type="crossdissolve" zoomafterinfov="90" softedge="0" zoomout="0" enabled="1" zoomin="0" zoomfov="20" blendtime="1" zoomafteroutfov="20" zoomspeed="2"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control lockedkeyboard="0" lockedwheel="0" simulatemass="1" hideabout="1" lockedkeyboardzoom="0" speedwheel="0.9" dblclickfullscreen="1" sensitivity="14" invertwheel="0" lockedmouse="0" invertcontrol="1" contextprojections="0" contextfullscreen="1" rubberband="0"/>
+  </panorama>
+  <panorama hideabout="1" id="node3">
+    <input overlap="1" flat="1" levelbias="0.400" width="6244" levelbiashidpi="1.000" height="4500" levelingpitch="0" leveltilesize="510" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" levelingroll="0">
+      <level width="6244" height="4500" predecode="0" preload="0"/>
+      <level width="3122" height="2250" predecode="0" preload="0"/>
+      <level width="1561" height="1125" predecode="0" preload="0"/>
+      <level width="780" height="562" predecode="0" preload="0"/>
+      <level width="390" height="281" predecode="1" preload="1"/>
+      <preview color="0x0b0b0b"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" tilt="0" fov="95" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max scaletofit="1" pan="360" tilt="90" fovfisheye="360" fovstereographic="270" fov="120"/>
+    </view>
+    <userdata description="Descubre nuestro configurador intéractivo." customnodeid="" nodeid="node3" tags="png" source="" author="" info="Orion" latitude="" longitude="" datetime="30/11/2020 5:22 p. m." comment="6 pax | 200 cm Diam" heading="0" title="Jacuzzi Orion - Plastiglass" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label borderalpha="1" backgroundalpha="1" textalpha="1" wordwrap="1" width="180" enabled="1" textcolor="0x000000" height="20" borderradius="1" background="1" backgroundcolor="0xffffff" bordercolor="0x000000" border="1"/>
+      <polystyle mode="0" borderalpha="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomoutpause="1" blendcolor="0x000000" type="crossdissolve" zoomafterinfov="90" softedge="0" zoomout="0" enabled="1" zoomin="0" zoomfov="20" blendtime="1" zoomafteroutfov="20" zoomspeed="2"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control lockedkeyboard="0" lockedwheel="0" simulatemass="1" hideabout="1" lockedkeyboardzoom="0" speedwheel="0.9" dblclickfullscreen="1" sensitivity="14" invertwheel="0" lockedmouse="0" invertcontrol="1" contextprojections="0" contextfullscreen="1" rubberband="0"/>
+  </panorama>
+  <masternode>
+    <userdata description="Descubre nuestro configurador intéractivo." customnodeid="" nodeid="master" tags="" source="" author="" info="Orion" latitude="" longitude="" datetime="" comment="6 pax | 200 cm Diam" heading="0" title="Jacuzzi Orion - Plastiglass" copyright=""/>
+  </masternode>
+</tour>

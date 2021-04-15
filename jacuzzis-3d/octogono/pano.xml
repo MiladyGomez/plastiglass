@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="18007" appversion="6.1.10" start="node2">
+  <panorama hideabout="1" id="node2">
+    <input width="4000" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingroll="0" height="4000" levelingpitch="0" leveltilesize="510" levelbiashidpi="1.000" overlap="1">
+      <level width="4000" height="4000" preload="0" predecode="0"/>
+      <level width="2000" height="2000" preload="0" predecode="0"/>
+      <level width="1000" height="1000" preload="0" predecode="0"/>
+      <level width="500" height="500" preload="1" predecode="1"/>
+      <preview color="0x0b0b0b" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start fov="70.59" tilt="-8.85" projection="4" pan="0"/>
+      <flyin fov="99" tilt="-8.85" projection="4" pan="0"/>
+      <min fov="30" tilt="-90" pan="-90"/>
+      <max fov="100" tilt="90" fovfisheye="360" scaletofit="1" fovstereographic="270" pan="90"/>
+    </view>
+    <userdata nodeid="node2" datetime="" author="" info="Octogono" tags="152-royal_v4" copyright="" title="Jacuzzi Octogono - Plastiglass" heading="0" latitude="" comment="6 pax | 200 x 200 cm" longitude="" customnodeid="" description="Descubre nuestro configurador intéractivo." source=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" wordwrap="1" borderradius="1" textcolor="0x000000" background="1" backgroundcolor="0xffffff" textalpha="1" enabled="1" height="20" border="1" bordercolor="0x000000" backgroundalpha="1" borderalpha="1"/>
+      <polystyle handcursor="1" backgroundcolor="0x0000ff" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
+      <hotspot tilt="-29.87" target="" url="media/blower.mp4" skinid="ht_video_file" title="" id="Point01" pan="-10.2" description=""/>
+      <hotspot tilt="-17.74" target="" url="media/prendido.mp4" skinid="ht_video_file" title="" id="Point04" pan="-20.07" description=""/>
+      <hotspot tilt="-26.2" target="" url="media/hidros2.mp4" skinid="ht_video_file" title="" id="Point03" pan="-344.68" description=""/>
+      <hotspot tilt="-24.51" target="_blank" url="" skinid="variaciones" title="" id="Variaciones" pan="-1.12" description=""/>
+    </hotspots>
+    <media>
+      <lensflare tilt="30.440" blinding="50.000" id="Lensflare01" alpha="80.000" pan="-68.270" type="3" color="0xffffff"/>
+    </media>
+    <transition zoomfov="20" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" softedge="0" blendtime="1" enabled="1" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" type="crossdissolve" zoomout="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="1" hideabout="1" contextprojections="0" contextfullscreen="1" invertwheel="0" lockedkeyboard="0" sensitivity="14" lockedmouse="0" speedwheel="0.9" lockedwheel="0" simulatemass="1" lockedkeyboardzoom="0" invertcontrol="1" rubberband="0"/>
+  </panorama>
+  <panorama hideabout="1" id="node3">
+    <input width="6244" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingroll="0" cylinder="1" flat="1" height="4500" levelingpitch="0" leveltilesize="510" levelbiashidpi="1.000" overlap="1">
+      <level width="6244" height="4500" preload="0" predecode="0"/>
+      <level width="3122" height="2250" preload="0" predecode="0"/>
+      <level width="1561" height="1125" preload="0" predecode="0"/>
+      <level width="780" height="562" preload="0" predecode="0"/>
+      <level width="390" height="281" preload="1" predecode="1"/>
+      <preview color="0x0b0b0b"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start fov="79.02" tilt="0" projection="4" pan="0"/>
+      <flyin fov="170" tilt="-90" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fov="120" tilt="90" fovfisheye="360" scaletofit="1" fovstereographic="270" pan="360"/>
+    </view>
+    <userdata nodeid="node3" datetime="30/11/2020 5:22 p. m." author="" info="Octogono" tags="png" copyright="" title="Jacuzzi Octogono - Plastiglass" heading="0" latitude="" comment="6 pax | 200 x 200 cm" longitude="" customnodeid="" description="Descubre nuestro configurador intéractivo." source=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label width="180" wordwrap="1" borderradius="1" textcolor="0x000000" background="1" backgroundcolor="0xffffff" textalpha="1" enabled="1" height="20" border="1" bordercolor="0x000000" backgroundalpha="1" borderalpha="1"/>
+      <polystyle handcursor="1" backgroundcolor="0x0000ff" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" softedge="0" blendtime="1" enabled="1" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" type="crossdissolve" zoomout="0"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="1" hideabout="1" contextprojections="0" contextfullscreen="1" invertwheel="0" lockedkeyboard="0" sensitivity="14" lockedmouse="0" speedwheel="0.9" lockedwheel="0" simulatemass="1" lockedkeyboardzoom="0" invertcontrol="1" rubberband="0"/>
+  </panorama>
+  <masternode>
+    <userdata nodeid="master" datetime="" author="" info="Octogono" tags="" copyright="" title="Jacuzzi Octogono - Plastiglass" heading="0" latitude="" comment="6 pax | 200 x 200 cm" longitude="" customnodeid="" description="Descubre nuestro configurador intéractivo." source=""/>
+  </masternode>
+</tour>
