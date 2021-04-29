@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   <meta name="viewport" content="width=device-width">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/main.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/main.css?v=1.0.0">
 
   <?php wp_head(); ?>
 </head>

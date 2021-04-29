@@ -460,6 +460,12 @@ header {
     padding: 15px 25px 15px 25px!important;
     border-radius: 0!important;
 }
+
+.main-banner img {
+    max-height: 50vh;
+    object-fit: cover;
+}
+
 @media (max-width:1180px){
     .maincarrito svg, .mainws svg {
         width: 25px;

@@ -22,7 +22,7 @@ get_header();
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/nosotros.css' ?>" type="text/css" media="all">
 
 <main id="nosotros-template">    
- <section>
+ <section class="main-banner">
      <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $imagen_top["url"]?>" alt="<?php echo $imagen_top["alt"]?>">
         </div>
