@@ -251,7 +251,7 @@
 }
 
 .over-render button {
-    background-color: #698893;
+    background-color: #A67EB1;
     font-size: 20px;
     line-height: 20px;
     color: #ffffff;
@@ -276,7 +276,7 @@
 }
 
 .btn-cotizar {
-    background-color: #698893;
+    background-color: #A67EB1;
     font-size: 20px;
     line-height: 20px;
     color: #ffffff;
@@ -290,6 +290,8 @@
     right: 20px;
     display: none;
 }
+
+
 
 @media (max-width:767px){
     #jacuzzi-3D {
