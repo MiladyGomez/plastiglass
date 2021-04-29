@@ -100,7 +100,7 @@
     margin-left: 75px;
     margin-right: 66px;
     margin-bottom: 130px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .products a:hover{
@@ -112,7 +112,7 @@
 }
 .product{
     width: 100%;
-    margin-right: 42px;
+    /* margin-right: 42px; */
     text-align: center;
     height: 100%;
 }
