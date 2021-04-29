@@ -27,12 +27,12 @@ $color_disponible = wp_get_post_terms($post->ID, "color_disponible");
 $material_disponible = wp_get_post_terms($post->ID, "material");
 $forma_disponible = wp_get_post_terms($post->ID, "forma");
 $tipo_disponible = wp_get_post_terms($post->ID, "tipo");
-$Menu_link=get_field("Menu_link");
+// $Menu_link=get_field("Menu_link");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
-$productos_similar=get_field("productos_similares");
+// $productos_similar=get_field("productos_similares");
 $productos_similares=get_field("producto_similar");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
-$main_category = wp_get_post_terms($post->ID, "categoria_productos");
+$main_category = wp_get_post_terms($post->ID, "product_cat");
 
 get_header();
 

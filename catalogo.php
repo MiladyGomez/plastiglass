@@ -66,6 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 }
 $consulta;
+$max_price = 0;
 
 $args = array(
     'post_type' => 'product',
@@ -107,6 +108,27 @@ else{
     $consulta = new WP_Query( $args );
 }
 
+if ($consulta) {
+    foreach($consulta->posts as $_consulta) {
+        $_product = wc_get_product($_consulta->ID);
+        if ($_product->price > $max_price) {
+            $max_price = $_product->price;
+        }
+    }
+}
+
+$range_to_div = $max_price / 100000;
+$range_prices = [];
+
+if ($range_to_div > 0) {
+    
+    for ($i = 0; $i < round($range_to_div); $i++) { 
+        array_push($range_prices, $i * 100000);
+    }
+    array_push($range_prices, $max_price);
+}
+
+
 get_header();
 
 ?>
@@ -145,9 +167,9 @@ get_header();
                     </span>
                 </p>
                 <ul>
-                    <?php if ($precio) : ?>
-                        <?php foreach($precio as $_precio): ?>
-                            <li onclick="filtrar('<?php echo $_precio->slug ?>','precio',this)">
+                    <?php if ($range_prices) : ?>
+                        <?php  for ($i = 0; $i < count($range_prices) - 1; $i++) : ?>
+                            <li onclick="filtrar('<?php echo $range_prices[$i] ?>,<?php echo $range_prices[$i+1] ?>','precio', this)">
                             <p class="textcat"> 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.7 28.04">
                                 <defs>
@@ -162,9 +184,9 @@ get_header();
                                     </g>
                                 </g>
                             </svg>                                                      
-                            <?php echo $_precio->name?> </p>
+                            <?php echo wc_price($range_prices[$i]) ?> - <?php echo wc_price($range_prices[$i+1]) ?></p>
                             </li>
-                        <?php endforeach ?>
+                        <?php endfor ?>
                     <?php endif ?>
                 </ul>
             </div>
@@ -417,7 +439,7 @@ get_header();
                         jQuery(elemento).addClass("openchilito")
                     }
                 }
-                //console.log(parametros)
+                
 
                 var path='?'
                 if (categoriaselecciona){
@@ -445,6 +467,7 @@ get_header();
                                         <img class="w-100" src="${producto.image.url}" alt="">
                                         <p class="tittleref"> REF ${producto.referencia} </p>
                                         <p class="tittleproc">${producto.title} </p>
+                                        <p class="precio">${producto.price}</p>
                                     </div>
                                 </a>
                             </div>`);
@@ -493,6 +516,7 @@ get_header();
                                             <img class="w-100" src="${producto.image.url}" alt="">
                                             <p class="tittleref"> REF ${producto.referencia} </p>
                                             <p class="tittleproc">${producto.title} </p>
+                                            <p class="precio">${producto.price}</p>
                                         </div>
                                     </a>
                                 </div>`);

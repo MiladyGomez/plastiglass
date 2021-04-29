@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5eadc7d4605cc",
-            "label": "hometop",
+            "label": "Imagen top",
             "name": "hometop",
             "type": "image",
             "instructions": "",
@@ -52,7 +52,7 @@
         },
         {
             "key": "field_5eadcd8dd01d3",
-            "label": "homemiddeo",
+            "label": "Seccion 1",
             "name": "homemiddeo",
             "type": "group",
             "instructions": "",
@@ -67,7 +67,7 @@
             "sub_fields": [
                 {
                     "key": "field_5eadcdcdd01d4",
-                    "label": "homemiddeone",
+                    "label": "Imagen izquierda",
                     "name": "homemiddeone",
                     "type": "image",
                     "instructions": "",
@@ -91,7 +91,7 @@
                 },
                 {
                     "key": "field_5eadcdf7d01d5",
-                    "label": "homemiddetwo",
+                    "label": "Imagen derecha",
                     "name": "homemiddetwo",
                     "type": "image",
                     "instructions": "",
@@ -115,7 +115,7 @@
                 },
                 {
                     "key": "field_5eadce0ed01d6",
-                    "label": "homemiddetext",
+                    "label": "Texto",
                     "name": "homemiddetext",
                     "type": "textarea",
                     "instructions": "",
@@ -134,7 +134,7 @@
                 },
                 {
                     "key": "field_5ec46c86f5c31",
-                    "label": "link home",
+                    "label": "Link",
                     "name": "link_home",
                     "type": "link",
                     "instructions": "",
@@ -151,7 +151,7 @@
         },
         {
             "key": "field_5eade2cd150f3",
-            "label": "homemiddet",
+            "label": "Seccion 2",
             "name": "homemiddet",
             "type": "group",
             "instructions": "",
@@ -166,7 +166,7 @@
             "sub_fields": [
                 {
                     "key": "field_5eade2ee150f4",
-                    "label": "homemiddethree",
+                    "label": "Imagen",
                     "name": "homemiddethree",
                     "type": "image",
                     "instructions": "",
@@ -190,7 +190,7 @@
                 },
                 {
                     "key": "field_5eb9ad340f8a8",
-                    "label": "homemiddethreemovile",
+                    "label": "Imagen mobile",
                     "name": "homemiddethreemovile",
                     "type": "image",
                     "instructions": "",
@@ -214,7 +214,7 @@
                 },
                 {
                     "key": "field_5eade308150f5",
-                    "label": "homemiddetextt",
+                    "label": "Titulo",
                     "name": "homemiddetextt",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -233,7 +233,7 @@
                 },
                 {
                     "key": "field_5eade4a636893",
-                    "label": "homemiddetextf",
+                    "label": "Texto",
                     "name": "homemiddetextf",
                     "type": "textarea",
                     "instructions": "",
@@ -252,7 +252,7 @@
                 },
                 {
                     "key": "field_5eade4be36894",
-                    "label": "homemiddeproducto",
+                    "label": "Link",
                     "name": "homemiddeproducto",
                     "type": "link",
                     "instructions": "",
@@ -269,7 +269,7 @@
         },
         {
             "key": "field_5eadf72553bd0",
-            "label": "homemiddf",
+            "label": "Seccion 3",
             "name": "homemiddf",
             "type": "group",
             "instructions": "",
@@ -284,7 +284,7 @@
             "sub_fields": [
                 {
                     "key": "field_5eadf74f53bd1",
-                    "label": "homemiddenttext",
+                    "label": "Titulo",
                     "name": "homemiddenttext",
                     "type": "text",
                     "instructions": "",
@@ -303,7 +303,7 @@
                 },
                 {
                     "key": "field_5eadf77f53bd2",
-                    "label": "homemiddenproduct",
+                    "label": "Producto",
                     "name": "homemiddenproduct",
                     "type": "repeater",
                     "instructions": "",
@@ -322,7 +322,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5eadf79c53bd3",
-                            "label": "imgcat",
+                            "label": "Imagen",
                             "name": "imgcat",
                             "type": "image",
                             "instructions": "",
@@ -345,30 +345,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5eadf7b353bd4",
-                            "label": "cattxt",
-                            "name": "cattxt",
-                            "type": "taxonomy",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "taxonomy": "categoria_productos",
-                            "field_type": "checkbox",
-                            "add_term": 1,
-                            "save_terms": 0,
-                            "load_terms": 0,
-                            "return_format": "object",
-                            "multiple": 0,
-                            "allow_null": 0
-                        },
-                        {
                             "key": "field_5ec467119be5e",
-                            "label": "Link Productos",
+                            "label": "Link Producto",
                             "name": "link_productos",
                             "type": "link",
                             "instructions": "",
@@ -400,8 +378,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
-    "modified": 1618328205
+    "modified": 1619658856
 }

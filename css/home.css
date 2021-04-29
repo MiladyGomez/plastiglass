@@ -4,6 +4,7 @@
     padding-left: 225px;
     padding-right: 225px;
     padding-bottom: 95px;
+    margin-bottom: 15px;
 }
 
 .secleft{
@@ -15,6 +16,11 @@
     margin-left: 27px;
 }
 
+.secright img {
+    object-fit: cover;
+    height: 100%;
+}
+
 .sectext{
     font-size: 22px;
     line-height: 31px;
@@ -23,8 +29,8 @@
     margin-top: 30px;
     font-family: 'Raleway-Regular';
     background-color: rgba(146, 165, 174, 0.22);
-    padding: 56px 39px 23px 38px;
-    min-height: 52.3%;
+    padding: 56px 39px 60px 38px;
+    /* min-height: 52.3%; */
 }
 
 .sectext svg {

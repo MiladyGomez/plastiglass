@@ -77,6 +77,8 @@ function catalogo($request)
   $forma = $request->get_param('forma');
   $tipo = $request->get_param('tipo');
   $categoria = $request->get_param('categoria');
+  $precio = $request->get_param('precio');
+  $price = array();
   $taxonomies= [];
 
   if ($color){
@@ -118,22 +120,32 @@ function catalogo($request)
   if ($categoria){
     array_push($taxonomies, 
       array(
-        'taxonomy' => 'categoria_productos',
+        'taxonomy' => 'product_cat',
         'field'	   => 'slug',
         'terms'	   => $categoria
       )				
     );
   }
 
+  if ($precio) {
+    $precio = explode(",", $precio);
+    $price = array(
+      'key' => '_price',
+      'value' => array($precio[0], $precio[1]),
+      'compare' => 'BETWEEN',
+      'type' => 'NUMERIC'
+    );
+  }
 
   $args_producto = array(
-    'post_type' => 'productos',
+    'post_type' => 'product',
     'posts_per_page' => -1, 
     'post_status' => 'publish',
     'tax_query' => array(
       'relation' => 'AND',
         $taxonomies
      ),
+     'meta_query' => array($price)
     );
 
   $consultafiltro = new WP_Query( $args_producto );
@@ -148,7 +160,8 @@ foreach ($consultafiltro->posts as $_consultafiltro) {
     "title" 		=> $_consultafiltro->post_title,
     "image"			=> $galeria["galeria_grifo"][0]["foto_grifo"],
     "link"			=> get_the_permalink( $_consultafiltro->ID ),
-    "referencia"		=> $galeria["referencia_text"]			
+    "referencia"		=> $galeria["referencia_text"],
+    "price" => wc_price(wc_get_product($_consultafiltro->ID)->price)	
   ));
 }
 

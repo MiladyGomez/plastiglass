@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5ebb4538bde2e",
-            "label": "imagen top mobile",
+            "label": "Imagen top mobile",
             "name": "imagen_top_mobile",
             "type": "image",
             "instructions": "",
@@ -214,8 +214,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
-    "modified": 1618347120
+    "modified": 1619658969
 }

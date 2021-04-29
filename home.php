@@ -87,7 +87,7 @@ get_header();
                         <a href="<?php echo $categoria["link_productos"]["url"]?>">
                             <div class="product" >                  
                             <img class="w-100" src="<?php echo $categoria["imgcat"]["url"]?>" alt="<?php echo $categoria["homemiddenproduct"]["alt"]?>">
-                            <p class="productext"><?php echo $categoria["cattxt"][0]->name; ?></p>
+                            <p class="productext"><?php echo $categoria["link_productos"]["title"] ?></p>
                             </div>
                             <?php endforeach ?>
                         </a>
