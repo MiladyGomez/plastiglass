@@ -460,11 +460,15 @@ get_header();
                     console.log(data);
                     $("#galeriaproductos").empty();
                     data.forEach(function(producto){
+                        var img = producto.image;
+                        if (!img) {
+                            img = {url: ''};
+                        }
                         $("#galeriaproductos").append(`                                
                             <div class="col-lg-4 col-md-6" >
                                 <a href="${producto.link}">
                                     <div class="boxproduc">
-                                        <img class="w-100" src="${producto.image.url}" alt="">
+                                        <img class="w-100" src="${img.url}" alt="">
                                         <p class="tittleref"> REF ${producto.referencia} </p>
                                         <p class="tittleproc">${producto.title} </p>
                                         <p class="precio">${producto.price}</p>
@@ -509,11 +513,15 @@ get_header();
                         console.log(data);
                         $("#galeriaproductos").empty();
                         data.forEach(function(producto){ 
+                            var img = producto.image;
+                            if (!img) {
+                                img = {url: ''};
+                            }
                             $("#galeriaproductos").append(`                                
                                 <div class="col-lg-4 col-md-6" >
                                     <a href="${producto.link}">
                                         <div class="boxproduc">
-                                            <img class="w-100" src="${producto.image.url}" alt="">
+                                            <img class="w-100" src="${img.url}" alt="">
                                             <p class="tittleref"> REF ${producto.referencia} </p>
                                             <p class="tittleproc">${producto.title} </p>
                                             <p class="precio">${producto.price}</p>
