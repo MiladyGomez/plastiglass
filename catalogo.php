@@ -79,6 +79,7 @@ if (isset($_GET['categoria'])) {
     foreach($imagen_top_productos as $categoria){
         if($categoria["categoria"][0]->slug==$_GET['categoria']){
             $imagen_top=$categoria["imagen_top_categoria_producto"];
+            $imagen_top_movile = $categoria["imagen_top_categoria_producto"];
             $tilte_productos=$categoria["categoria"][0]->name;
             $args = array(
                 'post_type' => 'product',
