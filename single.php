@@ -12,7 +12,18 @@ $imgentop=get_field("imgentop");
 $imgentop_mobile=get_field("imgentop_mobile");
 $social=get_field("social");
 
-$mas_articulos=get_field("mas_articulos");
+// $mas_articulos=get_field("mas_articulos");
+
+$mas_articulos = new WP_Query(array(
+    'post_type' => 'post',
+	'post_status' => 'publish',
+    'category__in' => wp_get_post_categories(get_the_ID()),
+    'post__not_in' => array(get_the_ID()),
+    'posts_per_page' => 3,
+    'orderby' => 'date',
+));
+
+
 
 $previous = get_previous_post();
 $next = get_next_post();
@@ -163,14 +174,14 @@ get_header();
 					</div> 
 					<div class="overproductos">
 						<div class="exploraarticulo" >	
-								<?php if($mas_articulos): ?>
-									<?php foreach($mas_articulos as $articulo): ?> 
+								<?php if($mas_articulos->have_posts()): ?>
+									<?php foreach($mas_articulos->posts as $articulo): ?> 
 										
 										<div class="articulossimilares">
-											<a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+											<a href="<?php echo get_permalink($articulo->ID)?>">
 
-												<?php $galeria= get_field("imgentop", $articulo["articulo"]->ID);?>
-												<?php $galeriamobile= get_field("imgentop_mobile", $articulo["articulo"]->ID);?>
+												<?php $galeria= get_field("imgentop", $articulo->ID);?>
+												<?php $galeriamobile= get_field("imgentop_mobile", $articulo->ID);?>
 
 												<div class="d-none d-md-block">
 													<img class="w-100" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
@@ -180,10 +191,10 @@ get_header();
 												</div>
 												<div class="boxtext">
 													<div> 
-														<p class="textdate"><?php echo date('M d, Y', strtotime($articulo["articulo"]->post_date)); ?></p>
+														<p class="textdate"><?php echo date('M d, Y', strtotime($articulo->post_date)); ?></p>
 													</div>
 													<div>  
-														<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
+														<p class="texttitle"><?php echo $articulo->post_title; ?></p>
 													</div>
 												</div>
 											</a>
@@ -202,14 +213,14 @@ get_header();
 		</div> 
 		<div class="overproductos">
 			<div class="exploraarticulo" >	
-					<?php if($mas_articulos): ?>
-						<?php foreach($mas_articulos as $articulo): ?> 
-							
+					<?php if($mas_articulos->have_posts()): ?>						
+						<?php foreach($mas_articulos->posts as $articulo): ?> 
+							<?php print_r($articulo); ?>
 							<div class="articulossimilares">
-								<a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
+								<a href="<?php echo get_permalink($articulo->ID)?>">
 
-									<?php $galeria= get_field("imgentop", $articulo["articulo"]->ID);?>
-									<?php $galeriamobile= get_field("imgentop_mobile", $articulo["articulo"]->ID);?>
+									<?php $galeria= get_field("imgentop", $articulo->ID);?>
+									<?php $galeriamobile= get_field("imgentop_mobile", $articulo->ID);?>
 
 									<div class="d-none d-md-block">
 										<img class="w-100" src="<?php echo $galeria["url"]?>" alt="<?php echo $galeria["alt"]?>">
@@ -219,10 +230,10 @@ get_header();
 									</div>
 									<div class="boxtext">
 										<div> 
-											<p class="textdate"><?php echo date('M d, Y', strtotime($articulo["articulo"]->post_date)); ?></p>
+											<p class="textdate"><?php echo date('M d, Y', strtotime($articulo->post_date)); ?></p>
 										</div>
 										<div>  
-											<p class="texttitle"><?php echo $articulo["articulo"]->post_title; ?></p>
+											<p class="texttitle"><?php echo $articulo->post_title; ?></p>
 										</div>
 									</div>
 								</a>

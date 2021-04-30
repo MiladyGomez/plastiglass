@@ -8,6 +8,7 @@
 
 $args = array(
     'post_type' => 'jacuzzi',
+    'post_status' => 'publish',
     'posts_per_page' => -1,    
 );
 

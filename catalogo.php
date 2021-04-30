@@ -70,6 +70,7 @@ $max_price = 0;
 
 $args = array(
     'post_type' => 'product',
+    'post_status' => 'publish',
     'posts_per_page' => -1,  
 
 );
@@ -83,6 +84,7 @@ if (isset($_GET['categoria'])) {
             $tilte_productos=$categoria["categoria"][0]->name;
             $args = array(
                 'post_type' => 'product',
+                'post_status' => 'publish',
                 'posts_per_page' => -1,  
                 'tax_query' => array(
                     array(
