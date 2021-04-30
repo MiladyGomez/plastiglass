@@ -43,7 +43,7 @@ get_header();
 
 <main id="dt_single">
 <section class="main-banner">
-		<div class="d-none d-md-block">$mas_articulos_num
+		<div class="d-none d-md-block">
 = count(            <img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">);
         </div>
         <div class="d-block d-md-none">
