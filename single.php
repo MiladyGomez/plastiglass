@@ -215,7 +215,6 @@ get_header();
 			<div class="exploraarticulo" >	
 					<?php if($mas_articulos->have_posts()): ?>						
 						<?php foreach($mas_articulos->posts as $articulo): ?> 
-							<?php print_r($articulo); ?>
 							<div class="articulossimilares">
 								<a href="<?php echo get_permalink($articulo->ID)?>">
 
