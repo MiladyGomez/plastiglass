@@ -84,7 +84,7 @@ function catalogo($request)
   if ($color){
     array_push($taxonomies, 
       array(
-        'taxonomy' => 'color_disponible',
+        'taxonomy' => 'pa_color',
         'field'	   => 'slug',
         'terms'	   => $color
       )				

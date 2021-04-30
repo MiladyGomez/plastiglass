@@ -36,7 +36,7 @@ $material_args = array(
 $material = get_categories( $material_args);
 
 $color_args = array(
-	'taxonomy'     => "color_disponible",
+	'taxonomy'     => "pa_color",
 	'parent'	   => 0,
 	'hide_empty'   => 0,
 	'orderby'      => 'name',
@@ -204,8 +204,8 @@ get_header();
                 <ul>
                     <div class="boxcolor">
                         <?php if ($color) : ?>
-                            <?php foreach($color as $_color): ?>
-                                <?php $background = get_field("color_disponible", $_color);  ?>
+                            <?php foreach($color as $_color): ?>                               
+                                <?php $background = sanitize_hex_color( wvs_get_product_attribute_color( $_color ) );  ?>
                                 <li onclick="filtrar('<?php echo $_color->slug ?>','color',this)">
                                 <span namecolor="<?php echo $_color->name ?>" class="circlec" style="background-color:<?php echo $background ?>"> 
                                 </span>
