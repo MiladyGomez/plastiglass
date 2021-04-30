@@ -23,6 +23,8 @@ $mas_articulos = new WP_Query(array(
     'orderby' => 'date',
 ));
 
+$mas_articulos_num = count($mas_articulos->posts);
+
 
 
 $previous = get_previous_post();
@@ -41,8 +43,8 @@ get_header();
 
 <main id="dt_single">
 <section class="main-banner">
-		<div class="d-none d-md-block">
-            <img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">
+		<div class="d-none d-md-block">$mas_articulos_num
+= count(            <img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">);
         </div>
         <div class="d-block d-md-none">
             <img class="w-100" src="<?php echo $imgentop_mobile["url"]?>" alt="<?php echo $imgentop_mobile["alt"]?>">
@@ -212,10 +214,10 @@ get_header();
 			<p class="textproduct"> Explora más artículos </p>
 		</div> 
 		<div class="overproductos">
-			<div class="exploraarticulo" >	
+			<div class="exploraarticulo" style="<?= ($mas_articulos_num == 1) ? 'min-width: 100%; justify-content: center;' : '' ?>">	
 					<?php if($mas_articulos->have_posts()): ?>						
 						<?php foreach($mas_articulos->posts as $articulo): ?> 
-							<div class="articulossimilares">
+							<div class="articulossimilares" style="<?= ($mas_articulos_num == 1) ? 'flex: 0 0 80%;' : '' ?>">
 								<a href="<?php echo get_permalink($articulo->ID)?>">
 
 									<?php $galeria= get_field("imgentop", $articulo->ID);?>
