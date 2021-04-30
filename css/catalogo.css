@@ -69,6 +69,7 @@
 
 .boxcolor{
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .circlec{
