@@ -30,7 +30,7 @@ $tipo_disponible = wp_get_post_terms($post->ID, "tipo");
 // $Menu_link=get_field("Menu_link");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
 // $productos_similar=get_field("productos_similares");
-$productos_similares=get_field("producto_similar");
+// $productos_similares=get_field("producto_similar");
 $caracteristicas_caja_llave_nevera=get_field("caracteristicas_caja_llave_nevera");
 $main_category = wp_get_post_terms($post->ID, "product_cat");
 
@@ -146,23 +146,15 @@ get_header();
 								</div>
 								
 							</div>
-							<p class="colores_text">Colores disponibles</p>
-							<?php if ($color_disponible): ?>
-								<div class="infcolor">
-									<?php foreach ($color_disponible as $colord): ?>
-										<?php $background = get_field("color_disponible", $colord);  ?>
-										<span onclick="circlecolordisponible(this)" namecolor="<?php echo $colord->name ?>" class="circlec" style="background-color:<?php echo $background ?>"> 
-										</span>
-									<?php endforeach ?>
-										<span id="colordisponibleselet">
-										
-										</span> 
-								</div>
-							<?php endif ?>
-							<p class="precio"><?php echo wc_price($_product->price);  ?> COP</p>
-							<form class="cart" action="<?php echo esc_url( get_permalink($post->ID)); ?>" method="post" enctype='multipart/form-data'>
-								<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $post->ID ); ?>" class="single_add_to_cart_button button alt buttomcomprar">Comprar</button>
-							</form>
+								
+
+							<?php while ( have_posts() ) : ?>
+								<?php the_post(); ?>
+
+								<?php do_action( 'woocommerce_single_product_summary' ); ?>
+
+							<?php endwhile; // end of the loop. ?>
+
 						</div>
 					</div>
 				</div>
@@ -185,6 +177,11 @@ get_header();
 						centerMode: true,
 						focusOnSelect: true
 					});
+
+					jQuery('label[for="pa_color"]').addClass("colores_text");
+
+					jQuery('.woocommerce-Price-amount.amount').append('<span> COP</span>');
+					jQuery('.characteristic form table').after(jQuery('.price'));
 				
 			});
 		</script>
@@ -208,14 +205,30 @@ get_header();
 			
 		</div>
 		<div class="overproductos">
-			<div class="productssimilares d-flex"> 
-				<?php if($productos_similares): ?>
-					<?php foreach($productos_similares as $producto): ?> 
+			<?php
+				$related_posts = get_posts( apply_filters('woocommerce_product_related_posts', array(
+					'orderby' => 'rand',
+					'posts_per_page' => 3,
+					'post_type' => 'product',
+					'fields' => 'ids',
+					'tax_query' => array(
+							array(
+									'taxonomy' => 'product_cat',
+									'field' => 'id',
+									'terms' => $main_category[0]->term_id
+							)
+					)
+				) ) );
+			?>
+			
+			<div class="products-similares d-flex"> 
+				<?php if($related_posts): ?>
+					<?php foreach($related_posts as $producto): ?> 
 						<div class="productsimilares" >
-							<a href="<?php echo get_permalink($producto["producto"]->ID)?>">  
-							<?php $galeria = get_field("caracteristicas_caja_llave_nevera", $producto["producto"]->ID); ?>
+							<a href="<?php echo get_permalink($producto)?>">  
+							<?php $galeria = get_field("caracteristicas_caja_llave_nevera", $producto); ?>
 							<img class="w-100" src="<?php echo $galeria["galeria_grifo"][0]["foto_grifo"]["url"]?>" alt="<?php echo $galeria[0]["foto_grifo"]["alt"]?>"> 
-							<p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
+							<p class="productsimilarestext"><?php echo get_the_title($producto); ?></p>
 							</a>
 						</div>
 						<?php endforeach ?> 

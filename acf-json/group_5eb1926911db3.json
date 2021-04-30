@@ -139,59 +139,9 @@
                     "maxlength": ""
                 }
             ]
-        },
-        {
-            "key": "field_5eb48c26cce71",
-            "label": "Producto Similar",
-            "name": "producto_similar",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 4,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_5eb48c59cce72",
-                    "label": "producto",
-                    "name": "producto",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "product"
-                    ],
-                    "taxonomy": "",
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "return_format": "object",
-                    "ui": 1
-                }
-            ]
         }
     ],
     "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "productos"
-            }
-        ],
         [
             {
                 "param": "post_type",
@@ -208,5 +158,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1618411431
+    "modified": 1619815953
 }
