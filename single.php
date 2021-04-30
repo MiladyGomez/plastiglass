@@ -29,7 +29,7 @@ get_header();
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/articuloblog.css' ?>" type="text/css" media="all">
 
 <main id="dt_single">
-<section>
+<section class="main-banner">
 		<div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">
         </div>
