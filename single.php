@@ -44,7 +44,7 @@ get_header();
 <main id="dt_single">
 <section class="main-banner">
 		<div class="d-none d-md-block">
-= count(            <img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">);
+			<img class="w-100" src="<?php echo $imgentop["url"]?>" alt="<?php echo $imgentop["alt"]?>">
         </div>
         <div class="d-block d-md-none">
             <img class="w-100" src="<?php echo $imgentop_mobile["url"]?>" alt="<?php echo $imgentop_mobile["alt"]?>">
