@@ -55,7 +55,8 @@ get_header();
 		<div class="row">
 				<div class="col-md-8">
 					<h1 class="title"><?php echo $post->post_title?></h1>
-					<p class="content"><?php echo $post->post_content?></p>
+					<div class="content"><?php echo the_content() ?></div>
+					<!-- <div class="content"><?php echo $post->post_content?></div> -->
 					<div class="social"> 
 						<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>" target="_blank">
 							<svg class="icono1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.76 18.85">
