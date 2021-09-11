@@ -10,7 +10,7 @@ $args = array(
     'post_type' => 'post',
     'posts_per_page' => 3, /*n de articulos a mostrar*/
     'orderby' => 'date',  
-    'order' => 'ASC',  
+    'order' => 'DESC',  
 );
 
 $garticulos = new WP_Query( $args ); 
