@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour apprev="18007" start="node2" appversion="6.1.10">
-  <panorama hideabout="1" id="node2">
-    <input levelbiashidpi="1.000" overlap="1" width="4000" levelingpitch="0" leveltilesize="510" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" height="4000">
-      <level predecode="0" width="4000" preload="0" height="4000"/>
-      <level predecode="0" width="2000" preload="0" height="2000"/>
-      <level predecode="0" width="1000" preload="0" height="1000"/>
-      <level predecode="1" width="500" preload="1" height="500"/>
-      <preview color="0x0b0b0b" strip="1"/>
+<tour start="node2" appversion="6.1.11" apprev="18043">
+  <panorama id="node2" hideabout="1">
+    <input levelingpitch="0" leveltilesize="510" levelbiashidpi="1.000" levelbias="0.400" levelingroll="0" width="4000" height="4000" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1">
+      <level preload="0" predecode="0" width="4000" height="4000"/>
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview strip="1" color="0x0b0b0b"/>
     </input>
-    <view pannorth="0" fovmode="0">
-      <start fov="70" projection="4" pan="0" tilt="-8"/>
-      <flyin fov="99" projection="4" pan="0" tilt="-8.85"/>
-      <min fov="30" pan="-90" tilt="-90"/>
-      <max fov="100" fovfisheye="360" fovstereographic="270" pan="90" tilt="90" scaletofit="1"/>
+    <view fovmode="0" pannorth="0">
+      <start pan="0" projection="4" tilt="-8" fov="70"/>
+      <flyin pan="0" projection="4" tilt="-8.85" fov="99"/>
+      <min pan="-90" tilt="-90" fov="30"/>
+      <max fovfisheye="360" pan="90" fovstereographic="270" tilt="90" scaletofit="1" fov="100"/>
     </view>
-    <userdata heading="0" author="" info="Superspa" tags="152-royal_v4" nodeid="node2" datetime="" latitude="" longitude="" title="Jacuzzi Superspa - Plastiglass" copyright="" customnodeid="" comment="10 pax | 260 x 220 cm" description="Descubre nuestro configurador intéractivo." source=""/>
-    <hotspots width="180" wordwrap="1" height="20">
-      <label textcolor="0x000000" border="1" borderalpha="1" width="180" wordwrap="1" background="1" enabled="1" backgroundalpha="1" textalpha="1" borderradius="1" backgroundcolor="0xffffff" bordercolor="0x000000" height="20"/>
-      <polystyle borderalpha="1" mode="0" backgroundalpha="0.25098" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1"/>
-      <hotspot skinid="ht_video_file" title="" description="" target="" pan="-6.53" url="media/blower.mp4" tilt="-26.02" id="Point01"/>
-      <hotspot skinid="ht_video_file" title="" description="" target="" pan="-25.34" url="media/cascada.mp4" tilt="-19.97" id="Point02"/>
-      <hotspot skinid="ht_video_file" title="" description="" target="" pan="-19.86" url="media/prendido.mp4" tilt="-16.44" id="Point04"/>
-      <hotspot skinid="ht_video_file" title="" description="" target="" pan="-350.51" url="media/hidros2.mp4" tilt="-21.95" id="Point03"/>
-      <hotspot skinid="variaciones" title="" description="" target="_blank" pan="1.2" url="" tilt="-23.01" id="Varaciones"/>
+    <userdata author="" title="Jacuzzi Superspa - Plastiglass" copyright="" longitude="" tags="152-royal_v4" comment="10 pax | 260 x 220 cm" heading="0" datetime="" source="" customnodeid="" description="Descubre nuestro configurador intéractivo." latitude="" info="Superspa" nodeid="node2"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" wordwrap="1" textcolor="0x000000" backgroundalpha="1" width="180" height="20" background="1" border="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle handcursor="1" borderalpha="1" backgroundcolor="0x0000ff" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-6.53" title="" skinid="ht_video_file" target="" id="Point01" tilt="-26.02" url="media/blower.mp4" description=""/>
+      <hotspot pan="-25.34" title="" skinid="ht_video_file" target="" id="Point02" tilt="-19.97" url="media/cascada.mp4" description=""/>
+      <hotspot pan="-19.86" title="" skinid="ht_video_file" target="" id="Point04" tilt="-16.44" url="media/prendido.mp4" description=""/>
+      <hotspot pan="-350.51" title="" skinid="ht_video_file" target="" id="Point03" tilt="-21.95" url="media/hidros2.mp4" description=""/>
+      <hotspot pan="1.2" title="" skinid="variaciones" target="_blank" id="Varaciones" tilt="-23.01" url="" description=""/>
     </hotspots>
     <media>
-      <lensflare alpha="80.000" type="3" blinding="50.000" color="0xffffff" pan="-68.270" tilt="30.440" id="Lensflare01"/>
+      <lensflare pan="-68.270" alpha="80.000" id="Lensflare01" tilt="30.440" type="3" blinding="50.000" color="0xffffff"/>
     </media>
-    <transition blendtime="1" softedge="0" zoomout="0" type="crossdissolve" blendcolor="0x000000" zoomin="0" enabled="1" zoomfov="20" zoomafteroutfov="20" zoomoutpause="1" zoomspeed="2" zoomafterinfov="90"/>
+    <transition blendtime="1" enabled="1" zoomfov="20" blendcolor="0x000000" zoomin="0" zoomout="0" type="crossdissolve" zoomafterinfov="90" softedge="0" zoomspeed="2" zoomoutpause="1" zoomafteroutfov="20"/>
     <flyintransition enabled="1" speed="2.00"/>
-    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control invertcontrol="1" contextprojections="0" hideabout="1" contextfullscreen="1" invertwheel="0" lockedkeyboard="0" speedwheel="0.9" sensitivity="14" lockedwheel="0" rubberband="0" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" lockedmouse="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control invertcontrol="1" speedwheel="0.9" lockedkeyboardzoom="0" invertwheel="0" sensitivity="14" lockedkeyboard="0" lockedwheel="0" contextfullscreen="1" contextprojections="0" simulatemass="1" dblclickfullscreen="1" lockedmouse="0" hideabout="1" rubberband="0"/>
   </panorama>
-  <panorama hideabout="1" id="node3">
-    <input levelbiashidpi="1.000" cylinder="1" overlap="1" width="6244" levelingpitch="0" leveltilesize="510" flat="1" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" height="4500">
-      <level predecode="0" width="6244" preload="0" height="4500"/>
-      <level predecode="0" width="3122" preload="0" height="2250"/>
-      <level predecode="0" width="1561" preload="0" height="1125"/>
-      <level predecode="0" width="780" preload="0" height="562"/>
-      <level predecode="1" width="390" preload="1" height="281"/>
+  <panorama id="node3" hideabout="1">
+    <input levelingpitch="0" leveltilesize="510" levelbiashidpi="1.000" cylinder="1" flat="1" levelbias="0.400" levelingroll="0" width="6244" height="4500" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1">
+      <level preload="0" predecode="0" width="6244" height="4500"/>
+      <level preload="0" predecode="0" width="3122" height="2250"/>
+      <level preload="0" predecode="0" width="1561" height="1125"/>
+      <level preload="0" predecode="0" width="780" height="562"/>
+      <level preload="1" predecode="1" width="390" height="281"/>
       <preview color="0x0b0b0b"/>
     </input>
-    <view pannorth="0" fovmode="0">
-      <start fov="94.28" projection="4" pan="1.37" tilt="0.1"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fov="120" fovfisheye="360" fovstereographic="270" pan="360" tilt="90" scaletofit="1"/>
+    <view fovmode="0" pannorth="0">
+      <start pan="1.37" projection="4" tilt="0.1" fov="94.28"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" pan="360" fovstereographic="270" tilt="90" scaletofit="1" fov="120"/>
     </view>
-    <userdata heading="0" author="" info="Superspa" tags="png" nodeid="node3" datetime="30/11/2020 5:22 p. m." latitude="" longitude="" title="Jacuzzi Superspa - Plastiglass" copyright="" customnodeid="" comment="10 pax | 260 x 220 cm" description="Descubre nuestro configurador intéractivo." source=""/>
-    <hotspots width="180" wordwrap="1" height="20">
-      <label textcolor="0x000000" border="1" borderalpha="1" width="180" wordwrap="1" background="1" enabled="1" backgroundalpha="1" textalpha="1" borderradius="1" backgroundcolor="0xffffff" bordercolor="0x000000" height="20"/>
-      <polystyle borderalpha="1" mode="0" backgroundalpha="0.25098" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1"/>
+    <userdata author="" title="Jacuzzi Superspa - Plastiglass" copyright="" longitude="" tags="png" comment="10 pax | 260 x 220 cm" heading="0" datetime="30/11/2020 5:22 p. m." source="" customnodeid="" description="Descubre nuestro configurador intéractivo." latitude="" info="Superspa" nodeid="node3"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" wordwrap="1" textcolor="0x000000" backgroundalpha="1" width="180" height="20" background="1" border="1" bordercolor="0x000000" textalpha="1"/>
+      <polystyle handcursor="1" borderalpha="1" backgroundcolor="0x0000ff" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
     </hotspots>
     <media/>
-    <transition blendtime="1" softedge="0" zoomout="0" type="crossdissolve" blendcolor="0x000000" zoomin="0" enabled="1" zoomfov="20" zoomafteroutfov="20" zoomoutpause="1" zoomspeed="2" zoomafterinfov="90"/>
+    <transition blendtime="1" enabled="1" zoomfov="20" blendcolor="0x000000" zoomin="0" zoomout="0" type="crossdissolve" zoomafterinfov="90" softedge="0" zoomspeed="2" zoomoutpause="1" zoomafteroutfov="20"/>
     <flyintransition enabled="1" speed="2.00"/>
-    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control invertcontrol="1" contextprojections="0" hideabout="1" contextfullscreen="1" invertwheel="0" lockedkeyboard="0" speedwheel="0.9" sensitivity="14" lockedwheel="0" rubberband="0" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" lockedmouse="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control invertcontrol="1" speedwheel="0.9" lockedkeyboardzoom="0" invertwheel="0" sensitivity="14" lockedkeyboard="0" lockedwheel="0" contextfullscreen="1" contextprojections="0" simulatemass="1" dblclickfullscreen="1" lockedmouse="0" hideabout="1" rubberband="0"/>
   </panorama>
   <masternode>
-    <userdata heading="0" author="" info="Superspa" tags="" nodeid="master" datetime="" latitude="" longitude="" title="Jacuzzi Superspa - Plastiglass" copyright="" customnodeid="" comment="10 pax | 260 x 220 cm" description="Descubre nuestro configurador intéractivo." source=""/>
+    <userdata author="" title="Jacuzzi Superspa - Plastiglass" copyright="" longitude="" tags="" comment="10 pax | 260 x 220 cm" heading="0" datetime="" source="" customnodeid="" description="Descubre nuestro configurador intéractivo." latitude="" info="Superspa" nodeid="master"/>
   </masternode>
 </tour>

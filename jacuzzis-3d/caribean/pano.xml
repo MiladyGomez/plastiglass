@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour start="node2" apprev="18007" appversion="6.1.10">
+<tour start="node2" appversion="6.1.11" apprev="18043">
   <panorama id="node2" hideabout="1">
-    <input levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="4000" levelbiashidpi="1.000" leveltilesize="510" levelbias="0.400" levelingroll="0" height="4000" overlap="1">
-      <level predecode="0" width="4000" preload="0" height="4000"/>
-      <level predecode="0" width="2000" preload="0" height="2000"/>
-      <level predecode="0" width="1000" preload="0" height="1000"/>
-      <level predecode="1" width="500" preload="1" height="500"/>
+    <input width="4000" leveltilesize="510" levelbias="0.400" levelingroll="0" levelbiashidpi="1.000" levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" height="4000" overlap="1">
+      <level width="4000" predecode="0" height="4000" preload="0"/>
+      <level width="2000" predecode="0" height="2000" preload="0"/>
+      <level width="1000" predecode="0" height="1000" preload="0"/>
+      <level width="500" predecode="1" height="500" preload="1"/>
       <preview color="0x0b0b0b" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start tilt="-13.85" pan="0" projection="4" fov="70.59"/>
-      <flyin tilt="-8.85" pan="0" projection="4" fov="99"/>
+      <start tilt="-13.85" pan="0" fov="70.59" projection="4"/>
+      <flyin tilt="-8.85" pan="0" fov="99" projection="4"/>
       <min tilt="-90" pan="-90" fov="30"/>
-      <max tilt="90" scaletofit="1" pan="90" fovstereographic="270" fovfisheye="360" fov="100"/>
+      <max tilt="90" scaletofit="1" pan="90" fov="100" fovstereographic="270" fovfisheye="360"/>
     </view>
-    <userdata latitude="" nodeid="node2" author="" heading="0" description="Descubre nuestro configurador intéractivo." datetime="" info="Caribean" comment="3-4 pax | 200 x 140 cm" tags="152-royal_v4" copyright="" title="Jacuzzi Caribean - Plastiglass" source="" customnodeid="" longitude=""/>
+    <userdata customnodeid="" comment="3-4 pax | 200 x 140 cm" info="Caribean" copyright="" author="" datetime="" nodeid="node2" latitude="" description="Descubre nuestro configurador intéractivo." tags="152-royal_v4" title="Jacuzzi Caribean - Plastiglass" source="" longitude="" heading="0"/>
     <hotspots width="180" wordwrap="1" height="20">
-      <label backgroundcolor="0xffffff" textcolor="0x000000" enabled="1" width="180" backgroundalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" wordwrap="1" height="20" textalpha="1" borderradius="1"/>
-      <polystyle backgroundcolor="0x0000ff" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
-      <hotspot tilt="-28.97" skinid="ht_video_file" pan="-352.06" description="" id="Point01" url="media/blower.mp4" title="" target=""/>
-      <hotspot tilt="-18.32" skinid="ht_video_file" pan="-19.62" description="" id="Point04" url="media/prendido.mp4" title="" target=""/>
-      <hotspot tilt="-23.33" skinid="ht_video_file" pan="-8.32999" description="" id="Point03" url="media/hidros2.mp4" title="" target=""/>
-      <hotspot tilt="-25.6" skinid="variaciones" pan="0.07" description="" id="Variaciones" url="" title="" target="_blank"/>
+      <label borderalpha="1" width="180" borderradius="1" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" enabled="1" height="20" textalpha="1" backgroundalpha="1" background="1" backgroundcolor="0xffffff" border="1"/>
+      <polystyle borderalpha="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+      <hotspot id="Point01" skinid="ht_video_file" tilt="-28.97" pan="-352.06" url="media/blower.mp4" description="" title="" target=""/>
+      <hotspot id="Point04" skinid="ht_video_file" tilt="-18.32" pan="-19.62" url="media/prendido.mp4" description="" title="" target=""/>
+      <hotspot id="Point03" skinid="ht_video_file" tilt="-23.33" pan="-8.32999" url="media/hidros2.mp4" description="" title="" target=""/>
+      <hotspot id="Variaciones" skinid="variaciones" tilt="-25.6" pan="0.07" url="" description="" title="" target="_blank"/>
     </hotspots>
     <media>
-      <lensflare tilt="30.440" type="3" pan="-68.270" id="Lensflare01" alpha="80.000" blinding="50.000" color="0xffffff"/>
+      <lensflare id="Lensflare01" tilt="30.440" blinding="50.000" type="3" pan="-68.270" color="0xffffff" alpha="80.000"/>
     </media>
-    <transition type="crossdissolve" zoomafterinfov="90" blendtime="1" zoomoutpause="1" blendcolor="0x000000" enabled="1" zoomfov="20" zoomafteroutfov="20" zoomin="0" zoomspeed="2" zoomout="0" softedge="0"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedmouse="0" speedwheel="0.9" invertcontrol="1" lockedkeyboardzoom="0" contextprojections="0" lockedkeyboard="0" dblclickfullscreen="1" simulatemass="1" rubberband="0" hideabout="1" lockedwheel="0" sensitivity="11" invertwheel="0" contextfullscreen="1"/>
+    <transition zoomfov="20" zoomout="0" type="crossdissolve" zoomoutpause="1" zoomspeed="2" zoomafterinfov="90" zoomafteroutfov="20" softedge="0" enabled="1" blendtime="1" zoomin="0" blendcolor="0x000000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" speedwheel="0.9" simulatemass="1" lockedmouse="0" lockedwheel="0" sensitivity="11" contextfullscreen="1" contextprojections="0" rubberband="0" lockedkeyboard="0" hideabout="1" dblclickfullscreen="1" invertcontrol="1" invertwheel="0"/>
   </panorama>
   <panorama id="node3" hideabout="1">
-    <input levelingpitch="0" flat="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" width="6244" levelbiashidpi="1.000" leveltilesize="510" levelbias="0.400" levelingroll="0" height="4500" overlap="1">
-      <level predecode="0" width="6244" preload="0" height="4500"/>
-      <level predecode="0" width="3122" preload="0" height="2250"/>
-      <level predecode="0" width="1561" preload="0" height="1125"/>
-      <level predecode="0" width="780" preload="0" height="562"/>
-      <level predecode="1" width="390" preload="1" height="281"/>
+    <input width="6244" cylinder="1" leveltilesize="510" levelbias="0.400" levelingroll="0" flat="1" levelbiashidpi="1.000" levelingpitch="0" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" height="4500" overlap="1">
+      <level width="6244" predecode="0" height="4500" preload="0"/>
+      <level width="3122" predecode="0" height="2250" preload="0"/>
+      <level width="1561" predecode="0" height="1125" preload="0"/>
+      <level width="780" predecode="0" height="562" preload="0"/>
+      <level width="390" predecode="1" height="281" preload="1"/>
       <preview color="0x0b0b0b"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start tilt="0" pan="0" projection="4" fov="100"/>
-      <flyin tilt="-90" pan="0" projection="9" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max tilt="90" scaletofit="1" pan="360" fovstereographic="270" fovfisheye="360" fov="120"/>
+      <start tilt="0" pan="0" fov="100" projection="4"/>
+      <flyin tilt="-90" pan="0" fov="170" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" scaletofit="1" pan="360" fov="120" fovstereographic="270" fovfisheye="360"/>
     </view>
-    <userdata latitude="" nodeid="node3" author="" heading="0" description="Descubre nuestro configurador intéractivo." datetime="30/11/2020 5:22 p. m." info="Caribean" comment="3-4 pax | 200 x 140 cm" tags="png" copyright="" title="Jacuzzi Caribean - Plastiglass" source="" customnodeid="" longitude=""/>
+    <userdata customnodeid="" comment="3-4 pax | 200 x 140 cm" info="Caribean" copyright="" author="" datetime="30/11/2020 5:22 p. m." nodeid="node3" latitude="" description="Descubre nuestro configurador intéractivo." tags="png" title="Jacuzzi Caribean - Plastiglass" source="" longitude="" heading="0"/>
     <hotspots width="180" wordwrap="1" height="20">
-      <label backgroundcolor="0xffffff" textcolor="0x000000" enabled="1" width="180" backgroundalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" wordwrap="1" height="20" textalpha="1" borderradius="1"/>
-      <polystyle backgroundcolor="0x0000ff" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+      <label borderalpha="1" width="180" borderradius="1" textcolor="0x000000" wordwrap="1" bordercolor="0x000000" enabled="1" height="20" textalpha="1" backgroundalpha="1" background="1" backgroundcolor="0xffffff" border="1"/>
+      <polystyle borderalpha="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
     </hotspots>
     <media/>
-    <transition type="crossdissolve" zoomafterinfov="90" blendtime="1" zoomoutpause="1" blendcolor="0x000000" enabled="1" zoomfov="20" zoomafteroutfov="20" zoomin="0" zoomspeed="2" zoomout="0" softedge="0"/>
-    <flyintransition enabled="1" speed="2.00"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedmouse="0" speedwheel="0.9" invertcontrol="1" lockedkeyboardzoom="0" contextprojections="0" lockedkeyboard="0" dblclickfullscreen="1" simulatemass="1" rubberband="0" hideabout="1" lockedwheel="0" sensitivity="11" invertwheel="0" contextfullscreen="1"/>
+    <transition zoomfov="20" zoomout="0" type="crossdissolve" zoomoutpause="1" zoomspeed="2" zoomafterinfov="90" zoomafteroutfov="20" softedge="0" enabled="1" blendtime="1" zoomin="0" blendcolor="0x000000"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" speedwheel="0.9" simulatemass="1" lockedmouse="0" lockedwheel="0" sensitivity="11" contextfullscreen="1" contextprojections="0" rubberband="0" lockedkeyboard="0" hideabout="1" dblclickfullscreen="1" invertcontrol="1" invertwheel="0"/>
   </panorama>
   <masternode>
-    <userdata latitude="" nodeid="master" author="" heading="0" description="Descubre nuestro configurador intéractivo." datetime="" info="Caribean" comment="3-4 pax | 200 x 140 cm" tags="" copyright="" title="Jacuzzi Caribean - Plastiglass" source="" customnodeid="" longitude=""/>
+    <userdata customnodeid="" comment="3-4 pax | 200 x 140 cm" info="Caribean" copyright="" author="" datetime="" nodeid="master" latitude="" description="Descubre nuestro configurador intéractivo." tags="" title="Jacuzzi Caribean - Plastiglass" source="" longitude="" heading="0"/>
   </masternode>
 </tour>

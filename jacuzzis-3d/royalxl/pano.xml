@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour apprev="18007" appversion="6.1.10" start="node2">
-  <panorama hideabout="1" id="node2">
-    <input height="2500" width="2500" levelbiashidpi="1.000" overlap="1" levelingpitch="0" levelingroll="0" leveltilesize="510" levelbias="0.400" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg">
-      <level height="2500" width="2500" preload="0" predecode="0"/>
-      <level height="1250" width="1250" preload="0" predecode="0"/>
-      <level height="625" width="625" preload="0" predecode="0"/>
-      <level height="312" width="312" preload="1" predecode="1"/>
+<tour appversion="6.1.11" start="node2" apprev="18043">
+  <panorama id="node2" hideabout="1">
+    <input width="2500" levelingroll="0" levelingpitch="0" leveltilesize="510" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="2500" levelbiashidpi="1.000" overlap="1">
+      <level width="2500" predecode="0" height="2500" preload="0"/>
+      <level width="1250" predecode="0" height="1250" preload="0"/>
+      <level width="625" predecode="0" height="625" preload="0"/>
+      <level width="312" predecode="1" height="312" preload="1"/>
       <preview strip="1" color="0x0b0b0b"/>
     </input>
-    <view fovmode="0" pannorth="0">
-      <start tilt="-8.85" pan="0" projection="4" fov="69"/>
-      <flyin tilt="-9.85" pan="0" projection="4" fov="99"/>
-      <min tilt="-90" pan="-90" fov="30"/>
-      <max tilt="90" fovfisheye="360" fovstereographic="270" scaletofit="1" pan="90" fov="100"/>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="-8.85" fov="69" pan="0"/>
+      <flyin projection="4" tilt="-9.85" fov="99" pan="0"/>
+      <min tilt="-90" fov="30" pan="-90"/>
+      <max fovfisheye="360" tilt="90" fov="100" fovstereographic="270" pan="90" scaletofit="1"/>
     </view>
-    <userdata title="Jacuzzi Royal XL - Plastiglass" author="" datetime="" info="Royal XL" tags="152-royal_v4" customnodeid="" nodeid="node2" description="Descubre nuestro configurador intéractivo." copyright="" latitude="" longitude="" comment="10 pax | 300 x 210 cm" source="" heading="0"/>
-    <hotspots height="20" width="180" wordwrap="1">
-      <label height="20" width="180" enabled="1" border="1" backgroundcolor="0xffffff" textcolor="0x000000" borderalpha="1" borderradius="1" backgroundalpha="1" background="1" textalpha="1" bordercolor="0x000000" wordwrap="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff"/>
-      <hotspot title="" tilt="-27.89" url="media/blower.mp4" pan="-12.58" id="Point01" description="" target="" skinid="ht_video_file"/>
-      <hotspot title="" tilt="-23.54" url="media/cascada.mp4" pan="-327.24" id="Point02" description="" target="" skinid="ht_video_file"/>
-      <hotspot title="" tilt="-28.51" url="media/prendido.mp4" pan="-320.98" id="Point04" description="" target="" skinid="ht_video_file"/>
-      <hotspot title="" tilt="-21.3" url="media/hidros2.mp4" pan="-343.25" id="Point03" description="" target="" skinid="ht_video_file"/>
-      <hotspot title="" tilt="-26.94" customimageheight="0" customimagewidth="0" url="" pan="0.04" id="Variaciones" use3D="0" fov="90" description="" customimage="media/152-atami_v5-AGUA_patch.png" distance3D="0" target="_blank" skinid="variaciones"/>
+    <userdata info="Royal XL" copyright="" nodeid="node2" comment="10 pax | 300 x 210 cm" author="" longitude="" heading="0" description="Descubre nuestro configurador intéractivo." tags="152-royal_v4" latitude="" title="Jacuzzi Royal XL - Plastiglass" source="" customnodeid="" datetime=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label border="1" width="180" backgroundcolor="0xffffff" backgroundalpha="1" borderalpha="1" height="20" textcolor="0x000000" background="1" enabled="1" textalpha="1" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+      <hotspot tilt="-27.89" id="Point01" pan="-12.58" url="media/blower.mp4" skinid="ht_video_file" description="" title="" target=""/>
+      <hotspot tilt="-23.54" id="Point02" pan="-327.24" url="media/cascada.mp4" skinid="ht_video_file" description="" title="" target=""/>
+      <hotspot tilt="-28.51" id="Point04" pan="-320.98" url="media/prendido.mp4" skinid="ht_video_file" description="" title="" target=""/>
+      <hotspot tilt="-21.3" id="Point03" pan="-343.25" url="media/hidros2.mp4" skinid="ht_video_file" description="" title="" target=""/>
+      <hotspot tilt="-26.94" use3D="0" fov="90" id="Variaciones" pan="0.04" url="" distance3D="0" skinid="variaciones" description="" title="" customimage="media/152-atami_v5-AGUA_patch.png" target="_blank" customimagewidth="0" customimageheight="0"/>
     </hotspots>
     <media>
-      <lensflare blinding="50.000" tilt="30.440" alpha="80.000" pan="-68.270" id="Lensflare01" type="3" color="0xffffff"/>
+      <lensflare tilt="30.440" id="Lensflare01" color="0xffffff" pan="-68.270" blinding="50.000" alpha="80.000" type="3"/>
     </media>
-    <transition zoomafteroutfov="20" enabled="1" zoomafterinfov="90" zoomout="0" type="crossdissolve" blendcolor="0x000000" zoomfov="20" zoomin="0" softedge="0" zoomoutpause="1" blendtime="1" zoomspeed="2"/>
+    <transition zoomout="0" zoomoutpause="1" zoomfov="20" zoomin="0" zoomafterinfov="90" blendcolor="0x000000" zoomafteroutfov="20" zoomspeed="2" enabled="1" type="crossdissolve" softedge="0" blendtime="1"/>
     <flyintransition enabled="1" speed="2.00"/>
-    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control simulatemass="1" dblclickfullscreen="1" sensitivity="14" lockedmouse="0" speedwheel="2.5" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" contextfullscreen="1" lockedwheel="0" lockedkeyboard="0" rubberband="0" invertcontrol="1" invertwheel="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control dblclickfullscreen="1" lockedwheel="0" contextfullscreen="1" lockedmouse="0" hideabout="1" invertwheel="0" sensitivity="14" lockedkeyboard="0" lockedkeyboardzoom="0" simulatemass="1" invertcontrol="1" speedwheel="2.5" rubberband="0" contextprojections="0"/>
   </panorama>
-  <panorama hideabout="1" id="node3">
-    <input height="4500" flat="1" width="6244" levelbiashidpi="1.000" overlap="1" levelingpitch="0" levelingroll="0" cylinder="1" leveltilesize="510" levelbias="0.400" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg">
-      <level height="4500" width="6244" preload="0" predecode="0"/>
-      <level height="2250" width="3122" preload="0" predecode="0"/>
-      <level height="1125" width="1561" preload="0" predecode="0"/>
-      <level height="562" width="780" preload="0" predecode="0"/>
-      <level height="281" width="390" preload="1" predecode="1"/>
+  <panorama id="node3" hideabout="1">
+    <input width="6244" levelingroll="0" levelingpitch="0" leveltilesize="510" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" height="4500" flat="1" levelbiashidpi="1.000" cylinder="1" overlap="1">
+      <level width="6244" predecode="0" height="4500" preload="0"/>
+      <level width="3122" predecode="0" height="2250" preload="0"/>
+      <level width="1561" predecode="0" height="1125" preload="0"/>
+      <level width="780" predecode="0" height="562" preload="0"/>
+      <level width="390" predecode="1" height="281" preload="1"/>
       <preview color="0x0b0b0b"/>
     </input>
-    <view fovmode="0" pannorth="0">
-      <start tilt="0.26" pan="1.3" projection="4" fov="79.32"/>
-      <flyin tilt="-90" pan="0" projection="9" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max tilt="90" fovfisheye="360" fovstereographic="270" scaletofit="1" pan="360" fov="120"/>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="0.26" fov="79.32" pan="1.3"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovfisheye="360" tilt="90" fov="120" fovstereographic="270" pan="360" scaletofit="1"/>
     </view>
-    <userdata title="Jacuzzi Royal XL - Plastiglass" author="" datetime="30/11/2020 5:22 p. m." info="Royal XL" tags="png" customnodeid="" nodeid="node3" description="Descubre nuestro configurador intéractivo." copyright="" latitude="" longitude="" comment="10 pax | 300 x 210 cm" source="" heading="0"/>
-    <hotspots height="20" width="180" wordwrap="1">
-      <label height="20" width="180" enabled="1" border="1" backgroundcolor="0xffffff" textcolor="0x000000" borderalpha="1" borderradius="1" backgroundalpha="1" background="1" textalpha="1" bordercolor="0x000000" wordwrap="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff"/>
+    <userdata info="Royal XL" copyright="" nodeid="node3" comment="10 pax | 300 x 210 cm" author="" longitude="" heading="0" description="Descubre nuestro configurador intéractivo." tags="png" latitude="" title="Jacuzzi Royal XL - Plastiglass" source="" customnodeid="" datetime="30/11/2020 5:22 p. m."/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label border="1" width="180" backgroundcolor="0xffffff" backgroundalpha="1" borderalpha="1" height="20" textcolor="0x000000" background="1" enabled="1" textalpha="1" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
     </hotspots>
     <media/>
-    <transition zoomafteroutfov="20" enabled="1" zoomafterinfov="90" zoomout="0" type="crossdissolve" blendcolor="0x000000" zoomfov="20" zoomin="0" softedge="0" zoomoutpause="1" blendtime="1" zoomspeed="2"/>
+    <transition zoomout="0" zoomoutpause="1" zoomfov="20" zoomin="0" zoomafterinfov="90" blendcolor="0x000000" zoomafteroutfov="20" zoomspeed="2" enabled="1" type="crossdissolve" softedge="0" blendtime="1"/>
     <flyintransition enabled="1" speed="2.00"/>
-    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control simulatemass="1" dblclickfullscreen="1" sensitivity="14" lockedmouse="0" speedwheel="2.5" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" contextfullscreen="1" lockedwheel="0" lockedkeyboard="0" rubberband="0" invertcontrol="1" invertwheel="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control dblclickfullscreen="1" lockedwheel="0" contextfullscreen="1" lockedmouse="0" hideabout="1" invertwheel="0" sensitivity="14" lockedkeyboard="0" lockedkeyboardzoom="0" simulatemass="1" invertcontrol="1" speedwheel="2.5" rubberband="0" contextprojections="0"/>
   </panorama>
   <masternode>
-    <userdata title="Jacuzzi Royal XL - Plastiglass" author="" datetime="" info="Royal XL" tags="" customnodeid="" nodeid="master" description="Descubre nuestro configurador intéractivo." copyright="" latitude="" longitude="" comment="10 pax | 300 x 210 cm" source="" heading="0"/>
+    <userdata info="Royal XL" copyright="" nodeid="master" comment="10 pax | 300 x 210 cm" author="" longitude="" heading="0" description="Descubre nuestro configurador intéractivo." tags="" latitude="" title="Jacuzzi Royal XL - Plastiglass" source="" customnodeid="" datetime=""/>
   </masternode>
 </tour>

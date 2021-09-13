@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour apprev="18007" start="node2" appversion="6.1.10">
-  <panorama hideabout="1" id="node2">
-    <input levelbiashidpi="1.000" width="2000" leveltilesize="510" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelingroll="0" overlap="1" height="2000" levelbias="0.400">
-      <level width="2000" predecode="0" height="2000" preload="0"/>
-      <level width="1000" predecode="0" height="1000" preload="0"/>
-      <level width="500" predecode="1" height="500" preload="1"/>
-      <preview color="0x0b0b0b" strip="1"/>
+<tour apprev="18043" start="node2" appversion="6.1.11">
+  <panorama id="node2" hideabout="1">
+    <input leveltilesize="510" height="2000" overlap="1" levelingroll="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" width="2000" levelingpitch="0">
+      <level height="2000" preload="0" width="2000" predecode="0"/>
+      <level height="1000" preload="0" width="1000" predecode="0"/>
+      <level height="500" preload="1" width="500" predecode="1"/>
+      <preview strip="1" color="0x0b0b0b"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start pan="0" tilt="-8.85" fov="70.59" projection="4"/>
-      <flyin pan="0" tilt="-8.85" fov="99" projection="4"/>
-      <min pan="-90" tilt="-90" fov="30"/>
-      <max pan="90" scaletofit="1" tilt="90" fov="100" fovstereographic="270" fovfisheye="360"/>
+      <start tilt="-8.85" pan="0" fov="70.59" projection="4"/>
+      <flyin tilt="-8.85" pan="0" fov="99" projection="4"/>
+      <min tilt="-90" pan="-90" fov="30"/>
+      <max tilt="90" fovstereographic="270" pan="90" fovfisheye="360" fov="100" scaletofit="1"/>
     </view>
-    <userdata latitude="" datetime="" copyright="" heading="0" customnodeid="" source="" title="Jacuzzi Gales - Plastiglass" tags="152-royal_v4" info="Gales" author="" description="Descubre nuestro configurador intéractivo." nodeid="node2" comment="4 pax | 156 x 156 cm" longitude=""/>
-    <hotspots width="180" wordwrap="1" height="20">
-      <label borderalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" textalpha="1" border="1" wordwrap="1" borderradius="1" textcolor="0x000000" background="1" height="20" backgroundalpha="1" enabled="1"/>
-      <polystyle borderalpha="1" backgroundcolor="0x0000ff" bordercolor="0x0000ff" mode="0" handcursor="1" backgroundalpha="0.25098"/>
-      <hotspot pan="-0.11" target="" url="media/blower.mp4" title="" tilt="-27.06" skinid="ht_video_file" id="Point01" description=""/>
-      <hotspot pan="-351" target="" url="media/cascada.mp4" title="" tilt="-18.87" skinid="ht_video_file" id="Point02" description=""/>
-      <hotspot pan="-341.9" target="" url="media/prendido.mp4" title="" tilt="-27.46" skinid="ht_video_file" id="Point04" description=""/>
-      <hotspot pan="-8.02999" target="" url="media/hidros2.mp4" title="" tilt="-23.41" skinid="ht_video_file" id="Point03" description=""/>
-      <hotspot pan="-0.22" target="_blank" url="" title="" tilt="-25.82" skinid="variaciones" id="Variaciones" description=""/>
+    <userdata author="" longitude="" title="Jacuzzi Gales - Plastiglass" heading="0" comment="4 pax | 156 x 156 cm" datetime="" nodeid="node2" tags="152-royal_v4" customnodeid="" source="" info="Gales" copyright="" description="Descubre nuestro configurador intéractivo." latitude=""/>
+    <hotspots height="20" wordwrap="1" width="180">
+      <label enabled="1" height="20" borderradius="1" textcolor="0x000000" backgroundalpha="1" borderalpha="1" textalpha="1" bordercolor="0x000000" background="1" backgroundcolor="0xffffff" wordwrap="1" width="180" border="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" borderalpha="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" id="Point01" tilt="-27.06" url="media/blower.mp4" skinid="ht_video_file" title="" pan="-0.11" description=""/>
+      <hotspot target="" id="Point02" tilt="-18.87" url="media/cascada.mp4" skinid="ht_video_file" title="" pan="-351" description=""/>
+      <hotspot target="" id="Point04" tilt="-27.46" url="media/prendido.mp4" skinid="ht_video_file" title="" pan="-341.9" description=""/>
+      <hotspot target="" id="Point03" tilt="-23.41" url="media/hidros2.mp4" skinid="ht_video_file" title="" pan="-8.02999" description=""/>
+      <hotspot target="_blank" id="Variaciones" tilt="-25.82" url="" skinid="variaciones" title="" pan="-0.22" description=""/>
     </hotspots>
     <media>
-      <lensflare pan="-68.270" alpha="80.000" type="3" tilt="30.440" blinding="50.000" color="0xffffff" id="Lensflare01"/>
+      <lensflare id="Lensflare01" tilt="30.440" type="3" pan="-68.270" blinding="50.000" color="0xffffff" alpha="80.000"/>
     </media>
-    <transition zoomspeed="2" zoomin="0" zoomout="0" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomafterinfov="90" blendcolor="0x000000" zoomafteroutfov="20" zoomfov="20" enabled="1" softedge="0"/>
-    <flyintransition speed="2.00" enabled="1"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control contextprojections="0" lockedmouse="0" speedwheel="0.9" lockedkeyboardzoom="0" dblclickfullscreen="1" hideabout="1" simulatemass="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedkeyboard="0" invertwheel="0" invertcontrol="1" sensitivity="14"/>
+    <transition enabled="1" type="crossdissolve" blendtime="1" zoomfov="20" softedge="0" blendcolor="0x000000" zoomspeed="2" zoomafteroutfov="20" zoomin="0" zoomoutpause="1" zoomafterinfov="90" zoomout="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control speedwheel="0.9" lockedkeyboard="0" dblclickfullscreen="1" invertcontrol="1" lockedwheel="0" invertwheel="0" contextfullscreen="1" sensitivity="14" contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" hideabout="1" rubberband="0" simulatemass="1"/>
   </panorama>
-  <panorama hideabout="1" id="node3">
-    <input levelbiashidpi="1.000" width="6244" flat="1" leveltilesize="510" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelingroll="0" overlap="1" height="4500" cylinder="1" levelbias="0.400">
-      <level width="6244" predecode="0" height="4500" preload="0"/>
-      <level width="3122" predecode="0" height="2250" preload="0"/>
-      <level width="1561" predecode="0" height="1125" preload="0"/>
-      <level width="780" predecode="0" height="562" preload="0"/>
-      <level width="390" predecode="1" height="281" preload="1"/>
+  <panorama id="node3" hideabout="1">
+    <input cylinder="1" leveltilesize="510" height="4500" overlap="1" flat="1" levelingroll="0" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" width="6244" levelingpitch="0">
+      <level height="4500" preload="0" width="6244" predecode="0"/>
+      <level height="2250" preload="0" width="3122" predecode="0"/>
+      <level height="1125" preload="0" width="1561" predecode="0"/>
+      <level height="562" preload="0" width="780" predecode="0"/>
+      <level height="281" preload="1" width="390" predecode="1"/>
       <preview color="0x0b0b0b"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start pan="0" tilt="0" fov="92.44" projection="4"/>
-      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
-      <min pan="0" fovpixel="2" tilt="-90"/>
-      <max pan="360" scaletofit="1" tilt="90" fov="120" fovstereographic="270" fovfisheye="360"/>
+      <start tilt="0" pan="0" fov="92.44" projection="4"/>
+      <flyin tilt="-90" pan="0" fov="170" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" pan="360" fovfisheye="360" fov="120" scaletofit="1"/>
     </view>
-    <userdata latitude="" datetime="30/11/2020 5:22 p. m." copyright="" heading="0" customnodeid="" source="" title="Jacuzzi Gales - Plastiglass" tags="png" info="Gales" author="" description="Descubre nuestro configurador intéractivo." nodeid="node3" comment="4 pax | 156 x 156 cm" longitude=""/>
-    <hotspots width="180" wordwrap="1" height="20">
-      <label borderalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" textalpha="1" border="1" wordwrap="1" borderradius="1" textcolor="0x000000" background="1" height="20" backgroundalpha="1" enabled="1"/>
-      <polystyle borderalpha="1" backgroundcolor="0x0000ff" bordercolor="0x0000ff" mode="0" handcursor="1" backgroundalpha="0.25098"/>
+    <userdata author="" longitude="" title="Jacuzzi Gales - Plastiglass" heading="0" comment="4 pax | 156 x 156 cm" datetime="30/11/2020 5:22 p. m." nodeid="node3" tags="png" customnodeid="" source="" info="Gales" copyright="" description="Descubre nuestro configurador intéractivo." latitude=""/>
+    <hotspots height="20" wordwrap="1" width="180">
+      <label enabled="1" height="20" borderradius="1" textcolor="0x000000" backgroundalpha="1" borderalpha="1" textalpha="1" bordercolor="0x000000" background="1" backgroundcolor="0xffffff" wordwrap="1" width="180" border="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" borderalpha="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" handcursor="1"/>
     </hotspots>
     <media/>
-    <transition zoomspeed="2" zoomin="0" zoomout="0" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomafterinfov="90" blendcolor="0x000000" zoomafteroutfov="20" zoomfov="20" enabled="1" softedge="0"/>
-    <flyintransition speed="2.00" enabled="1"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control contextprojections="0" lockedmouse="0" speedwheel="0.9" lockedkeyboardzoom="0" dblclickfullscreen="1" hideabout="1" simulatemass="1" contextfullscreen="1" rubberband="0" lockedwheel="0" lockedkeyboard="0" invertwheel="0" invertcontrol="1" sensitivity="14"/>
+    <transition enabled="1" type="crossdissolve" blendtime="1" zoomfov="20" softedge="0" blendcolor="0x000000" zoomspeed="2" zoomafteroutfov="20" zoomin="0" zoomoutpause="1" zoomafterinfov="90" zoomout="0"/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control speedwheel="0.9" lockedkeyboard="0" dblclickfullscreen="1" invertcontrol="1" lockedwheel="0" invertwheel="0" contextfullscreen="1" sensitivity="14" contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" hideabout="1" rubberband="0" simulatemass="1"/>
   </panorama>
   <masternode>
-    <userdata latitude="" datetime="" copyright="" heading="0" customnodeid="" source="" title="Jacuzzi Gales - Plastiglass" tags="" info="Gales" author="" description="Descubre nuestro configurador intéractivo." nodeid="master" comment="4 pax | 156 x 156 cm" longitude=""/>
+    <userdata author="" longitude="" title="Jacuzzi Gales - Plastiglass" heading="0" comment="4 pax | 156 x 156 cm" datetime="" nodeid="master" tags="" customnodeid="" source="" info="Gales" copyright="" description="Descubre nuestro configurador intéractivo." latitude=""/>
   </masternode>
 </tour>
