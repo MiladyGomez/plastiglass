@@ -45,7 +45,7 @@ get_header();
                 <div class="row"> 
                     <div class="col-lg-6 col-xl-5">
                         <p class="tittle"><?php echo $onepost->post_title?></p>
-                        <!-- <p class="content"><?php echo get_field("resumen", $onepost->ID);?></p> -->
+                        <p class="content"><?php echo get_field("resumen", $onepost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($onepost)?>">
                             Ver articulo
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
@@ -80,7 +80,7 @@ get_header();
                     </div>                    
                     <div class="col-lg-6 col-xl-5">
                         <p class="tittle"> <?php echo $twopost->post_title?></p>
-                        <!-- <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p> -->
+                        <p class="content"> <?php echo get_field("resumen", $twopost->ID);?></p>
                         <a class="verarticulo" href="<?php echo get_permalink($twopost)?>">
                             Ver articulo
                             <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
@@ -131,7 +131,8 @@ get_header();
         </div>
     </section>
     <section>
-        <div class="textproduct">
+        <?php echo get_template_part('partials/articulosrecientes') ?> 
+        <!-- <div class="textproduct">
             <p> Articulos recientes </p> 
         </div>
 
@@ -166,11 +167,11 @@ get_header();
                     </div>
                 </div>  
             </div>
-        </div> 
+        </div>  -->
     </section> 
-    <section>
+    <!-- <section>
         <?php echo get_template_part('partials/formulariosuscribirme') ?> 
-    </section> 
+    </section>  -->
 
 
 <?php

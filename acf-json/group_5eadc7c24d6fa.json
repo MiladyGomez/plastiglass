@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5eadc7d4605cc",
-            "label": "Imagen top",
+            "label": "hometop",
             "name": "hometop",
             "type": "image",
             "instructions": "",
@@ -51,8 +51,42 @@
             "mime_types": ""
         },
         {
+            "key": "field_61487db4ebfc3",
+            "label": "Home Title",
+            "name": "home_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61487defd15e3",
+            "label": "Home Link",
+            "name": "home_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_5eadcd8dd01d3",
-            "label": "Seccion 1",
+            "label": "homemiddeo",
             "name": "homemiddeo",
             "type": "group",
             "instructions": "",
@@ -67,7 +101,7 @@
             "sub_fields": [
                 {
                     "key": "field_5eadcdcdd01d4",
-                    "label": "Imagen izquierda",
+                    "label": "homemiddeone",
                     "name": "homemiddeone",
                     "type": "image",
                     "instructions": "",
@@ -91,7 +125,7 @@
                 },
                 {
                     "key": "field_5eadcdf7d01d5",
-                    "label": "Imagen derecha",
+                    "label": "homemiddetwo",
                     "name": "homemiddetwo",
                     "type": "image",
                     "instructions": "",
@@ -115,7 +149,7 @@
                 },
                 {
                     "key": "field_5eadce0ed01d6",
-                    "label": "Texto",
+                    "label": "homemiddetext",
                     "name": "homemiddetext",
                     "type": "textarea",
                     "instructions": "",
@@ -134,7 +168,7 @@
                 },
                 {
                     "key": "field_5ec46c86f5c31",
-                    "label": "Link",
+                    "label": "link home",
                     "name": "link_home",
                     "type": "link",
                     "instructions": "",
@@ -151,7 +185,7 @@
         },
         {
             "key": "field_5eade2cd150f3",
-            "label": "Seccion 2",
+            "label": "homemiddet",
             "name": "homemiddet",
             "type": "group",
             "instructions": "",
@@ -166,7 +200,7 @@
             "sub_fields": [
                 {
                     "key": "field_5eade2ee150f4",
-                    "label": "Imagen",
+                    "label": "homemiddethree",
                     "name": "homemiddethree",
                     "type": "image",
                     "instructions": "",
@@ -190,7 +224,7 @@
                 },
                 {
                     "key": "field_5eb9ad340f8a8",
-                    "label": "Imagen mobile",
+                    "label": "homemiddethreemovile",
                     "name": "homemiddethreemovile",
                     "type": "image",
                     "instructions": "",
@@ -214,7 +248,7 @@
                 },
                 {
                     "key": "field_5eade308150f5",
-                    "label": "Titulo",
+                    "label": "homemiddetextt",
                     "name": "homemiddetextt",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -233,7 +267,7 @@
                 },
                 {
                     "key": "field_5eade4a636893",
-                    "label": "Texto",
+                    "label": "homemiddetextf",
                     "name": "homemiddetextf",
                     "type": "textarea",
                     "instructions": "",
@@ -252,7 +286,7 @@
                 },
                 {
                     "key": "field_5eade4be36894",
-                    "label": "Link",
+                    "label": "homemiddeproducto",
                     "name": "homemiddeproducto",
                     "type": "link",
                     "instructions": "",
@@ -269,7 +303,7 @@
         },
         {
             "key": "field_5eadf72553bd0",
-            "label": "Seccion 3",
+            "label": "homemiddf",
             "name": "homemiddf",
             "type": "group",
             "instructions": "",
@@ -284,7 +318,7 @@
             "sub_fields": [
                 {
                     "key": "field_5eadf74f53bd1",
-                    "label": "Titulo",
+                    "label": "homemiddenttext",
                     "name": "homemiddenttext",
                     "type": "text",
                     "instructions": "",
@@ -303,7 +337,7 @@
                 },
                 {
                     "key": "field_5eadf77f53bd2",
-                    "label": "Producto",
+                    "label": "homemiddenproduct",
                     "name": "homemiddenproduct",
                     "type": "repeater",
                     "instructions": "",
@@ -322,7 +356,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5eadf79c53bd3",
-                            "label": "Imagen",
+                            "label": "imgcat",
                             "name": "imgcat",
                             "type": "image",
                             "instructions": "",
@@ -345,8 +379,30 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_5eadf7b353bd4",
+                            "label": "cattxt",
+                            "name": "cattxt",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "categoria_productos",
+                            "field_type": "checkbox",
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0,
+                            "allow_null": 0
+                        },
+                        {
                             "key": "field_5ec467119be5e",
-                            "label": "Link Producto",
+                            "label": "Link Productos",
                             "name": "link_productos",
                             "type": "link",
                             "instructions": "",
@@ -378,10 +434,8 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
+    "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1619658856
+    "modified": 1632140798
 }

@@ -7,6 +7,8 @@
  */
 $hometop=get_field("hometop"); /*Imagen de home top*/
 $imagen_top_mobile=get_field("imagen_top_mobile");
+$home_title=get_field("home_title");
+$home_link=get_field("home_link");
 $homemiddeo=get_field("homemiddeo"); 
 $homemiddet=get_field("homemiddet");
 $homemiddf=get_field("homemiddf");
@@ -27,13 +29,19 @@ get_header();
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/home.css' ?>" type="text/css" media="all">
 
 <main id="home-template">    
-    <section>
+    <section class="tophome">
         <div class="d-none d-md-block">
             <img class="w-100" src="<?php echo $hometop["url"]?>" alt="<?php echo $hometop["alt"]?>">
         </div>
         <div class="d-block d-md-none">
             <img class="w-100" src="<?php echo $imagen_top_mobile["url"]?>" alt="<?php echo $imagen_top_mobile["alt"]?>">
         </div> 
+        <div class="text">
+            <p><?php echo $home_title?></p>
+            <a href="<?php echo $home_link["url"]?>">
+                <?php echo $home_link["title"]?>
+            </a>
+        </div>
     </section>
     <section class="middensec  d-lg-flex">
         <div class="secleft">
@@ -96,6 +104,9 @@ get_header();
         </div>
     </section>
 
+    <section>
+        <?php echo get_template_part('partials/articulosrecientes') ?> 
+    </section>
 </main>
 
 <?php

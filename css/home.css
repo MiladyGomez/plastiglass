@@ -1,4 +1,33 @@
-
+.tophome{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 35%;
+    right: 65px;
+    transform: translateY(-50%);
+    max-width: 460px;
+    text-align: right;
+}
+.text p{
+    font-size: 49px;
+    line-height: 54px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-family: 'Raleway-Heavy';
+}
+.text a{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    font-family: 'Raleway-Heavy';
+    background-color: #A67EB1;
+    padding: 11px 25px 10px 25px;
+}
+.text a:hover{
+    text-decoration: none;
+}
 .middensec {
     padding-top: 90px;
     padding-left: 225px;

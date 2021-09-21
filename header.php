@@ -26,12 +26,13 @@ if ( ! defined( 'ABSPATH' ) ) {
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/main.css?v=1.0.0">
 
   <?php wp_head(); ?>
+  
 </head>
 <body <?php body_class(); ?>>
 <div id="page"> <!-- +Page container -->
   <header id="header-wrapper">
     <div class="container-header">
-      <nav class="d-flex" id="PR-navbar">
+      <nav class="d-flex" id="PR-navbar" style="position:relative;">
         <?php if (has_custom_logo()): ?>
           <?php the_custom_logo(); ?>
         <?php else: ?>
@@ -53,7 +54,50 @@ if ( ! defined( 'ABSPATH' ) ) {
             'menu_class'      => 'navbar-nav ml-auto',
           ]);
         ?>
-   
+            <div class="wrapper-search">
+              <div class="wrapper-search-contenido">
+                <div class="box-search"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
+                <div class="closesearch" onclick="closesearch()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.71 12.71">
+                      <defs>
+                          <style>.cls-2{fill:#706F6F;}</style>
+                      </defs>
+                      <g id="Capa_2" data-name="Capa 2">
+                          <g id="Layer_1" data-name="Layer 1">
+                              <path class="cls-2" d="M7.06,6.35l5.5-5.5a.48.48,0,0,0,0-.7.48.48,0,0,0-.7,0L6.35,5.65.85.15a.48.48,0,0,0-.7,0,.48.48,0,0,0,0,.7l5.5,5.5L.15,11.86a.48.48,0,0,0,0,.7.47.47,0,0,0,.35.15.5.5,0,0,0,.35-.15l5.5-5.5,5.51,5.5a.49.49,0,0,0,.35.15.47.47,0,0,0,.35-.15.48.48,0,0,0,0-.7Z" />
+                          </g>
+                      </g>
+                  </svg>
+                </div>
+              </div>
+            <!-- <?php echo get_search_form()?> -->
+              <!-- <div class="content-grid">
+                <div class="toggle-main-search">
+                  <?= get_template_part('images/icons/icon-search'); ?>
+                </div>
+                <div class="ui search">
+                  <div class="ui input">
+                    <input class="prompt" type="text" placeholder="<?php _e('Search', 'celsia-common'); ?>">
+                  </div>
+                  <div class="results"></div>
+                </div>
+                <div class="toggle-main-search cursor-pointer">
+                  <?= get_template_part('images/icons/icon-close-light'); ?>
+                </div>
+              </div> -->
+            </div>
+            <span class="lupa" onclick="opensearch()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+                  <defs>
+                      <style>.cls-1{fill:#fff;fill-rule:evenodd;}</style>
+                  </defs>
+                  <g id="Capa_2" data-name="Capa 2">
+                      <g id="Layer_1" data-name="Layer 1">
+                          <path class="cls-1" d="M30.71,29.32l-8-7.88a12.64,12.64,0,0,0,3.38-8.6A12.93,12.93,0,0,0,13.05,0,12.94,12.94,0,0,0,0,12.84,12.94,12.94,0,0,0,13.05,25.67a13.11,13.11,0,0,0,8.2-2.86l8,7.9a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.39ZM13.05,23.7A11,11,0,0,1,2,12.84,11,11,0,0,1,13.05,2a11,11,0,0,1,11,10.87,11,11,0,0,1-11,10.86Z" />
+                      </g>
+                  </g>
+              </svg>
+            </span>
       </nav>
     </div>
     <div class="see_main_mobile">
@@ -112,5 +156,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         jQuery(".see_main_mobile").toggleClass("mostrar")
         jQuery("body").toggleClass("nonescroll")
       } 
+      function closesearch() {
+        jQuery(".wrapper-search").hide();
+      }
+      function opensearch() {
+        jQuery(".wrapper-search").show();
+      }
   </script> 
 

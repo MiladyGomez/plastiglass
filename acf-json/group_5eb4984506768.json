@@ -109,6 +109,49 @@
                     "return_format": "array"
                 }
             ]
+        },
+        {
+            "key": "field_6148df5883737",
+            "label": "Productos relacionados",
+            "name": "productos_relacionados",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6148df7283738",
+                    "label": "Producto",
+                    "name": "producto",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "jacuzzi"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
         }
     ],
     "location": [
@@ -128,5 +171,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1619823600
+    "modified": 1632165773
 }

@@ -17,6 +17,7 @@ $jacuzzijets=get_field("jacuzzijets");
 $jacuzziwateramount=get_field("jacuzziwateramount");
 $jacuzzimaterial=get_field("jacuzzimaterial");
 $productos_similares=get_field("producto_similar");
+$informacion_adicional=get_field("informacion_adicional");
 $configurador_jacuzzi = get_field('configurador_jacuzzi');
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -184,6 +185,151 @@ get_header();
             });
         </script> 
     </section>
+
+    <section class="container-fluid container-plastiglass">
+        <h2 class="title-render">Información adicional</h2>
+        <div class="inf-adicional">
+            <?php if($informacion_adicional["caracteristicas_especiales"]): ?>
+                <div>
+                    <div class="title-info">Características Especiales
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.3">
+                                <defs>
+                                    <style>.cls-1{fill:#00263a;}</style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Layer_1" data-name="Layer 1">
+                                        <path class="cls-1" d="M15.3,8.87H0V6.43H15.3Z" />
+                                        <path class="cls-1 mas" d="M6.43,15.3V0H8.87V15.3Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-infor"><?php echo $informacion_adicional["caracteristicas_especiales"]; ?></div>
+                </div>
+            <?php endif ?>
+            <?php if ($color_exterior): ?>
+                <div>
+                    <div class="title-info">Colores
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.3">
+                                <defs>
+                                    <style>.cls-1{fill:#00263a;}</style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Layer_1" data-name="Layer 1">
+                                        <path class="cls-1" d="M15.3,8.87H0V6.43H15.3Z" />
+                                        <path class="cls-1 mas" d="M6.43,15.3V0H8.87V15.3Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-infor">
+                        <div class="contenedor-colores">
+                            <?php foreach ($color_exterior as $colorj): ?>
+                                <?php $background = get_field("color", $colorj);  ?>
+                                <div class="box-color">
+                                    <span class="circlec" style="background-color:<?php echo $background ?>"> </span>
+                                    <div> <?php echo $colorj->name ?> </div>
+                                </div>
+                            <?php endforeach ?>
+                        </div>
+                    </div>
+                </div>
+            <?php endif ?>
+            <?php if($informacion_adicional["equipos_&_accesorios"]): ?>
+                <div>
+                    <div class="title-info">Equipos & Accesorios
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.3">
+                                <defs>
+                                    <style>.cls-1{fill:#00263a;}</style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Layer_1" data-name="Layer 1">
+                                        <path class="cls-1" d="M15.3,8.87H0V6.43H15.3Z" />
+                                        <path class="cls-1 mas" d="M6.43,15.3V0H8.87V15.3Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-infor">
+                        <table class="accesorios">
+                            <thead>
+                                <?php foreach ($informacion_adicional["equipos_&_accesorios"]["head"] as $title): ?>
+                                    <th><?php echo $title["text"] ?></th>
+                                <?php endforeach ?>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($informacion_adicional["equipos_&_accesorios"]["body"] as $body): ?>
+                                    <tr>
+                                        <?php foreach ($body["td"] as $td): ?>
+                                            <?php if(strlen($td["text"] ) > 0): ?>
+                                                <td ><?php echo $td["text"] ?></td>
+                                            <?php else: ?>
+                                                <td class="cont"><?php echo $td["text"] ?></td>
+                                            <?php endif ?>
+                                        <?php endforeach ?>
+                                    </tr>
+                                <?php endforeach ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <?php endif ?>
+            <?php if($informacion_adicional["garantia"]): ?>
+                <div>
+                    <div class="title-info">Garantía
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.3">
+                                <defs>
+                                    <style>.cls-1{fill:#00263a;}</style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Layer_1" data-name="Layer 1">
+                                        <path class="cls-1" d="M15.3,8.87H0V6.43H15.3Z" />
+                                        <path class="cls-1 mas" d="M6.43,15.3V0H8.87V15.3Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-infor"><?php echo $informacion_adicional["garantia"]; ?></div>
+                </div>
+            <?php endif ?>
+            <?php if($informacion_adicional["archivos_descargables"]): ?>
+                <div>
+                    <div class="title-info">Archivos Descargables
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.3">
+                                <defs>
+                                    <style>.cls-1{fill:#00263a;}</style>
+                                </defs>
+                                <g id="Capa_2" data-name="Capa 2">
+                                    <g id="Layer_1" data-name="Layer 1">
+                                        <path class="cls-1" d="M15.3,8.87H0V6.43H15.3Z" />
+                                        <path class="cls-1 mas" d="M6.43,15.3V0H8.87V15.3Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="text-infor">
+                        <?php foreach($informacion_adicional["archivos_descargables"] as $file): ?>  
+                            <div>                 
+                                <a href="<?php echo $file["archivo"]["url"]?>">
+                                    <?php echo $file["nombre"]?>
+                                </a>
+                            </div>  
+                        <?php endforeach ?>
+                    </div>
+                </div>
+            <?php endif ?>
+        </div>
+    </section>
   
     <?php if ($configurador_jacuzzi) : ?>
     <h2 class="title-render">CONFIGURA TU JACUZZI</h2>
@@ -197,7 +343,7 @@ get_header();
    <?php endif ?>
 
     <section>
-        <?php echo get_template_part('partials/formulariojacuzzis') ?> 
+        <?php echo get_template_part('partials/formulariojacuzzis') ?>  
     </section>
     <section class="productsimili">
         <div class="textproduct">
@@ -307,5 +453,11 @@ get_header();
             }, 1500);
         }
     }
+    jQuery('.title-info').click(function(e){
+        jQuery('.title-info').not(this).parent().removeClass('open');
+        jQuery('.title-info').not(this).parent().find('.text-infor').slideUp("slow");   
+        jQuery(this).parent().toggleClass('open');
+        jQuery(this).parent().find('.text-infor').slideToggle("slow");
+    });
 </script>
 <?php get_footer(); ?>

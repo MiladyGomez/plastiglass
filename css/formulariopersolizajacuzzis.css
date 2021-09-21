@@ -1,0 +1,155 @@
+.formulcotizacion .container-plastiglass{
+    margin-left: auto!important;
+    max-width: 510px;
+}
+.formulcotizacion{
+    position: relative;
+}
+.formulcotizacion .title{
+    font-size: 43px;
+    line-height: 50px;
+    color: #00263A; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
+    text-align: center;
+    margin-bottom: 85px;
+} 
+.formulcotizacion .editable input{
+    width: 100%;
+    border-bottom: 1px #808080 solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 7px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+.formulcotizacion .editable p{
+    height: 0;
+    margin: 0;
+}
+.formulcotizacion .editable input::placeholder {                 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #808080; 
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
+}
+  
+.formulcotizacion .editable input:-ms-input-placeholder { 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
+
+}
+  
+.formulcotizacion .editable input::-ms-input-placeholder { 
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #929292; 
+    font-weight: bold;
+    font-family: 'Raleway-Heavy';
+    letter-spacing: 0.050em;
+
+}
+
+.formulcotizacion .wpcf7-submit{
+    background-color: #A67EB1;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff; 
+    font-family: 'Raleway-ExtraBold';
+    letter-spacing: 0.050em;
+    padding: 12px 50px;
+    border: none;
+    margin-top: 33px;
+    width: 100%;
+}
+.formulcotizacion .box-checkbox{
+    margin-top: 10px;
+}
+
+.formulcotizacion .wpcf7-list-item-label{
+    font-size: 15px;
+    line-height: 19px;
+    color: #808080; 
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.020em;
+    margin-left: 21px;
+}
+.custemchulito{
+    left: 0px;
+    position: absolute;
+}
+.custemchulito svg{
+    width: 26px;
+    cursor: pointer;
+}
+.chulito{
+    opacity: 0;
+}
+.chulitomostar{
+    opacity: 1;
+}
+
+.formulcotizacion input[name="box[]"]{
+    display: none;
+}
+
+.wpcf7-not-valid-tip{
+    font-size: 14px !important;
+    line-height: 16.8px;
+    color: #801F23 !important; 
+    font-family: 'Raleway-Regular';
+    letter-spacing: 0.050em;
+    position: absolute;
+    width: 90%;
+    left: 7px;
+    bottom: -25px;
+}
+.wpcf7-response-output{
+    display: none !important; 
+}
+
+@media (max-width:767px){
+    .formulcotizacion .editable input::placeholder {                 
+        font-size: 16px;
+        line-height: 19px;
+    }
+      
+    .formulcotizacion .editable input:-ms-input-placeholder { 
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .formulcotizacion .editable input::-ms-input-placeholder { 
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .formulcotizacion .editable input {
+        margin-bottom: 6px;
+    }
+    .formulcotizacion .title {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 35px;
+    }
+    span.wpcf7-list-item {
+        margin-top: -13px;
+        margin-left: 40px;
+    }
+    .formulcotizacion .wpcf7-list-item-label {
+        letter-spacing: 0em;
+        margin-left: 0px;
+    }
+    .formulcotizacion .wpcf7-submit {
+        font-size: 16px;
+        margin-top: 18px;
+        padding: 9px 15px;
+    }
+}

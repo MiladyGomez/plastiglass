@@ -12,6 +12,7 @@ $imgentop=get_field("imgentop");
 $imgentop_mobile=get_field("imgentop_mobile");
 $social=get_field("social");
 
+$productos_relacionados=get_field("productos_relacionados");
 // $mas_articulos=get_field("mas_articulos");
 
 $mas_articulos = new WP_Query(array(
@@ -49,15 +50,21 @@ get_header();
         <div class="d-block d-md-none">
             <img class="w-100" src="<?php echo $imgentop_mobile["url"]?>" alt="<?php echo $imgentop_mobile["alt"]?>">
         </div>
+		<div class="go-form" onclick="scrollcontact()">
+			<span>
+				Ir a formulario de contacto
+			</span>
+		</div>
 </section>
 <section>
 	<div class="blogcontent">
 		<div class="row">
 				<div class="col-md-8">
+					<p class="date"><?= date('d F Y', strtotime($post->post_date)); ?></p>
 					<h1 class="title"><?php echo $post->post_title?></h1>
 					<div class="content"><?php echo the_content() ?></div>
 					<!-- <div class="content"><?php echo $post->post_content?></div> -->
-					<div class="social"> 
+					<div class="social d-flex align-items-end"> 
 						<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>" target="_blank">
 							<svg class="icono1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.76 18.85">
 								<defs>
@@ -134,6 +141,7 @@ get_header();
 							</svg>
 						</a> -->
 						<?php if($social): ?>
+							<span>Compartir</span>
 							<?php foreach($social as $social_icon): ?>
 								<a href="<?php echo $social_icon["link"]["url"]?>" target="_blank">
 									<img src="<?php echo $social_icon["icon"]["url"]?>" alt="<?php echo $social_icon["icon"]["alt"]?>">
@@ -143,41 +151,59 @@ get_header();
 					</div>
 					<div class="bottomarrow">
 						<?php if ($previous) : ?>
+						<svg class="arrowleft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.69 13.95">
+							<defs>
+								<style>.cls-1{fill:#a67eb1;}</style>
+							</defs>
+							<g id="Capa_2" data-name="Capa 2">
+								<g id="Layer_1" data-name="Layer 1">
+									<polygon class="cls-1" points="7.69 0.72 1.44 6.97 7.69 13.23 6.97 13.95 0 6.97 6.97 0 7.69 0.72" />
+								</g>
+							</g>
+						</svg>
 						<a class="botonanterior" href="<?php echo get_the_permalink($previous) ?>">
-							<svg class="arrowleft"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
+							<!-- <svg class="arrowleft"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Layer_1" data-name="Layer 1">
 										<line x1="29.63" y1="8.18" x2="2.17" y2="8.18" style="fill:none;stroke:#a67eb1;stroke-miterlimit:10;stroke-width:2px" />
 										<polygon points="8.8 0 10.16 1.47 2.94 8.18 10.16 14.89 8.8 16.36 0 8.18 8.8 0" style="fill:#a67eb1" />
 									</g>
 								</g>
-							</svg>
-							Anterior
-						</a>
+							</svg> -->
+							Anterior</a>
 						<?php endif ?>
 						<?php if ($next) : ?>
 						<a class="botonsiguiente" href="<?php echo get_the_permalink($next) ?>">
-							Siguiente
-								<svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
-									<g id="Capa_2" data-name="Capa 2">
-										<g id="Layer_1" data-name="Layer 1">
-											<rect y="7.18" width="27.46" height="2" style="fill:#a67eb1"/>
-											<polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
-										</g>
+							<!-- <svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.63 16.36">
+								<g id="Capa_2" data-name="Capa 2">
+									<g id="Layer_1" data-name="Layer 1">
+										<rect y="7.18" width="27.46" height="2" style="fill:#a67eb1"/>
+										<polygon points="20.83 16.36 19.47 14.89 26.69 8.18 19.47 1.47 20.83 0 29.63 8.18 20.83 16.36" style="fill:#a67eb1"/>
 									</g>
-								</svg>
-						</a> 
+								</g>
+							</svg> -->
+							Siguiente</a> 
+						<svg class="arrowrigh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.69 13.95">
+							<defs>
+								<style>.cls-1{fill:#a67eb1;}</style>
+							</defs>
+							<g id="Capa_2" data-name="Capa 2">
+								<g id="Layer_1" data-name="Layer 1">
+									<polygon class="cls-1" points="0 13.23 6.25 6.97 0 0.72 0.72 0 7.69 6.97 0.72 13.95 0 13.23" />
+								</g>
+							</g>
+						</svg>
 						<?php endif ?>
 					</div>
 
 				</div>
 				<div class="col-md-4 d-none d-md-block"> 
 					<div>
-						<p class="textproduct"> Explora más artículos </p>
+						<p class="textproduct"> Productos relacionados</p>
 					</div> 
 					<div class="overproductos">
 						<div class="exploraarticulo" >	
-								<?php if($mas_articulos->have_posts()): ?>
+								<!-- <?php if($mas_articulos->have_posts()): ?>
 									<?php foreach($mas_articulos->posts as $articulo): ?> 
 										
 										<div class="articulossimilares">
@@ -203,8 +229,19 @@ get_header();
 											</a>
 										</div>	 
 									<?php endforeach ?> 
+								<?php endif ?>  -->
+								<?php if($productos_relacionados): ?>
+									<?php foreach($productos_relacionados as $producto): ?> 
+										
+										<div class="articulossimilares">
+										<a href="<?php echo get_permalink($producto["producto"]->ID)?>">    
+											<?php $galeria = get_field("jacuzziimgjacuzzi", $producto["producto"]->ID); ?>               
+											<img class="w-100" src="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["url"]?>" alt="<?php echo $galeria[0]["jacuzziimgjacuzzip"]["alt"]?>">
+											<p class="productsimilarestext"><?php echo $producto["producto"]->post_title; ?></p>
+										</a>
+										</div>	 
+									<?php endforeach ?> 
 								<?php endif ?> 
-							
 						</div> 
 					</div>
 				</div>
@@ -212,7 +249,7 @@ get_header();
 	</div>
 	<div class="d-block d-md-none"> 
 		<div>
-			<p class="textproduct"> Explora más artículos </p>
+			<p class="textproduct"> Productos relacionados </p>
 		</div> 
 		<div class="overproductos">
 			<div class="exploraarticulo" style="<?= ($mas_articulos_num == 1) ? 'min-width: 100%; justify-content: center;' : '' ?>">	
@@ -247,10 +284,22 @@ get_header();
 		</div>
 	</div>
 </section>
-<section>
+<section class="form-contacto">
+		<div class="inforcontactos">
+            <p class="tittlecontantacnos">Formulario de contacto</p>
+        </div>
+		<?php echo get_template_part('partials/formulariocontactanos') ?> 
+</section>
+<!-- <section>
 	<?php echo get_template_part('partials/formulariosuscribirme') ?> 
-</section> 
-
+</section>  -->
+<script>
+	function scrollcontact() { 
+		jQuery('html, body').animate({
+			scrollTop: jQuery(".form-contacto").offset().top
+		}, 1000); 
+	}
+</script>
 
 </main>
 

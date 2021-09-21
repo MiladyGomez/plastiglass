@@ -1,4 +1,27 @@
+.imagen-top{
+    position: relative;
+}
+.imagen-top img{
+    min-height: 580px;
+    object-fit: cover;
+}
+.formulario{
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 100%;
+    background-color: #F1F2F2;
+    max-width: 510px;
+    padding: 25px 45px 52px 45px ;
+}
 
+.formulario .line{
+    position: absolute;
+    top: 145px;
+    width: 100%;
+    left: 0px;
+    width: 100%;
+}
 
 .containerpost {
     margin-left: 42px;
@@ -183,6 +206,7 @@
 }
 
 @media (max-width:991px){
+
     .tittle {
         font-size: 28px;
         line-height: 29px; 
@@ -212,21 +236,63 @@
 }
 
 @media (max-width:767px){
+    .btn-formulario{
+        position: absolute;
+        bottom: 20px;
+        right: 35px;
+    }
+    .btn-formulario span{
+        background-color: #A67EB1;
+        font-size: 16px;
+        line-height: 17.15px;
+        color: #ffffff;
+        font-family: 'Raleway-ExtraBold';
+        letter-spacing: 0.050em;
+        padding: 12px 25px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+    .btn-formulario span svg{
+        width: 15px;
+        margin-top: -19px;
+    }
+    .imagen-top img{
+        min-height: auto;
+    }
+    .formulario{
+        width: 85%;
+        height: auto;
+        display: none;
+        right: 50%;
+        transform: translateX(50%);
+        padding: 25px 25px 20px 25px;
+        z-index: 1;
+    }
 
-.containerpost {
-    margin-top: 59px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
+    .formulario .close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+    }
 
-.marginbottomtext {
-    margin-bottom: 60px;
-}
-.marginbottomimg {
-    margin-bottom: 40px;
-}
+    .containerpost {
+        margin-top: 59px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
-
-
+    .marginbottomtext {
+        margin-bottom: 60px;
+    }
+    .marginbottomimg {
+        margin-bottom: 40px;
+    }
+    .formulario .line{
+        top: 85px;
+        
+    }
 }
 

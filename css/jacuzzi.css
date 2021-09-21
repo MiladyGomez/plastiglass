@@ -177,15 +177,27 @@
     text-transform: capitalize; 
 }
 
+.contenedor-colores{
+    display: flex;
+}
+.contenedor-colores .box-color{
+    padding-right: 17px;
+}
+.contenedor-colores .box-color div{
+    font-size: 12px;
+    line-height: 14.4px;
+    color: #808080; 
+    text-align: center;
+    max-width: 42px;
+    overflow-wrap: break-word;
+}
+
 .circlec, .circlee{
     height: 42px;
     width: 42px;
     display: inline-block;
     border-radius: 50%;
-}
-
-.circlec, .circlee {
-    cursor: pointer; 
+    border: 2px solid #231F20;
 }
 
 .nextArro, .prevArro {
@@ -239,11 +251,143 @@
 }
 
 .title-render {
+    font-size: 26px;
+    line-height: 19px;
     color: #00263A;
     font-family: 'Raleway-Heavy';
     letter-spacing: 0.050em;
     text-align: center;
     margin-top: 50px;
+}
+.inf-adicional .title-info{
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0.025em;
+    color: #00263A;
+    font-family: 'Raleway-Heavy';
+
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #808080;
+    padding: 30px 10px 0 10px;
+}
+.inf-adicional .title-info span{
+    position: absolute;
+    right: 25px;
+    width: 17px;
+}
+.inf-adicional .text-infor{
+    display: none;
+    padding: 20px 10px 0 10px;
+}
+.inf-adicional .text-infor p{
+    font-size: 21px;
+}
+
+.inf-adicional .text-infor a{
+    font-size: 21px;
+    color: #5FD0DF;
+    text-decoration: underline;
+}
+
+.inf-adicional .text-infor ul{
+    padding-left: 22px;
+}
+
+.inf-adicional .text-infor ul li{
+    font-size: 21px;
+}
+
+.inf-adicional .text-infor ul li::marker {
+    color: #00263A;
+    font-size: 21px;
+}
+
+.inf-adicional .text-infor .accesorios{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+}
+.inf-adicional .text-infor .accesorios th{
+    font-size: 18.49px;
+    line-height: 22px;
+    color: #808080;
+    font-family: 'Raleway-Bold';
+    text-align: center;
+    border-style: hidden;
+    padding-left: 17px;
+}
+.inf-adicional .text-infor .accesorios .cont{
+    border-bottom-style: hidden;
+}
+.inf-adicional .text-infor .accesorios td{
+    font-size: 18.49px;
+    line-height: 22px;
+    color: #808080;
+    font-family: 'Raleway-Regular';
+    text-align: center;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    width: 162px;
+    max-width: 100%;
+    padding-left: 17px;
+}
+.inf-adicional .text-infor table, 
+.inf-adicional .text-infor tr, 
+.inf-adicional .text-infor td{
+    border-width : 1px;
+    border-color: rgba(35, 31, 32, 0.5);
+    background-color: transparent;
+}
+.inf-adicional .text-infor th,
+.inf-adicional .text-infor td{
+    background-color: rgba(95, 208, 223, 0.18);
+    position: relative;
+}
+.inf-adicional .text-infor th::before,
+.inf-adicional .text-infor td::before{
+    position: absolute;
+    content: "";
+    border-left: 17px solid #FFFFFF;
+    width: 17px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.inf-adicional .text-infor .accesorios tr th:nth-child(1)::before,
+.inf-adicional .text-infor .accesorios tr td:nth-child(1)::before{
+    content: unset;
+}
+.inf-adicional .text-infor .accesorios tr th:nth-child(1){
+    background-color: transparent;
+}
+.inf-adicional .text-infor .accesorios tr td:nth-child(1){
+    font-size: 19px;
+    line-height: 32px;
+    text-align: left;
+    width: 305px;
+    background-color: transparent;
+    padding-left: 0px;
+}
+.inf-adicional .text-infor .accesorios tr td:last-child{
+    width: 70px;
+}
+.inf-adicional .text-infor .accesorios tr td:nth-last-child(2){
+    width: 70px;
+}
+.inf-adicional .text-infor .accesorios tr:last-child .cont{
+    border-bottom-style: solid;
+}
+.inf-adicional .mas{
+    opacity: 0;
+    transform: 0.5s;
+}
+.inf-adicional .open .mas{
+    opacity: 1;
 }
 
 .section-render {
@@ -406,6 +550,22 @@
         margin-bottom: 43px;
         width: 300vw;
     }
+
+    .inf-adicional .text-infor p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .inf-adicional .text-infor a{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .inf-adicional .text-infor ul li{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     .overproductos{
         overflow: auto;
     }

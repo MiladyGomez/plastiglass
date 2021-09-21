@@ -1,3 +1,4 @@
+
 <?php
 /*** +Theme Includes ***/
 include_once 'inc/theme-includes-menu.php';
@@ -202,3 +203,32 @@ function bbloomer_rename_address_1_province( $fields ) {
     $fields['address_1']['label'] = 'Dirección';
     return $fields;
 }
+
+
+/**
+ * Login Styles
+ */
+function ditto_login_styles() { ?>
+  <style type="text/css">
+    body {
+      background-color: #00263A !important;
+    }
+    #login h1 a, .login h1 a {
+      display: none;
+    }
+    #login h1 img {
+      width: 100%;
+      max-width: 240px;
+      max-height: 180px;
+    }
+  </style>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      let loginImg = document.createElement("img");
+        loginImg.src = "<?= get_template_directory_uri() ?>/images/Logoserena.svg";
+        loginImg.alt = "WordPress login image";
+        document.querySelector('#login h1').appendChild(loginImg);
+    });
+  </script>
+<?php }
+add_action( 'login_enqueue_scripts', 'ditto_login_styles' );

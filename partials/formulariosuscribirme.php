@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/formulariosuscribirme.css' ?>" type="text/css" media="all">
 
 <div class="formulsuscribirme">
-            <p class="title"> SUSCRIBIRME AL BLOG </p>
+            <p class="title"> Suscribirme al boletín </p>
             <?php echo do_shortcode('[contact-form-7 id="282" title="suscribirme"]')?>
             
 </div> 
