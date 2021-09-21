@@ -12,6 +12,8 @@
  setlocale(LC_TIME, 'es_ES.UTF-8');
  // En windows
  setlocale(LC_TIME, 'spanish');
+
+$meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
 $imgentop=get_field("imgentop");
 $imgentop_mobile=get_field("imgentop_mobile");
 $social=get_field("social");
@@ -64,6 +66,7 @@ get_header();
 	<div class="blogcontent">
 		<div class="row">
 				<div class="col-md-8">
+					<p class="date"> <?php echo date('d')." de ".$meses[date('n')-1]. " del ".date('Y')?></p>
 					<p class="date"><?= strftime("d F Y", strtotime($post->post_date)); ?></p>
 					<p class="date"><?= strftime("%d %B  %Y", strtotime($post->post_date)); ?></p>
 					<p class="date"><?= strftime("%A, %d de %B del %Y", strtotime($post->post_date)); ?></p>
