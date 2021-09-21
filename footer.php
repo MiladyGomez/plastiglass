@@ -63,7 +63,7 @@ $terminos=get_field("pagina_de_terminos", "option");
                         T: <?php echo $footer["phoneone"]["title"]?>
                     </a>
                     <a class="phonetwo" href="<?php echo $footer["phonetwo"]["url"]?>">
-                        <?php echo $footer["phoneone"]["title"]?>
+                        <?php echo $footer["phonetwo"]["title"]?>
                     </a>
                 </div>
                 <div>
