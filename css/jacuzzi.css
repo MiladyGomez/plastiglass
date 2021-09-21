@@ -2,6 +2,12 @@
     padding-right: 56px;
 }
 
+.container-plastiglass {
+    width: calc(100% - 80px)!important; 
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
 .title{
     font-size: 49px;
     line-height: 50px;
