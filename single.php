@@ -66,11 +66,13 @@ get_header();
 	<div class="blogcontent">
 		<div class="row">
 				<div class="col-md-8">
-					<p class="date"> <?php echo date('d')." de ".$meses[date('n')-1]. " del ".date('Y')?></p>
-					<p class="date"><?= strftime("d F Y", strtotime($post->post_date)); ?></p>
+					<!-- <p class="date"> <?php echo date('d')?></p> -->
+					<p class="date"> <?php echo date('d', strtotime($post->post_date))."  ".$meses[date('m', strtotime($post->post_date))-1]. "  ".date('Y', strtotime($post->post_date))?></p>
+					<!-- <p class="date"><?= strftime("d F Y", strtotime($post->post_date)); ?></p>
 					<p class="date"><?= strftime("%d %B  %Y", strtotime($post->post_date)); ?></p>
 					<p class="date"><?= strftime("%A, %d de %B del %Y", strtotime($post->post_date)); ?></p>
-					<p class="date"><?= date('d F Y', strtotime($post->post_date)); ?></p>
+					<p class="date"><?= date('d m Y', strtotime($post->post_date)); ?></p> -->
+
 					<h1 class="title"><?php echo $post->post_title?></h1>
 					<div class="content"><?php echo the_content() ?></div>
 					<!-- <div class="content"><?php echo $post->post_content?></div> -->
