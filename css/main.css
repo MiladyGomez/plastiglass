@@ -275,7 +275,9 @@ div.asl_r .results .item .asl_content h3, div.asl_r .results .item .asl_content 
 .footermain #main_menu li:before{
     content: unset!important;
 }
-
+.footermain #main_menu .menu-item-has-children:hover .sub-menu{
+    display: none!important;
+}
 .footermain .mail {
     position: relative;
     font-weight: normal;
