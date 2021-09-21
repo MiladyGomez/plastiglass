@@ -287,6 +287,7 @@
     width: 17px;
 }
 .inf-adicional .text-infor{
+    overflow: auto;
     display: none;
     padding: 20px 10px 0 10px;
 }
@@ -383,7 +384,7 @@
     width: 70px;
 }
 .inf-adicional .text-infor .accesorios tr td:nth-last-child(2){
-    width: 70px;
+    width: 90px;
 }
 .inf-adicional .text-infor .accesorios tr:last-child .cont{
     border-bottom-style: solid;
