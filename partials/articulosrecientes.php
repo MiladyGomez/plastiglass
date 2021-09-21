@@ -29,7 +29,7 @@
                         
                         <div class="col-4">
                             <a href="<?php echo get_permalink($articulo["articulo"]->ID)?>">
-                            <div class="box-articulo">
+                            <div class="box-articulo"> 
                                 <div class="imgarticulo" style="background-image: url(<?php echo $galeria ["url"]?>)">
                                 </div>
                                 <div class="textart">

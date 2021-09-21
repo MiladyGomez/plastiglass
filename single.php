@@ -7,7 +7,11 @@
 
  global $post;
 
- 
+ date_default_timezone_set('Europe/Madrid');
+ // Unix
+ setlocale(LC_TIME, 'es_ES.UTF-8');
+ // En windows
+ setlocale(LC_TIME, 'spanish');
 $imgentop=get_field("imgentop");
 $imgentop_mobile=get_field("imgentop_mobile");
 $social=get_field("social");
@@ -60,7 +64,7 @@ get_header();
 	<div class="blogcontent">
 		<div class="row">
 				<div class="col-md-8">
-					<p class="date"><?= date('d F Y', strtotime($post->post_date)); ?></p>
+					<p class="date"><?= strftime("%d %B  %Y", strtotime($post->post_date)); ?></p>
 					<h1 class="title"><?php echo $post->post_title?></h1>
 					<div class="content"><?php echo the_content() ?></div>
 					<!-- <div class="content"><?php echo $post->post_content?></div> -->
