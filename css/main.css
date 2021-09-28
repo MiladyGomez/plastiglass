@@ -345,9 +345,13 @@ div.asl_r .results .item .asl_content h3, div.asl_r .results .item .asl_content 
     margin-top: 3px;
     width: 29.09090909%;
 }
+.footermain .top .cinco .d-lg-flex{
+    align-items: center;
+}
 .footermain .top .cinco img{
     max-width: 33px;
-    height: 33px;
+    max-height: 33px;
+    height: auto;
     margin-right: 20px;
 }
 .footermain .bottom{
