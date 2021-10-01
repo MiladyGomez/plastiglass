@@ -1,6 +1,6 @@
 {
     "key": "group_5eaefff3b910a",
-    "title": "Jacuzzi",
+    "title": "Jacuzzi y Bañeras",
     "fields": [
         {
             "key": "field_5eaf004fb177e",
@@ -505,6 +505,13 @@
                 "operator": "==",
                 "value": "jacuzzi"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "banera"
+            }
         ]
     ],
     "menu_order": 0,
@@ -515,5 +522,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1632185530
+    "modified": 1633108184
 }

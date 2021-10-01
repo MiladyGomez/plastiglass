@@ -3,7 +3,7 @@
 <?php global $post ?>
 
 <div class="formulcotizacion"> 
-    <p class="title"> Personaliza y cotiza tu Jacuzzi </p> 
+    <p class="title"> Personaliza y cotiza tu Bañera </p> 
     <?php echo do_shortcode('[contact-form-7 id="1094" title="Formulario cotiza tu producto"]')?>
             
 </div>

@@ -153,6 +153,13 @@
                 "operator": "==",
                 "value": "hidromasajes.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "baneras.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -165,5 +172,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1619733887
+    "modified": 1633108592
 }
