@@ -140,10 +140,10 @@ get_header();
                             <p class="classp1">Dimensiones</p> 
                             <p class="classp2"><?php echo $jacuzzidimensions?></p>
                         </div>
-                        <div> 
+                        <!-- <div> 
                             <p class="classp1">Chorros</p> 
                             <p class="classp2"><?php echo $jacuzzijets?></p> 
-                        </div>
+                        </div> -->
                         <div>
                             <p class="classp1">Cantidad de agua</p> 
                             <p class="classp2"><?php echo $jacuzziwateramount?></p> 
