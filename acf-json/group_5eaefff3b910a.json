@@ -134,25 +134,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_5eaf01a76305f",
-            "label": "Chorros",
-            "name": "jacuzzijets",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5eaf01c263060",
             "label": "Cantidad de Agua",
             "name": "jacuzziwateramount",
@@ -522,5 +503,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633108184
+    "modified": 1633375718
 }
